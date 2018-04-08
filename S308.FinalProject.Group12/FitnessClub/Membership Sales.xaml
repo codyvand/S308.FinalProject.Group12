@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClub"
         mc:Ignorable="d"
-        Title="Membership_Sales" Height="300" Width="300">
+        Title="Membership_Sales" Height="400" Width="500">
     <Grid>
-        
+        <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="23" Margin="163,10,0,0" TextWrapping="Wrap" Text="Member Information" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPersonalFitnessGoalTitle" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" TextWrapping="Wrap" Text="Personal Fitness Goal:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="10,61,0,0" TextWrapping="Wrap" Text="MembershipType:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0" TextWrapping="Wrap" Text="Start Date:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtEndDateTitle" HorizontalAlignment="Left" Height="23" Margin="10,107,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="10,130,0,0" TextWrapping="Wrap" Text="Cost per Month:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtSubtotalTitle" HorizontalAlignment="Left" Height="23" Margin="10,153,0,0" TextWrapping="Wrap" Text="Subtotal:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtAdditionalFeaturesTitle" HorizontalAlignment="Left" Height="23" Margin="10,181,0,0" TextWrapping="Wrap" Text="Additional Features:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtTrainingPlanTitle" HorizontalAlignment="Left" Height="23" Margin="10,204,0,0" TextWrapping="Wrap" Text="Training Plan:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtLockerRentalTitle" HorizontalAlignment="Left" Height="23" Margin="10,227,0,0" TextWrapping="Wrap" Text="Locker Rental:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtTotalTitle" HorizontalAlignment="Left" Height="23" Margin="10,250,0,0" TextWrapping="Wrap" Text="Total:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtFirstNameTitle" HorizontalAlignment="Left" Height="23" Margin="181,38,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtLastNameTitle" HorizontalAlignment="Left" Height="23" Margin="181,61,0,0" TextWrapping="Wrap" Text="Last Name:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtPhoneTitle" HorizontalAlignment="Left" Height="23" Margin="181,84,0,0" TextWrapping="Wrap" Text="Phone:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtEmailTitle" HorizontalAlignment="Left" Height="23" Margin="181,107,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtGenderTitle" HorizontalAlignment="Left" Height="23" Margin="181,130,0,0" TextWrapping="Wrap" Text="Gender:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtWeightTitle_" HorizontalAlignment="Left" Height="23" Margin="181,153,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtAgeTitle" HorizontalAlignment="Left" Height="23" Margin="181,181,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="153"/>
+        <Button x:Name="btnMainMenu" Content="Main Menu" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="103,340,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="242,340,0,0" VerticalAlignment="Top" Width="118"/>
+        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="374,340,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="163,312,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="339,24,0,0" TextWrapping="Wrap" Text="Find Member:" VerticalAlignment="Top" Width="153"/>
+
     </Grid>
 </Window>
