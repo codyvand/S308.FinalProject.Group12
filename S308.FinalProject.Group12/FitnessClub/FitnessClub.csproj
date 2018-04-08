@@ -74,8 +74,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MemberInformation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Membership Sales.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PricingManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MemberInformation.xaml.cs">
+      <DependentUpon>MemberInformation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Membership Sales.xaml.cs">
+      <DependentUpon>Membership Sales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PricingManagement.xaml.cs">
+      <DependentUpon>PricingManagement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
