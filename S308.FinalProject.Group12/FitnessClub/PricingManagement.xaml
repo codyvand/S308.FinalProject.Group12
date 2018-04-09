@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="PricingManagement" Height="300" Width="300">
     <Grid>
-        
+        <Label x:Name="lblGymMembershipOptions" Content="Gym Membership Options" HorizontalAlignment="Center" Height="39" Margin="10,10,10,0" VerticalAlignment="Top" Width="272" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="lblIndvidual1Month" Content="Individual 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,54,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblIndividual12Month" Content="Individual 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,87,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblTwoPerson1Month" Content="Two Person 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,120,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblTwoPerson12Month" Content="Two Person 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,148,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblFamily1Month" Content="Family 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,181,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblFamily12Month" Content="Family 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,214,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="28" Margin="156,54,0,0" TextWrapping="Wrap" Text="$9.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="1"/>
+        <TextBox x:Name="txtIndividual12Month" HorizontalAlignment="Left" Height="28" Margin="156,87,0,0" TextWrapping="Wrap" Text="$100.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="2"/>
+        <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="28" Margin="156,120,0,0" TextWrapping="Wrap" Text="$14.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="3"/>
+        <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="28" Margin="156,153,0,0" TextWrapping="Wrap" Text="$150.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="4"/>
+        <TextBox x:Name="txtFamily1Month" HorizontalAlignment="Left" Height="28" Margin="156,186,0,0" TextWrapping="Wrap" Text="$19.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="5"/>
+        <TextBox x:Name="txtFamily12Month" HorizontalAlignment="Left" Height="28" Margin="156,219,0,0" TextWrapping="Wrap" Text="$200.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="6"/>
+
     </Grid>
 </Window>
