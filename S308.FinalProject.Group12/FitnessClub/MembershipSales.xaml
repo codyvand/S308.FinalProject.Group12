@@ -92,7 +92,7 @@
         <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="370,332,-145,-85" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos"/>
         <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="370,361,-145,-114" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190"/>
         <TextBox x:Name="txtGenderData" HorizontalAlignment="Left" Height="23" Margin="369,389,-144,-142" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Male"/>
-        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="575,304,-407,-57" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722"/>
+        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="575,304,-407,-57" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722" TextChanged="txtPhoneData_TextChanged"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="577,330,-409,-83" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu"/>
         <TextBox x:Name="txtAgeData_Copy" HorizontalAlignment="Left" Height="23" Margin="579,361,-335,-114" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="404,465,-149,-218" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
@@ -104,6 +104,23 @@
         <RadioButton x:Name="rbtMonthlyTrainingPlan" Content="Yes" HorizontalAlignment="Left" Margin="434,223,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtMonthlyLockerRental" Content="Yes" HorizontalAlignment="Left" Margin="663,222,0,0" VerticalAlignment="Top"/>
         <Calendar x:Name="clrStartDate" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top" Height="167" Width="224"/>
+        <Rectangle x:Name="recCreditCardInformation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="86" Margin="267,87,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox x:Name="txtCreditCardInformationTitle" HorizontalAlignment="Left" Height="23" Margin="278,81,0,0" TextWrapping="Wrap" Text="Credit Card Information" VerticalAlignment="Top" Width="151" FontWeight="Bold"/>
+        <TextBox x:Name="txtCreditCardTypeTitle" HorizontalAlignment="Left" Height="23" Margin="303,104,0,0" TextWrapping="Wrap" Text="Credit Card Type:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtCreditCardNumberTitle" HorizontalAlignment="Left" Height="23" Margin="304,132,0,0" TextWrapping="Wrap" Text="Credit Card Number:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0"/>
+        <ComboBox x:Name="cbxCreditCardTypeData" HorizontalAlignment="Left" Margin="404,104,0,0" VerticalAlignment="Top" Width="120" Height="23">
+            <Button Content="Individual 1 Month"/>
+        </ComboBox>
+        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="423,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextChanged="txtPhoneData_TextChanged"/>
 
     </Grid>
 </Window>
