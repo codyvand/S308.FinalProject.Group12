@@ -16,9 +16,9 @@
         <ProgressBar x:Name="psbMemberInformation" HorizontalAlignment="Left" Height="10" Margin="142,131,-78,0" VerticalAlignment="Top" Width="228"/>
         <ProgressBar x:Name="psbMembershipSales" HorizontalAlignment="Left" Height="10" Margin="142,182,-78,0" VerticalAlignment="Top" Width="228"/>
         <ProgressBar x:Name="psbPricingManagement" HorizontalAlignment="Left" Height="10" Margin="142,230,-78,0" VerticalAlignment="Top" Width="228"/>
-        <TextBox x:Name="txtApplicationStatusTitle_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="206,103,-110,0" FontWeight="Bold"/>
-        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="70" TextChanged="textBox_TextChanged" Margin="131,103,0,0" FontWeight="Bold"/>
-        <TextBox x:Name="txtFinishLine" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="70" TextChanged="textBox_TextChanged" Margin="346,103,-124,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtApplicationStatusTitle_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" Margin="206,103,-110,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="70" Margin="131,103,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtFinishLine" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="70" Margin="346,103,-124,0" FontWeight="Bold"/>
 
     </Grid>
 </Window>
