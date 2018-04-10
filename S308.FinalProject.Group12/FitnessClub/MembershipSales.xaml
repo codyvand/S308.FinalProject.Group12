@@ -60,7 +60,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="46" Margin="409,10,-359,0" TextWrapping="Wrap" Text="Member Information" VerticalAlignment="Top" Width="242" FontWeight="Bold" Background="{x:Null}" FontSize="21.333" BorderThickness="0"/>
+        <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="46" Margin="409,10,-359,0" TextWrapping="Wrap" Text="Membership Sales" VerticalAlignment="Top" Width="242" FontWeight="Bold" Background="{x:Null}" FontSize="21.333" BorderThickness="0"/>
         <TextBox x:Name="txtPersonalFitnessGoalTitle" HorizontalAlignment="Left" Height="23" Margin="278,53,-112,0" TextWrapping="Wrap" Text="Personal Fitness Goal:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0"/>
         <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="11,51,0,0" TextWrapping="Wrap" Text="MembershipType:" VerticalAlignment="Top" Width="104" Background="{x:Null}" BorderThickness="0"/>
         <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="80,74,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
