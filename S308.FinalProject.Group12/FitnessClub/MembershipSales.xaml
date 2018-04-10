@@ -98,7 +98,7 @@
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="404,465,-149,-218" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="593,465,-363,-218" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="341,493,-137,-246" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="$20"/>
-        <ComboBox x:Name="cbxMembershipType" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23">
+        <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23">
             <Button Content="Individual 1 Month"/>
         </ComboBox>
         <RadioButton x:Name="rbtMonthlyTrainingPlan" Content="Yes" HorizontalAlignment="Left" Margin="434,223,0,0" VerticalAlignment="Top"/>
@@ -120,7 +120,7 @@
         <ComboBox x:Name="cbxCreditCardTypeData" HorizontalAlignment="Left" Margin="404,104,0,0" VerticalAlignment="Top" Width="120" Height="23">
             <Button Content="Individual 1 Month"/>
         </ComboBox>
-        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="423,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextChanged="txtPhoneData_TextChanged"/>
+        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="423,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextChanged="txtPhoneData_TextChanged" Text="5555 5555 5555 5555"/>
 
     </Grid>
 </Window>
