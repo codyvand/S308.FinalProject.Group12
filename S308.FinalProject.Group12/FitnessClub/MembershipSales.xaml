@@ -5,8 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClub"
         mc:Ignorable="d"
-        Title="MembershipSales" Height="300" Width="300">
+        Title="MembershipSales" Height="600" Width="800">
     <Grid>
-        
+        <Rectangle x:Name="recNavigation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="236" Margin="13,302,0,0" Stroke="Black" VerticalAlignment="Top" Width="228" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle x:Name="recMemberInformation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="536" Margin="258,2,-484,-268" Stroke="Black" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="recAdditionalFeatures_Copy1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="140" Margin="268,279,-473,-149" Stroke="Black" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle x:Name="recAdditionalFeatures" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="55" Margin="268,197,-474,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <Rectangle x:Name="recMembershipDetails" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="283" Margin="10,1,0,0" Stroke="Black" VerticalAlignment="Top" Width="229" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="46" Margin="409,10,-359,0" TextWrapping="Wrap" Text="Member Information" VerticalAlignment="Top" Width="242" FontWeight="Bold" Background="{x:Null}" FontSize="21.333" BorderThickness="0"/>
+        <TextBox x:Name="txtPersonalFitnessGoalTitle" HorizontalAlignment="Left" Height="23" Margin="278,53,-112,0" TextWrapping="Wrap" Text="Personal Fitness Goal:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="11,51,0,0" TextWrapping="Wrap" Text="MembershipType:" VerticalAlignment="Top" Width="104" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="80,74,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtEndDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,258,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top" Width="60" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="303,465,-112,-218" TextWrapping="Wrap" Text="Cost per Month:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtSubtotalTitle" HorizontalAlignment="Left" Height="23" Margin="531,465,-301,-218" TextWrapping="Wrap" Text="Subtotal:" VerticalAlignment="Top" Width="62" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtAdditionalFeaturesTitle" HorizontalAlignment="Left" Height="23" Margin="278,187,-137,0" TextWrapping="Wrap" Text="Additional Features" VerticalAlignment="Top" Width="151" FontWeight="Bold"/>
+        <TextBox x:Name="txtTrainingPlanTitle" HorizontalAlignment="Left" Height="23" Margin="303,221,-137,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtLockerRentalTitle" HorizontalAlignment="Left" Height="23" Margin="531,221,-371,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtTotalTitle" HorizontalAlignment="Left" Height="23" Margin="303,493,-49,-246" TextWrapping="Wrap" Text="Total:" VerticalAlignment="Top" Width="38" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtFirstNameTitle" HorizontalAlignment="Left" Height="23" Margin="303,304,-78,-57" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtLastNameTitle" HorizontalAlignment="Left" Height="23" Margin="303,332,-78,-85" TextWrapping="Wrap" Text="Last Name:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtPhoneTitle" HorizontalAlignment="Left" Height="23" Margin="531,304,-283,-57" TextWrapping="Wrap" Text="Phone:" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtEmailTitle" HorizontalAlignment="Left" Height="23" Margin="531,330,-287,-83" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Width="48" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtGenderTitle" HorizontalAlignment="Left" Height="23" Margin="303,389,-78,-142" TextWrapping="Wrap" Text="Gender:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtWeightTitle_" HorizontalAlignment="Left" Height="23" Margin="303,361,-78,-114" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="531,361,-287,-114" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="Age:" Background="{x:Null}" BorderThickness="0"/>
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="80,344,0,-108" VerticalAlignment="Top" Width="86" Height="34"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="80,392,0,-158" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="80,486,0,-254" VerticalAlignment="Top" Width="86" Height="38"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="80,440,0,-206" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="80,310,0,-63" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16"/>
+        <TextBox x:Name="txtPersonalInformationTitle" HorizontalAlignment="Left" Height="23" Margin="278,268,-137,-21" TextWrapping="Wrap" Text="Personal Information" VerticalAlignment="Top" Width="151" FontWeight="Bold"/>
+        <TextBox x:Name="txtPersonalFitnessGoalData" HorizontalAlignment="Left" Height="23" Margin="404,53,-474,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" Text="To grow and get faster and stronger" FontStyle="Italic"/>
+        <TextBox x:Name="txtMembershipInvestmentTitle" HorizontalAlignment="Left" Height="23" Margin="278,434,-137,-187" TextWrapping="Wrap" Text="Membership Investment" VerticalAlignment="Top" Width="151" FontWeight="Bold"/>
+        <TextBox x:Name="txtMembershipDetailsTitle" HorizontalAlignment="Left" Height="23" Margin="27,10,0,0" TextWrapping="Wrap" Text="Membership Details" VerticalAlignment="Top" Width="187" FontWeight="Bold" Background="{x:Null}" BorderThickness="0" FontSize="18.667"/>
+        <TextBox x:Name="txtEndDateData" HorizontalAlignment="Left" Height="23" Margin="68,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018"/>
+        <TextBox x:Name="txtFirstNameData" HorizontalAlignment="Left" Height="23" Margin="370,304,-145,-57" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Zach"/>
+        <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="370,332,-145,-85" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos"/>
+        <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="370,361,-145,-114" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190"/>
+        <TextBox x:Name="txtGenderData" HorizontalAlignment="Left" Height="23" Margin="369,389,-144,-142" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Male"/>
+        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="575,304,-407,-57" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722"/>
+        <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="577,330,-409,-83" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu"/>
+        <TextBox x:Name="txtAgeData_Copy" HorizontalAlignment="Left" Height="23" Margin="579,361,-335,-114" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22"/>
+        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="404,465,-149,-218" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
+        <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="593,465,-363,-218" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
+        <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="341,493,-137,-246" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="$20"/>
+        <ComboBox x:Name="cbxMembershipType" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23">
+            <Button Content="Individual 1 Month"/>
+        </ComboBox>
+        <RadioButton x:Name="rbtMonthlyTrainingPlan" Content="Yes" HorizontalAlignment="Left" Margin="434,223,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtMonthlyLockerRental" Content="Yes" HorizontalAlignment="Left" Margin="663,222,0,0" VerticalAlignment="Top"/>
+        <Calendar x:Name="clrStartDate" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top" Height="167" Width="224"/>
+
     </Grid>
 </Window>
