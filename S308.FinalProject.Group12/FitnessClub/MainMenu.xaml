@@ -7,12 +7,17 @@
         mc:Ignorable="d"
         Title="Gym Main Menu" Height="300" Width="450">
     <Grid>
-        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Welcome To The Gym" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="127,10,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Welcome To The Gym" VerticalAlignment="Top" Width="196" Margin="127,10,0,0" FontWeight="Bold"/>
         <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
-        <TextBox x:Name="txtApplicationStatusTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="144,86,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtApplicationStatusTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="220,103,0,0" FontWeight="Bold"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="385,248,0,0" VerticalAlignment="Top" Width="57" Height="22"/>
+        <Slider x:Name="slrMemberInformation" HorizontalAlignment="Left" Margin="144,131,0,0" VerticalAlignment="Top" Width="272"/>
+        <Slider x:Name="slrMembershipSales" HorizontalAlignment="Left" Margin="144,178,0,0" VerticalAlignment="Top" Width="272" ValueChanged="slider_Copy_ValueChanged"/>
+        <Slider x:Name="slrPricingManagement" HorizontalAlignment="Left" Margin="144,224,0,0" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtStartTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="37" TextChanged="textBox_TextChanged" Margin="127,103,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtFinishlineTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="62" TextChanged="textBox_TextChanged" Margin="354,103,0,0" FontWeight="Bold"/>
 
     </Grid>
 </Window>
