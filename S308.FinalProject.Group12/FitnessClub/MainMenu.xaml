@@ -13,7 +13,13 @@
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <TextBox x:Name="txtApplicationStatusTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="220,103,0,0" FontWeight="Bold"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="385,248,0,0" VerticalAlignment="Top" Width="57" Height="22"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" Source="images/FitForLife.jpg"/>
+        <Image x:Name="imgFinishLine" HorizontalAlignment="Left" Height="64" Margin="375,153,0,0" VerticalAlignment="Top" Width="57" Source="images/FitForLife.jpg"/>
+        <ProgressBar x:Name="psbMemberInformation" HorizontalAlignment="Left" Height="10" Margin="142,131,0,0" VerticalAlignment="Top" Width="228"/>
+        <ProgressBar x:Name="psbMembershipSales" HorizontalAlignment="Left" Height="10" Margin="142,182,0,0" VerticalAlignment="Top" Width="228"/>
+        <ProgressBar x:Name="psbPricingManagement" HorizontalAlignment="Left" Height="10" Margin="142,230,0,0" VerticalAlignment="Top" Width="228"/>
+        <TextBox x:Name="txtApplicationStatusTitle_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="206,103,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="70" TextChanged="textBox_TextChanged" Margin="131,103,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtFinishLine" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="70" TextChanged="textBox_TextChanged" Margin="346,103,0,0" FontWeight="Bold"/>
 
     </Grid>
 </Window>
