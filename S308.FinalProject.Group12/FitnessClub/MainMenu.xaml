@@ -13,6 +13,7 @@
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <TextBox x:Name="txtApplicationStatusTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" TextChanged="textBox_TextChanged" Margin="220,103,0,0" FontWeight="Bold"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="385,248,0,0" VerticalAlignment="Top" Width="57" Height="22"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" Source="images/FitForLife.jpg"/>
 
     </Grid>
 </Window>
