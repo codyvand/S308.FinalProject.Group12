@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Gym Main Menu" Height="300" Width="450">
     <Grid>
-        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Welcome To The Gym" VerticalAlignment="Top" Width="196" Margin="127,10,0,0" FontWeight="Bold"/>
+        <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="75" TextWrapping="Wrap" Text="Welcome To The Gym" VerticalAlignment="Top" Width="204" Margin="127,10,0,0" FontWeight="Bold" BorderThickness="0" FontSize="29.333" TextAlignment="Center"/>
         <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
