@@ -120,7 +120,7 @@
         <ComboBox x:Name="cbxCreditCardTypeData" HorizontalAlignment="Left" Margin="404,104,0,0" VerticalAlignment="Top" Width="120" Height="23">
             <Button Content="Individual 1 Month"/>
         </ComboBox>
-        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="423,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextChanged="txtPhoneData_TextChanged" Text="5555 5555 5555 5555"/>
+        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="423,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="5555 5555 5555 5555"/>
 
     </Grid>
 </Window>
