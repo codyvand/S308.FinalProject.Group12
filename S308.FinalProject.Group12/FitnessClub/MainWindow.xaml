@@ -19,6 +19,7 @@
         <TextBox x:Name="txtApplicationStatusTitle_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" Margin="206,103,-110,0" FontWeight="Bold"/>
         <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="70" Margin="131,103,0,0" FontWeight="Bold"/>
         <TextBox x:Name="txtFinishLine" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="70" Margin="346,103,-124,0" FontWeight="Bold"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="25,36,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
