@@ -8,18 +8,11 @@
         Title="MainWindow" Height="300" Width="450">
     <Grid>
         <TextBox x:Name="txtMainMenuTitle" HorizontalAlignment="Left" Height="75" TextWrapping="Wrap" Text="Welcome To The Gym" VerticalAlignment="Top" Width="204" Margin="127,10,-39,0" FontWeight="Bold" BorderThickness="0" FontSize="29.333" TextAlignment="Center"/>
-        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
-        <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
-        <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
+        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="176,153,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="176,202,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
+        <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="176,104,0,0" VerticalAlignment="Top" Width="116" Height="41"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="385,248,-150,0" VerticalAlignment="Top" Width="57" Height="22"/>
         <Image x:Name="imgFinishLine" HorizontalAlignment="Left" Height="64" Margin="375,153,-140,0" VerticalAlignment="Top" Width="57" Source="images/FitForLife.jpg"/>
-        <ProgressBar x:Name="psbMemberInformation" HorizontalAlignment="Left" Height="10" Margin="142,131,-78,0" VerticalAlignment="Top" Width="228"/>
-        <ProgressBar x:Name="psbMembershipSales" HorizontalAlignment="Left" Height="10" Margin="142,182,-78,0" VerticalAlignment="Top" Width="228"/>
-        <ProgressBar x:Name="psbPricingManagement" HorizontalAlignment="Left" Height="10" Margin="142,230,-78,0" VerticalAlignment="Top" Width="228"/>
-        <TextBox x:Name="txtApplicationStatusTitle_Copy" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Application Status" VerticalAlignment="Top" Width="196" Margin="206,103,-110,0" FontWeight="Bold"/>
-        <TextBox x:Name="txtStart" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Start" VerticalAlignment="Top" Width="70" Margin="131,103,0,0" FontWeight="Bold"/>
-        <TextBox x:Name="txtFinishLine" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Finishline" VerticalAlignment="Top" Width="70" Margin="346,103,-124,0" FontWeight="Bold"/>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="25,36,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
