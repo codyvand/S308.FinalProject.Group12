@@ -24,14 +24,15 @@ namespace FitnessClub
         public MemberInformation()
         {
             InitializeComponent();
+
             //instantiate a list to hold the Campuses
             customerList = new List<Customers>();
-            dtgFindResults.ItemsSource = customerList;
+            lbxFindResults.ItemsSource = customerList;
 
             //call the method to local the campus information and display
             ImportCustomerData();
         }
-              private void ImportCustomerData()
+        private void ImportCustomerData()
         {
             string strFilePath = @"..\..\..\Data\Customers.json";
 
@@ -54,8 +55,20 @@ namespace FitnessClub
             }
 
             //set the source of the datagrid and refresh
-            dtgFindResults.ItemsSource = customerList;
-            dtgFindResults.Items.Refresh();
+            lbxFindResults.ItemsSource = customerList;
+            lbxFindResults.Items.Refresh();
         }
+        private Customers ConvertToCustomer(string strLine)
+        {
+            //declare a string array to hold the data 
+            string[] rawData;
+            //split on the delimiter into the array
+            rawData = strLine.Split(',');
+
+            //create a customer from the data
+            Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtStartDateData.Text.Trim(),txtEndDateData.Text.Trim());
+            return customerNew;
+        }
+
     }
     }
