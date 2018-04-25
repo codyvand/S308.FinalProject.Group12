@@ -147,6 +147,10 @@ namespace FitnessClub
             //Declare Customers class
             Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
 
+
+                customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+
+
             //instantiate a new Campus from the input and add it to the list
             customerList.Add(customerNew);
 
