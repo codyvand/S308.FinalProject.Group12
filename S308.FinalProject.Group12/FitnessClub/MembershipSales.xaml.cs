@@ -65,21 +65,111 @@ namespace FitnessClub
             Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
-        // Nav links
-        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        private bool AddCustomer(string firstName, string lastName, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
         {
-            Window winHomePage = new HomePage();
-            winHomePage.Show();
-            this.Close();
+            //Define variables
+            Customers customerNew;
+
+            //Validation on reqired fields (FirstName, LastName, and Phone) 
+            //In case of failure, return false (as status) to the calling code
+            if (firstName == "")
+            {
+                MessageBox.Show("First Name is a required field.");
+                return false;
+            }
+
+            if (lastName == "")
+            {
+                MessageBox.Show("Last Name is a required field.");
+                return false;
+            }
+
+            if (phone == "")
+            {
+                MessageBox.Show("Phone Numer is a required field.");
+                return false;
+            }
+
+
+           customerNew = new Customers(firstName, lastName, weight, gender, phone, email, phone, email, age, membershiptype, startdate, enddate, monthlylockerrental, monthlytrainingplan);
+
+            //Add the new customer objec to the list
+            customerList.Add(customerNew);
+
+            //Return ture (as status) to the calling code
+            return true;
         }
 
-        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
+        private void btnSubmitMembership_Click(object sender, RoutedEventArgs e)
         {
-            Window winMemberInformation = new MemberInformation();
-            winMemberInformation.Show();
-            this.Close();
-        }
+            string strFilePath = @"..\..\..\Data\Customers.json";
+            long phone;
 
+            //validate the input FirstName(input)
+            if (txtFirstNameData.Text.Trim() == "")
+            {
+                MessageBox.Show("First Name must be provided.");
+                return;
+            }
+
+            //validate the input LastName(input)
+            if (txtLastNameData.Text.Trim() == "")
+            {
+                MessageBox.Show("Last Name must be provided.");
+                return;
+            }
+
+            //validate the input Phone (input provided, 10 digits within properties, number)
+            if (txtPhoneData.Text.Trim() == "")
+            {
+                MessageBox.Show("Phone must be provided.");
+                return;
+            }
+
+            if (!Int64.TryParse(txtPhoneData.Text.Trim(), out phone))
+            {
+                MessageBox.Show("Phone must be a number.");
+                return;
+            }
+
+
+            //Establish Phone as a number so that I an made sure that the value fall within 10 digits this is for validation establish as a string, then convert to a long then establish connection with string and txtphone then convert string into long and then ensure that it is within the right range else user gets a message
+            string strPhone;
+            long lngPhone;
+            strPhone = txtPhoneData.Text.Trim();
+            lngPhone = Convert.ToInt64(strPhone);
+            if (lngPhone < 1000000000 || lngPhone > 9999999999)
+            {
+                MessageBox.Show("Phone must be 10 digits.");
+                return;
+            }
+
+            //Declare Customers class
+            Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+
+            //instantiate a new Campus from the input and add it to the list
+            customerList.Add(customerNew);
+
+
+            try
+            {
+                //serialize the new list of campuses to json format
+                string jsonData = JsonConvert.SerializeObject(customerList);
+
+                //use System.IO.File to write over the file with the json data
+                System.IO.File.WriteAllText(strFilePath, jsonData);
+
+                MessageBox.Show(customerList.Count + " Cusomters have been exported.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in export process: " + ex.Message);
+            }
+
+            MessageBox.Show("Campus Added!" + Environment.NewLine + customerNew.ToString());
+
+
+        }
         private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
         {
             Window winMembershipSales = new MembershipSales();
