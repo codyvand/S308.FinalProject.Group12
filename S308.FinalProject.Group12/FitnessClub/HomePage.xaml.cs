@@ -23,5 +23,12 @@ namespace FitnessClub
         {
             InitializeComponent();
         }
+
+        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMemberInformation = new MemberInformation();
+            winMemberInformation.Show();
+            this.Close(); 
+        }
     }
 }
