@@ -65,6 +65,39 @@ namespace FitnessClub
             Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
+        private bool AddCustomer(string firstName, string lastName, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
+        {
+            //Define variables
+            Customers customerNew;
 
+            //Validation on reqired fields (FirstName, LastName, and Phone) 
+            //In case of failure, return false (as status) to the calling code
+            if (firstName == "")
+            {
+                MessageBox.Show("First Name is a required field.");
+                return false;
+            }
+
+            if (lastName == "")
+            {
+                MessageBox.Show("Last Name is a required field.");
+                return false;
+            }
+
+            if (phone == "")
+            {
+                MessageBox.Show("Phone Numer is a required field.");
+                return false;
+            }
+
+
+           customerNew = new Customers(firstName, lastName, weight, gender, phone, email, phone, email, age, membershiptype, startdate, enddate, monthlylockerrental, monthlytrainingplan);
+
+            //Add the new customer objec to the list
+            customerList.Add(customerNew);
+
+            //Return ture (as status) to the calling code
+            return true;
+        }
     }
 }
