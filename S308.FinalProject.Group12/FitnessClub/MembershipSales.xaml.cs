@@ -174,18 +174,5 @@ namespace FitnessClub
 
 
         }
-        private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
-        {
-            Window winMembershipSales = new MembershipSales();
-            winMembershipSales.Show();
-            this.Close();
-        }
-
-        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
-        {
-            Window winPricingManagement = new PricingManagement();
-            winPricingManagement.Show();
-            this.Close();
-        }
     }
 }
