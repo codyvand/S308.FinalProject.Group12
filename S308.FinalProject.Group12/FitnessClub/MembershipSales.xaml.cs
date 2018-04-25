@@ -20,13 +20,13 @@ namespace FitnessClub
     /// </summary>
     public partial class MembershipSales : Window
     {
+        List<Customers> customerList;
         public MembershipSales()
         {
             InitializeComponent();
 
             //instantiate a list to hold the Campuses
             customerList = new List<Customers>();
-            lbxFindResults.ItemsSource = customerList;
 
             //call the method to local the campus information and display
             ImportCustomerData();
@@ -53,9 +53,6 @@ namespace FitnessClub
                 MessageBox.Show("Error in import process: " + ex.Message);
             }
 
-            //set the source of the datagrid and refresh
-            lbxFindResults.ItemsSource = customerList;
-            lbxFindResults.Items.Refresh();
         }
         private Customers ConvertToCustomer(string strLine)
         {
@@ -65,8 +62,9 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim());
+            Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
+
     }
 }
