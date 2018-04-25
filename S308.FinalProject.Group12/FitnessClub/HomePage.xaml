@@ -13,8 +13,8 @@
             </TextBox.BorderBrush>
         </TextBox>
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="84,110,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="1" Click="btnMemberInformation_Click"/>
-        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="84,156,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="2"/>
-        <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="84,202,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="3"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="225,237,0,0" VerticalAlignment="Top" Width="57" Height="22" TabIndex="4"/>
+        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="84,156,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="2" Click="btnMembershipSales_Click"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing Management" HorizontalAlignment="Left" Margin="84,202,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="3" Click="btnPricingManagement_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="225,237,0,0" VerticalAlignment="Top" Width="57" Height="22" TabIndex="4" Click="btnExit_Click"/>
     </Grid>
 </Window>
