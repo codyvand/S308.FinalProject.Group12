@@ -41,10 +41,10 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="678,81,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="14"/>
-        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="678,130,0,0" VerticalAlignment="Top" Width="86" TabIndex="15"/>
-        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="678,236,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="17"/>
-        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86" TabIndex="16"/>
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="678,81,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="14" Click="btnMainMenu_Click"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="678,130,0,0" VerticalAlignment="Top" Width="86" TabIndex="15" Click="btnMemberInformation_Click"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="678,236,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="17" Click="btnPricingManagement_Click"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86" TabIndex="16" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="678,53,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
         <RadioButton x:Name="rbtIndividual1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,54,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="1"/>
         <RadioButton x:Name="rbtIndividual12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,82,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="2"/>

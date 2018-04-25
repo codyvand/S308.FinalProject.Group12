@@ -65,6 +65,33 @@ namespace FitnessClub
             Customers customerNew = new Customers(txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), txtTrainingPlanData.Text.Trim(), txtLockerRentalData.Text.Trim(), cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
+        // Nav links
+        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Window winHomePage = new HomePage();
+            winHomePage.Show();
+            this.Close();
+        }
 
+        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMemberInformation = new MemberInformation();
+            winMemberInformation.Show();
+            this.Close();
+        }
+
+        private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMembershipSales = new MembershipSales();
+            winMembershipSales.Show();
+            this.Close();
+        }
+
+        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
+        {
+            Window winPricingManagement = new PricingManagement();
+            winPricingManagement.Show();
+            this.Close();
+        }
     }
 }
