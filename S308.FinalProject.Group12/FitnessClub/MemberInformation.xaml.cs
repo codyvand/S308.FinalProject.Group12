@@ -30,6 +30,7 @@ namespace FitnessClub
 
             //call the method to local the campus information and display
             ImportCustomerData();
+        }
               private void ImportCustomerData()
         {
             string strFilePath = @"..\..\..\Data\Customers.json";
@@ -58,4 +59,3 @@ namespace FitnessClub
         }
     }
     }
-}
