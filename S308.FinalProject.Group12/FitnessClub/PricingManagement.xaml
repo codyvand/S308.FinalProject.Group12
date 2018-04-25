@@ -5,21 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClub"
         mc:Ignorable="d"
-        Title="PricingManagement" Height="300" Width="300">
+        Title="PricingManagement" Height="600" Width="800">
     <Grid>
         <Label x:Name="lblGymMembershipOptions" Content="Gym Membership Options" HorizontalAlignment="Center" Height="39" Margin="10,10,10,0" VerticalAlignment="Top" Width="272" FontSize="20" FontWeight="Bold"/>
-        <Label x:Name="lblIndvidual1Month" Content="Individual 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,54,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <Label x:Name="lblIndividual12Month" Content="Individual 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,87,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <Label x:Name="lblTwoPerson1Month" Content="Two Person 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,120,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <Label x:Name="lblTwoPerson12Month" Content="Two Person 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,148,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <Label x:Name="lblFamily1Month" Content="Family 1 Month:" HorizontalAlignment="Left" Height="28" Margin="10,181,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <Label x:Name="lblFamily12Month" Content="Family 12 Month:" HorizontalAlignment="Left" Height="28" Margin="10,214,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
-        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="28" Margin="156,54,0,0" TextWrapping="Wrap" Text="$9.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="1"/>
-        <TextBox x:Name="txtIndividual12Month" HorizontalAlignment="Left" Height="28" Margin="156,87,0,0" TextWrapping="Wrap" Text="$100.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="2"/>
-        <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="28" Margin="156,120,0,0" TextWrapping="Wrap" Text="$14.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="3"/>
-        <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="28" Margin="156,153,0,0" TextWrapping="Wrap" Text="$150.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="4"/>
-        <TextBox x:Name="txtFamily1Month" HorizontalAlignment="Left" Height="28" Margin="156,186,0,0" TextWrapping="Wrap" Text="$19.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="5"/>
-        <TextBox x:Name="txtFamily12Month" HorizontalAlignment="Left" Height="28" Margin="156,219,0,0" TextWrapping="Wrap" Text="$200.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="6"/>
+        <Label x:Name="lblIndvidual1Month" Content="Individual 1 Month:" HorizontalAlignment="Left" Height="28" Margin="48,54,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblIndividual12Month" Content="Individual 12 Month:" HorizontalAlignment="Left" Height="28" Margin="48,87,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblTwoPerson1Month" Content="Two Person 1 Month:" HorizontalAlignment="Left" Height="28" Margin="48,120,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblTwoPerson12Month" Content="Two Person 12 Month:" HorizontalAlignment="Left" Height="28" Margin="48,148,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblFamily1Month" Content="Family 1 Month:" HorizontalAlignment="Left" Height="28" Margin="48,181,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <Label x:Name="lblFamily12Month" Content="Family 12 Month:" HorizontalAlignment="Left" Height="28" Margin="48,214,0,0" VerticalAlignment="Top" Width="146" FontSize="13.333"/>
+        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="28" Margin="194,54,0,0" TextWrapping="Wrap" Text="$9.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="1"/>
+        <TextBox x:Name="txtIndividual12Month" HorizontalAlignment="Left" Height="28" Margin="194,87,0,0" TextWrapping="Wrap" Text="$100.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="2"/>
+        <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="28" Margin="194,120,0,0" TextWrapping="Wrap" Text="$14.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="3"/>
+        <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="28" Margin="194,153,0,0" TextWrapping="Wrap" Text="$150.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="4"/>
+        <TextBox x:Name="txtFamily1Month" HorizontalAlignment="Left" Height="28" Margin="194,186,0,0" TextWrapping="Wrap" Text="$19.99" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="5"/>
+        <TextBox x:Name="txtFamily12Month" HorizontalAlignment="Left" Height="28" Margin="194,219,0,0" TextWrapping="Wrap" Text="$200.00" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="6"/>
+        <Rectangle x:Name="recNavigation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="240" Margin="666,41,0,0" Stroke="Black" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="678,81,0,0" VerticalAlignment="Top" Width="86" Height="34"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="678,130,0,0" VerticalAlignment="Top" Width="86"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="678,236,0,0" VerticalAlignment="Top" Width="86" Height="38"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="678,53,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16"/>
+        <RadioButton x:Name="rbtIndividual1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,54,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtIndividual12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,82,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtTwoPerson1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,115,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtTwoPerson12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,148,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtFamily1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,181,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="rbtFamily12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,214,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnUpdatePricing" Content="Update Pricing" HorizontalAlignment="Left" Height="25" Margin="194,274,0,0" VerticalAlignment="Top" Width="100" Click="button_Click"/>
 
     </Grid>
 </Window>
