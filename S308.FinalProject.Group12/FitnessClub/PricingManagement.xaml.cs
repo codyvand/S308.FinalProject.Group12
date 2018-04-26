@@ -66,40 +66,7 @@ namespace FitnessClub
             return featureNew;
         }
 
-        private bool AddFeature(individualsinglemonth, individualtwelvemonth, twosinglemonth, twotwelvemonth, familysinglemonth, familytwelvemonth)
-        {
-            //Define variables
-            Features featureNew;
 
-            //Validation on reqired fields (FirstName, LastName, and Phone) 
-            //In case of failure, return false (as status) to the calling code
-            if (indi == "")
-            {
-                MessageBox.Show("First Name is a required field.");
-                return false;
-            }
-
-            if (lastname == "")
-            {
-                MessageBox.Show("Last Name is a required field.");
-                return false;
-            }
-
-            if (phone == "")
-            {
-                MessageBox.Show("Phone Numer is a required field.");
-                return false;
-            }
-
-
-            featureNew = new Features(firstname, lastname, weight, gender, phone, email, phone, email, age, membershiptype, startdate, enddate, monthlylockerrental, monthlytrainingplan);
-
-            //Add the new customer objec to the list
-            featureList.Add(featureNew);
-
-            //Return ture (as status) to the calling code
-            return true;
-        }
 
         //Nav links
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
