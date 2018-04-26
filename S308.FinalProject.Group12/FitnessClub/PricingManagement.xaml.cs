@@ -53,5 +53,6 @@ namespace FitnessClub
             winPricingManagement.Show();
             this.Close();
         }
+
     }
 }
