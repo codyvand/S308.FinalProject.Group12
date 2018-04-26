@@ -25,73 +25,55 @@ namespace FitnessClub
         {
             InitializeComponent();
 
-            //instantiate a list to hold the Campuses
+            InitializeComponent();
+            //instantiate a list to hold the Customers
             customerList = new List<Customers>();
-            lbxFindResults.ItemsSource = customerList;
-           
+            
+
+            //call the method to local the campus information and display
+            ImportCustomerData();
+
         }
 
-        public List<Customers> GetDataSetFromFile()
+        private void ImportCustomerData()
         {
-            List<Customers> lstCustomer = new List<Customers>();
-
-            string strFilePath = @"../../../Data/Customers.json";
+            string strFilePath = @"..\..\..\Data\Customers.json";
 
             try
             {
+                //use System.IO.File to read the entire data file
                 string jsonData = File.ReadAllText(strFilePath);
-                lstCustomer = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
+
+                //serialize the json data to a list of campuses
+                customerList = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
+
+                if (customerList.Count >= 0)
+                    MessageBox.Show(customerList.Count + " Campuses have been imported.");
+                else
+                    MessageBox.Show("No Campuses has been imported. Please check your file.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error loading Customer from file: " + ex.Message);
+                MessageBox.Show("Error in import process: " + ex.Message);
             }
 
-            return lstCustomer;
+
         }
 
-        // Search Button functionality
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            List<Customers> customerSearch;
 
-            List<Customers> lstCustomer;
+            string strFindLastName = txtFindLastNameData.Text.Trim();
+            lbxFindResults.Items.Clear();
 
-            string strNametxtFindLastNameData = txtFindLastNameData.Text.Trim();
+            customerSearch = customerList.Where(p => p.LastName.StartsWith(strFindLastName)).ToList();
 
-            string strFindPhoneData = txtFindPhoneData.Text.Trim();
-
-            string strFindEmailData = txtFindEmailData.Text.Trim();
-
-
-            txtDetails.Text = "";
-            lbxPokemon.Items.Clear();
-
-            pokemonSearch = pokemonIndex.Where(p =>
-                p.name.StartsWith(strName) &&
-                p.base_experience >= intExpMin &&
-                p.base_experience <= intExpMax &&
-                p.height >= intHeightMin &&
-                p.height <= intHeightMax &&
-                p.weight >= intWeightMin &&
-                p.weight <= intWeightMax &&
-                (strType == "All" || p.types.Exists(t => t.type.name == strType))
-            ).ToList();
-
-            foreach (Pokemon p in pokemonSearch)
+            foreach (Customers p in customerSearch)
             {
-                lbxPokemon.Items.Add(p.name);
+                lbxFindResults.Items.Add(p.LastName);
             }
-
-            lblNumFound.Content = "(" + pokemonSearch.Count.ToString() + ")";
-
         }
-
-
-
-
-
-
-
 
         // Navigation Links
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
@@ -122,7 +104,7 @@ namespace FitnessClub
             this.Close();
         }
 
-       
+
     }
     }
    
