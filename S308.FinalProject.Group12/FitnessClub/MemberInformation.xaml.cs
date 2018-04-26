@@ -79,6 +79,18 @@ namespace FitnessClub
             }
         }
 
+        private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbxFindResults.SelectedIndex > -1)
+            {
+                string strSelectedName = lbxFindResults.SelectedItem.ToString();
+                Customers customerSelected = customerList.Where(p => "| Last Name: " + p.LastName + " |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" == strSelectedName).FirstOrDefault();
+                txtPhoneData.Text = customerSelected.ToString();
+            }
+
+        }
+
+
         // Navigation Links
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {

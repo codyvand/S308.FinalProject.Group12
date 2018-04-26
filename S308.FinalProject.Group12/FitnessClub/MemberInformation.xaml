@@ -126,13 +126,13 @@
         <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="570,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos"/>
         <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="570,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190"/>
         <TextBox x:Name="txtGenderData" HorizontalAlignment="Left" Height="23" Margin="569,389,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Male"/>
-        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="775,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="777,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="779,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="604,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="793,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="541,493,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="$20"/>
-        <ListBox x:Name="lbxFindResults" HorizontalAlignment="Left" Height="129" Margin="23,153,0,0" VerticalAlignment="Top" Width="410"/>
+        <ListBox x:Name="lbxFindResults" HorizontalAlignment="Left" Height="129" Margin="23,153,0,0" VerticalAlignment="Top" Width="410" SelectionChanged="lbxFindResults_SelectionChanged"/>
+        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="192" Margin="594,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" Text="(812) 345-0722"/>
 
     </Grid>
 </Window>
