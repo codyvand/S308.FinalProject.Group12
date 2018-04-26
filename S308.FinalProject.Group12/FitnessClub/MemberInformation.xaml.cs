@@ -65,13 +65,17 @@ namespace FitnessClub
             List<Customers> customerSearch;
 
             string strFindLastName = txtFindLastNameData.Text.Trim();
+            string strFindPhone = txtFindPhoneData.Text.Trim();
+            string strFindEmail = txtFindEmailData.Text.Trim();
             lbxFindResults.Items.Clear();
 
-            customerSearch = customerList.Where(p => p.LastName.StartsWith(strFindLastName)).ToList();
+            customerSearch = customerList.Where(p => p.LastName.StartsWith(strFindLastName) && p.Phone.StartsWith(strFindPhone) && p.Email.StartsWith(strFindEmail)).ToList();
 
             foreach (Customers p in customerSearch)
             {
-                lbxFindResults.Items.Add(p.LastName);
+                string strNamePhoneEmail = "| Last Name: " + p.LastName +" |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" ;
+                lbxFindResults.Items.Add(strNamePhoneEmail);
+
             }
         }
 
