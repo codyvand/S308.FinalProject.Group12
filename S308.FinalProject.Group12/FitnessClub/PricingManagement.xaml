@@ -59,6 +59,7 @@
         <TextBox x:Name="txtTwoPerson12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,153,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="10"/>
         <TextBox x:Name="txtFamily1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,184,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="11"/>
         <TextBox x:Name="txtFamily12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,220,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="12"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="56" Margin="194,384,0,0" VerticalAlignment="Top" Width="174"/>
 
     </Grid>
 </Window>
