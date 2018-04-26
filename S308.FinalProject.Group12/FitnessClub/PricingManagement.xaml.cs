@@ -23,7 +23,36 @@ namespace FitnessClub
         List<Features> featureList;
         public PricingManagement()
         {
+
+            //instantiate a list to hold the Campuses
+            featureList = new List<Features>();
+
+            //call the method to local the campus information and display
+            ImportFeatureData();
             InitializeComponent();
+        }
+        private void ImportFeatureData()
+        {
+            string strFilePath = @"..\..\..\Data\Features.json";
+
+            try
+            {
+                //use System.IO.File to read the entire data file
+                string jsonData = File.ReadAllText(strFilePath);
+
+                //serialize the json data to a list of campuses
+                featureList = JsonConvert.DeserializeObject<List<Features>>(jsonData);
+
+                if (featureList.Count >= 0)
+                    MessageBox.Show(featureList.Count + " Campuses have been imported.");
+                else
+                    MessageBox.Show("No Campuses has been imported. Please check your file.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in import process: " + ex.Message);
+            }
+
         }
 
         //Nav links
