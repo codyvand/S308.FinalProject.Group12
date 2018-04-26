@@ -53,6 +53,12 @@
         <RadioButton x:Name="rbtFamily1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,181,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="5"/>
         <RadioButton x:Name="rbtFamily12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,214,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="6"/>
         <Button x:Name="btnUpdatePricing" Content="Update Pricing" HorizontalAlignment="Left" Height="25" Margin="194,274,0,0" VerticalAlignment="Top" Width="100" TabIndex="13"/>
+        <TextBox x:Name="txtIndividual1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,57,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="7"/>
+        <TextBox x:Name="txtIndividual12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,87,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="8"/>
+        <TextBox x:Name="txtTwoPerson1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,120,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="9"/>
+        <TextBox x:Name="txtTwoPerson12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,153,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="10"/>
+        <TextBox x:Name="txtFamily1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,184,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="11"/>
+        <TextBox x:Name="txtFamily12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,220,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="12"/>
 
     </Grid>
 </Window>

@@ -20,9 +20,50 @@ namespace FitnessClub
     /// </summary>
     public partial class PricingManagement : Window
     {
+        List<Features> featureList;
         public PricingManagement()
         {
+
+            //instantiate a list to hold the Campuses
+            featureList = new List<Features>();
+
+            //call the method to local the campus information and display
+            ImportFeatureData();
             InitializeComponent();
+        }
+        private void ImportFeatureData()
+        {
+            string strFilePath = @"..\..\..\Data\Features.json";
+
+            try
+            {
+                //use System.IO.File to read the entire data file
+                string jsonData = File.ReadAllText(strFilePath);
+
+                //serialize the json data to a list of campuses
+                featureList = JsonConvert.DeserializeObject<List<Features>>(jsonData);
+
+                if (featureList.Count >= 0)
+                    MessageBox.Show(featureList.Count + " Features have been imported.");
+                else
+                    MessageBox.Show("No features has been imported. Please check your file.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in import process: " + ex.Message);
+            }
+
+        }
+        private Features ConvertToFeatures(string strLine)
+        {
+            //declare a string array to hold the data 
+            string[] rawData;
+            //split on the delimiter into the array
+            rawData = strLine.Split(',');
+
+            //create a customer from the data
+            Features featureNew = new Features(txtIndividual1MonthCheck.Text.Trim(), txtIndividual12MonthCheck.Text.Trim(), txtTwoPerson1MonthCheck.Text.Trim(), txtTwoPerson12MonthCheck.Text.Trim(), txtFamily1MonthCheck.Text.Trim(), txtFamily12MonthCheck.Text.Trim());
+            return featureNew;
         }
 
         //Nav links
@@ -53,5 +94,6 @@ namespace FitnessClub
             winPricingManagement.Show();
             this.Close();
         }
+
     }
 }
