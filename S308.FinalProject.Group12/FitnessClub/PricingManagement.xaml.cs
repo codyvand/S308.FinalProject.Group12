@@ -44,15 +44,26 @@ namespace FitnessClub
                 featureList = JsonConvert.DeserializeObject<List<Features>>(jsonData);
 
                 if (featureList.Count >= 0)
-                    MessageBox.Show(featureList.Count + " Campuses have been imported.");
+                    MessageBox.Show(featureList.Count + " Features have been imported.");
                 else
-                    MessageBox.Show("No Campuses has been imported. Please check your file.");
+                    MessageBox.Show("No features has been imported. Please check your file.");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error in import process: " + ex.Message);
             }
 
+        }
+        private Features ConvertToFeatures(string strLine)
+        {
+            //declare a string array to hold the data 
+            string[] rawData;
+            //split on the delimiter into the array
+            rawData = strLine.Split(',');
+
+            //create a customer from the data
+            Features featureNew = new Features(txtIndividual1MonthCheck.Text.Trim(), txtIndividual12MonthCheck.Text.Trim(), txtTwoPerson1MonthCheck.Text.Trim(), txtTwoPerson12MonthCheck.Text.Trim(), txtFamily1MonthCheck.Text.Trim(), txtFamily12MonthCheck.Text.Trim());
+            return featureNew;
         }
 
         //Nav links
