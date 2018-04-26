@@ -9,12 +9,18 @@ namespace FitnessClub
     class Features
     {
         public string IndividualSingleMonth { get; set; }
+        public string IndividualSingleMonthCheck { get; set; }
         public string IndividualTwelveMonth { get; set; }
+        public string IndividualTwelveMonthCheck { get; set; }
         public string TwoSingleMonth { get; set; }
+        public string TwoSingleMonthCheck { get; set; }
         public string TwoTwelveMonth { get; set; }
+        public string TwoTwelveMonthCheck { get; set; }
         public string FamilySingleMonth { get; set; }
+        public string FamilySingleMonthCheck { get; set; }
         public string FamilyTwelveMonth { get; set; }
-       
+        public string FamilyTwelveMonthCheck { get; set; }
+
         public Features()
         {
 
