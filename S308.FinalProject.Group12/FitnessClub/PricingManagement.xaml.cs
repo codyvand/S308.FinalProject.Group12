@@ -20,6 +20,7 @@ namespace FitnessClub
     /// </summary>
     public partial class PricingManagement : Window
     {
+        List<Features> featureList;
         public PricingManagement()
         {
             InitializeComponent();
