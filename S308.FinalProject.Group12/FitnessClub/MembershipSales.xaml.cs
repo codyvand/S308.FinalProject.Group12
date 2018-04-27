@@ -171,8 +171,36 @@ namespace FitnessClub
             }
 
             MessageBox.Show("Campus Added!" + Environment.NewLine + customerNew.ToString());
+            }
 
 
+        //Navigation Links
+        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Window winHomePage = new HomePage();
+            winHomePage.Show();
+            this.Close();
+        }
+
+        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMemberInformation = new MemberInformation();
+            winMemberInformation.Show();
+            this.Close();
+        }
+
+        private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMembershipSales = new MembershipSales();
+            winMembershipSales.Show();
+            this.Close();
+        }
+
+        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
+        {
+            Window winPricingManagement = new PricingManagement();
+            winPricingManagement.Show();
+            this.Close();
         }
     }
 }
