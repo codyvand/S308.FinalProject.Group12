@@ -85,9 +85,8 @@ namespace FitnessClub
             {
                 string strSelectedName = lbxFindResults.SelectedItem.ToString();
                 Customers customerSelected = customerList.Where(p => "| Last Name: " + p.LastName + " |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" == strSelectedName).FirstOrDefault();
-                txtPhoneData.Text = customerSelected.ToString();
+                txtPhoneData.Text = customerSelected.Phone;
             }
-
         }
 
 
