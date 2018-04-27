@@ -129,7 +129,9 @@
         <TextBox x:Name="txtCreditCardTypeTitle" HorizontalAlignment="Left" Height="23" Margin="509,118,0,0" TextWrapping="Wrap" Text="Credit Card Type:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtCreditCardNumberTitle" HorizontalAlignment="Left" Height="23" Margin="510,146,0,0" TextWrapping="Wrap" Text="Credit Card Number:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <ComboBox x:Name="cbxCreditCardTypeData" HorizontalAlignment="Left" Margin="610,118,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="7">
-            <Button Content="Individual 1 Month"/>
+            <ComboBoxItem Content="American Express"/>
+            <ComboBoxItem Content="MasterCard"/>
+            <ComboBoxItem Content="Visa"/>
         </ComboBox>
         <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="629,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="5555 5555 5555 5555" TabIndex="8"/>
         <TextBox x:Name="txtTrainingPlanPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,181,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
