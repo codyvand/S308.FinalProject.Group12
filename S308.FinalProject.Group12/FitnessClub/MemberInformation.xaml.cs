@@ -25,7 +25,6 @@ namespace FitnessClub
         {
             InitializeComponent();
 
-            InitializeComponent();
             //instantiate a list to hold the Customers
             customerList = new List<Customers>();
             

@@ -29,8 +29,9 @@ namespace FitnessClub
             featureList = new List<Features>();
 
             //call the method to local the campus information and display
-            ImportFeatureData();
             InitializeComponent();
+            txtIndividual1Month.Text = featureList.ToString();
+            ImportFeatureData();
         }
         private void ImportFeatureData()
         {
@@ -53,6 +54,10 @@ namespace FitnessClub
             {
                 MessageBox.Show("Error in import process: " + ex.Message);
             }
+
+            //set the source of the datagrid and refresh
+            txtIndividual1Month.Text = featureList.ToString();
+            txtIndividual1Month.Text.Refresh();
 
         }
 
