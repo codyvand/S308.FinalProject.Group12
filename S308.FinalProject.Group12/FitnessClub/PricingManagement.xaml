@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="PricingManagement" Height="600" Width="800">
     <Grid>
-        <Rectangle x:Name="recPricingOptions" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="264" Margin="4,48,0,0" Stroke="Black" VerticalAlignment="Top" Width="358" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
+        <Rectangle x:Name="recPricingOptions" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="264" Margin="6,48,0,0" Stroke="Black" VerticalAlignment="Top" Width="358" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -46,20 +46,14 @@
         <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="678,236,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="17" Click="btnPricingManagement_Click"/>
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86" TabIndex="16" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="678,53,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
-        <RadioButton x:Name="rbtIndividual1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,54,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="1"/>
-        <RadioButton x:Name="rbtIndividual12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,82,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="2"/>
-        <RadioButton x:Name="rbtTwoPerson1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,115,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="3"/>
-        <RadioButton x:Name="rbtTwoPerson12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,148,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="4"/>
-        <RadioButton x:Name="rbtFamily1Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,181,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="5"/>
-        <RadioButton x:Name="rbtFamily12Month" Content="" HorizontalAlignment="Left" Height="28" Margin="19,214,0,0" VerticalAlignment="Top" Width="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="6"/>
         <Button x:Name="btnUpdatePricing" Content="Update Pricing" HorizontalAlignment="Left" Height="25" Margin="194,274,0,0" VerticalAlignment="Top" Width="100" TabIndex="13"/>
-        <TextBox x:Name="txtIndividual1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,57,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="7"/>
-        <TextBox x:Name="txtIndividual12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,87,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="8"/>
-        <TextBox x:Name="txtTwoPerson1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,120,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="9"/>
-        <TextBox x:Name="txtTwoPerson12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,153,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="10"/>
-        <TextBox x:Name="txtFamily1MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,184,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="11"/>
-        <TextBox x:Name="txtFamily12MonthCheck" HorizontalAlignment="Left" Height="28" Margin="366,220,0,0" TextWrapping="Wrap" Text="T" VerticalAlignment="Top" Width="100" FontSize="13.333" BorderThickness="2" TabIndex="12"/>
         <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="84,399,0,0" VerticalAlignment="Top" Width="320"/>
+        <CheckBox x:Name="chbIndividual1Month" Content="" HorizontalAlignment="Left" Margin="19,57,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chbIndividual12Month" Content="" HorizontalAlignment="Left" Margin="19,90,0,0" VerticalAlignment="Top" Height="25" Width="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chbTwoPerson1Month" Content="" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="1.326,0.57"/>
+        <CheckBox x:Name="chbTwoPerson12Month" Content="" HorizontalAlignment="Left" Margin="20,151,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chbFamily1Month" Content="" HorizontalAlignment="Left" Margin="20,184,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <CheckBox x:Name="chbFamily12Month" Content="" HorizontalAlignment="Left" Margin="20,217,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>
