@@ -44,10 +44,6 @@ namespace FitnessClub
                 //serialize the json data to a list of campuses
                 customerList = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
 
-                if (customerList.Count >= 0)
-                    MessageBox.Show(customerList.Count + " Campuses have been imported.");
-                else
-                    MessageBox.Show("No Campuses has been imported. Please check your file.");
             }
             catch (Exception ex)
             {
