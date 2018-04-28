@@ -47,18 +47,18 @@
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86" TabIndex="16" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="678,53,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnUpdatePricing" Content="Update Pricing" HorizontalAlignment="Left" Height="25" Margin="194,274,0,0" VerticalAlignment="Top" Width="100" TabIndex="13"/>
-        <RadioButton x:Name="rbtIndvidual1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="299,49,0,0" VerticalAlignment="Top" GroupName="Individual1MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtIndvidual1MonthNo" Content="No" HorizontalAlignment="Left" Margin="299,69,0,0" VerticalAlignment="Top" GroupName="Individual1MonthGroup" Height="13" Width="39"/>
-        <RadioButton x:Name="rbtIndvidual12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="299,88,0,0" VerticalAlignment="Top" GroupName="Individual12MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtIndvidual12MonthNo" Content="No" HorizontalAlignment="Left" Margin="299,108,0,0" VerticalAlignment="Top" GroupName="Individual12MonthGroup" Height="13" Width="39"/>
-        <RadioButton x:Name="rbtTwoPerson1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,122,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtTwoPerson1MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,141,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="13" Width="39"/>
-        <RadioButton x:Name="rbtTwoPerson12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,154,0,0" VerticalAlignment="Top" GroupName="TwoPerson12MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtTwoPerson12MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,173,0,0" VerticalAlignment="Top" GroupName="TwoPerson12MonthGroup" Height="13" Width="39"/>
-        <RadioButton x:Name="rbtFamily1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,188,0,0" VerticalAlignment="Top" GroupName="Family1MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtFamily1MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,207,0,0" VerticalAlignment="Top" GroupName="Family1MonthGroup" Height="13" Width="39"/>
-        <RadioButton x:Name="rbtFamily12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,228,0,0" VerticalAlignment="Top" GroupName="Family12MonthGroup" Height="20" Width="39"/>
-        <RadioButton x:Name="rbtFamily12MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,247,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="13" Width="39"/>
+        <RadioButton x:Name="rbtIndvidual1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="299,49,0,0" VerticalAlignment="Top" GroupName="Individual1MonthGroup" Height="20" Width="39" Checked="rbtIndvidual1MonthYes_Checked"/>
+        <RadioButton x:Name="rbtIndvidual1MonthNo" Content="No" HorizontalAlignment="Left" Margin="299,69,0,0" VerticalAlignment="Top" GroupName="Individual1MonthGroup" Height="13" Width="39" Checked="rbtIndvidual1MonthNo_Checked"/>
+        <RadioButton x:Name="rbtIndvidual12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="299,88,0,0" VerticalAlignment="Top" GroupName="Individual12MonthGroup" Height="20" Width="39" Checked="rbtIndvidual12MonthYes_Checked"/>
+        <RadioButton x:Name="rbtIndvidual12MonthNo" Content="No" HorizontalAlignment="Left" Margin="299,108,0,0" VerticalAlignment="Top" GroupName="Individual12MonthGroup" Height="13" Width="39" Checked="rbtIndvidual12MonthNo_Checked"/>
+        <RadioButton x:Name="rbtTwoPerson1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,122,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="20" Width="39" Checked="rbtTwoPerson1MonthYes_Checked"/>
+        <RadioButton x:Name="rbtTwoPerson1MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,141,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="13" Width="39" Checked="rbtTwoPerson1MonthNo_Checked"/>
+        <RadioButton x:Name="rbtTwoPerson12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,154,0,0" VerticalAlignment="Top" GroupName="TwoPerson12MonthGroup" Height="20" Width="39" Checked="rbtTwoPerson12MonthYes_Checked"/>
+        <RadioButton x:Name="rbtTwoPerson12MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,173,0,0" VerticalAlignment="Top" GroupName="TwoPerson12MonthGroup" Height="13" Width="39" Checked="rbtTwoPerson12MonthNo_Checked"/>
+        <RadioButton x:Name="rbtFamily1MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,188,0,0" VerticalAlignment="Top" GroupName="Family1MonthGroup" Height="20" Width="39" Checked="rbtFamily1MonthYes_Checked"/>
+        <RadioButton x:Name="rbtFamily1MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,207,0,0" VerticalAlignment="Top" GroupName="Family1MonthGroup" Height="13" Width="39" Checked="rbtFamily1MonthNo_Checked"/>
+        <RadioButton x:Name="rbtFamily12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,228,0,0" VerticalAlignment="Top" GroupName="Family12MonthGroup" Height="20" Width="39" Checked="rbtFamily12MonthYes_Checked"/>
+        <RadioButton x:Name="rbtFamily12MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,247,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="13" Width="39" Checked="rbtFamily12MonthNo_Checked"/>
 
     </Grid>
 </Window>

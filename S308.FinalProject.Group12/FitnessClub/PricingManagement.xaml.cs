@@ -55,6 +55,67 @@ namespace FitnessClub
             }
 
         }
+
+        private void rbtIndvidual1MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strIndividual1Month = "Yes";
+        }
+
+        private void rbtIndvidual1MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strIndividual1Month = "No";
+        }
+
+        private void rbtIndvidual12MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strIndividual12Month = "Yes";
+        }
+
+        private void rbtIndvidual12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strIndividual12Month = "No";
+        }
+
+        private void rbtTwoPerson1MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson1Month = "Yes";
+        }
+
+        private void rbtTwoPerson1MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson12Month = "No";
+        }
+
+        private void rbtTwoPerson12MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson12Month = "Yes";
+        }
+
+        private void rbtTwoPerson12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson12Month = "No";
+        }
+
+        private void rbtFamily1MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily1Month = "Yes";
+        }
+
+        private void rbtFamily1MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily1Month = "No";
+        }
+
+        private void rbtFamily12MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily12Month = "Yes";
+        }
+
+        private void rbtFamily12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily12Month = "No";
+        }
+
         private Features ConvertToFeatures(string strLine)
         {
             //declare a string array to hold the data 
@@ -67,6 +128,14 @@ namespace FitnessClub
             return featureNew;
             
         }
+
+
+
+
+
+
+
+
 
 
 
