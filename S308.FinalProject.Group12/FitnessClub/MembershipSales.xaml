@@ -142,6 +142,8 @@
         <TextBox x:Name="txtStartDateData" HorizontalAlignment="Left" Height="23" Margin="338,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3"/>
         <TextBox x:Name="txtTrainingPlanData" HorizontalAlignment="Left" Height="23" Margin="452,489,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtLockerRentalData" HorizontalAlignment="Left" Height="23" Margin="446,453,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="23" Margin="598,463,0,0" TextWrapping="Wrap" Text="CreditCard Nmber555" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="617,536,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
 
     </Grid>
 </Window>
