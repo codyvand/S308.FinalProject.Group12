@@ -21,6 +21,7 @@ namespace FitnessClub
     public partial class PricingManagement : Window
     {
         List<Features> featureList;
+        string strIndividual1Month, strIndividual12Month, strTwoPerson1Month, strTwoPerson12Month, strFamily1Month, strFamily12Month;
         public PricingManagement()
         {
 
@@ -62,9 +63,9 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Features featureNew = new Features();
+            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1Month, txtIndividual12Month.Text.Trim(), strIndividual12Month, txtTwoPerson1Month.Text.Trim(), strTwoPerson1Month, txtTwoPerson12Month.Text.Trim(), strTwoPerson12Month, txtFamily1Month.Text.Trim(), strFamily1Month, txtFamily12Month.Text.Trim(), strFamily12Month);
             return featureNew;
-            //txtIndividual1Month.Text.Trim(), chbIndividual1Month.Content.ToString(), txtIndividual12Month.Text.Trim(), chbIndividual12Month.Content.ToString(), txtTwoPerson1Month.Text.Trim(), chbTwoPerson1Month.Content.ToString(), txtTwoPerson12Month.Text.Trim(), chbTwoPerson12Month.Content.ToString(), txtFamily1Month.Text.Trim(), chbFamily1Month.Content.ToString(), txtFamily12Month.Text.Trim(), chbFamily12Month.Content.ToString()
+            
         }
 
 
