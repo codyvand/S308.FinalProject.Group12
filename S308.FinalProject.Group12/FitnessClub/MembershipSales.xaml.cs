@@ -129,7 +129,7 @@ namespace FitnessClub
 
             if (!Int64.TryParse(txtPhoneData.Text.Trim(), out phone))
             {
-                MessageBox.Show("Phone number must be a number.");
+                MessageBox.Show("Phone number must be only numbers.  Example:1234567890");
                 return;
             }
 
@@ -141,7 +141,7 @@ namespace FitnessClub
             lngPhone = Convert.ToInt64(strPhone);
             if (lngPhone < 1000000000 || lngPhone > 9999999999)
             {
-                MessageBox.Show("Phone must be 10 digits.");
+                MessageBox.Show("Phone number must be 10 digits. Example:1234567890");
                 return;
             }
 
