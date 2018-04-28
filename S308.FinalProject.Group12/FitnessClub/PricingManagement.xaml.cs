@@ -133,6 +133,7 @@ namespace FitnessClub
 
 
             //instantiate a new Campus from the input and add it to the list
+            featureList.Clear();
             featureList.Add(featureNew);
 
 
