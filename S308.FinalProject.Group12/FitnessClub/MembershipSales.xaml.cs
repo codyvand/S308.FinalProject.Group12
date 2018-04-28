@@ -123,13 +123,13 @@ namespace FitnessClub
             //validate the input Phone (input provided, 10 digits within properties, number)
             if (txtPhoneData.Text.Trim() == "")
             {
-                MessageBox.Show("Phone must be provided.");
+                MessageBox.Show("Phone number must be provided.");
                 return;
             }
 
             if (!Int64.TryParse(txtPhoneData.Text.Trim(), out phone))
             {
-                MessageBox.Show("Phone must be a number.");
+                MessageBox.Show("Phone number must be a number.");
                 return;
             }
 
@@ -145,7 +145,32 @@ namespace FitnessClub
                 return;
             }
 
-           
+            //Email Vailidation
+            string strEmailData;
+            strEmailData =txtEmailData.Text.Trim();
+            bool hasAt = strEmailData.Contains("@") == true;
+            bool hasDot = strEmailData.Contains(".") == true;
+
+            if (!(hasDot) ||  !(hasAt))
+            {
+                txtEmailData.Text = "";
+                MessageBox.Show("Enter a valid email adress.");
+                return;
+            }
+
+            int intAt = strEmailData.IndexOf("@");
+            int intDot = strEmailData.IndexOf(".");
+            string strUserName = strEmailData.Substring(0, intAt);
+            string strDot = strEmailData.Substring(intAt + 1, intDot - intAt - 1);
+            string strDomain = strEmailData.Substring(intDot + 1);
+
+            if (strUserName.Length < 1 || strDot.Length <1 || strDomain.Length <2)
+            {
+                txtEmailData.Text = "";
+                MessageBox.Show("Enter a valid email adress.");
+                return;
+
+            }
 
             //Declare Customers class
             Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, txtStartDateData.Text.Trim(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
