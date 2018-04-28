@@ -62,8 +62,9 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), chbIndividual1Month.Content.ToString(), txtIndividual12Month.Text.Trim(), chbIndividual12Month.Content.ToString(), txtTwoPerson1Month.Text.Trim(), chbTwoPerson1Month.Content.ToString(), txtTwoPerson12Month.Text.Trim(), chbTwoPerson12Month.Content.ToString(), txtFamily1Month.Text.Trim(), chbFamily1Month.Content.ToString(), txtFamily12Month.Text.Trim(), chbFamily12Month.Content.ToString());
+            Features featureNew = new Features();
             return featureNew;
+            //txtIndividual1Month.Text.Trim(), chbIndividual1Month.Content.ToString(), txtIndividual12Month.Text.Trim(), chbIndividual12Month.Content.ToString(), txtTwoPerson1Month.Text.Trim(), chbTwoPerson1Month.Content.ToString(), txtTwoPerson12Month.Text.Trim(), chbTwoPerson12Month.Content.ToString(), txtFamily1Month.Text.Trim(), chbFamily1Month.Content.ToString(), txtFamily12Month.Text.Trim(), chbFamily12Month.Content.ToString()
         }
 
 
