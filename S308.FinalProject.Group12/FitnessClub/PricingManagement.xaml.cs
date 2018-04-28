@@ -120,6 +120,41 @@ namespace FitnessClub
             strFamily12MonthCheck = "No";
         }
 
+
+        private void btnUpdatePricing_Click(object sender, RoutedEventArgs e)
+        {
+            string strFilePath = @"..\..\..\Data\Features.json";
+
+            //Declare Customers class
+            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+
+
+            featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+
+
+            //instantiate a new Campus from the input and add it to the list
+            featureList.Add(featureNew);
+
+
+            try
+            {
+                //serialize the new list of campuses to json format
+                string jsonData = JsonConvert.SerializeObject(featureList);
+
+                //use System.IO.File to write over the file with the json data
+                System.IO.File.WriteAllText(strFilePath, jsonData);
+
+                MessageBox.Show(featureList.Count + " Cusomters have been exported.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in export process: " + ex.Message);
+            }
+
+            MessageBox.Show("Campus Added!" + Environment.NewLine + featureNew.ToString());
+        
+    }
+
         private Features ConvertToFeatures(string strLine)
         {
             //declare a string array to hold the data 
@@ -133,7 +168,19 @@ namespace FitnessClub
             
         }
 
+        private bool AddFeature(string individualsinglemonth, string individualsinglemonthcheck, string individualtwelvemonth, string individualtwelvemonthcheck, string twosinglemonth, string twosinglemonthcheck, string twotwelvemonth, string twotwelvemonthcheck, string familysinglemonth, string familysinglemonthcheck, string familytwelvemonth, string familytwelvemonthcheck)
+        {
+            //Define variables
+            Features featureNew;
 
+            featureNew = new Features(individualsinglemonth, individualsinglemonthcheck, individualtwelvemonth, individualtwelvemonthcheck, twosinglemonth, twosinglemonthcheck, twotwelvemonth, twotwelvemonthcheck, familysinglemonth, familysinglemonthcheck, familytwelvemonth, familytwelvemonthcheck);
+
+            //Add the new customer objec to the list
+            featureList.Add(featureNew);
+
+            //Return ture (as status) to the calling code
+            return true;
+        }
 
 
 
