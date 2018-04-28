@@ -132,7 +132,7 @@
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="793,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="541,493,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="$20"/>
         <ListBox x:Name="lbxFindResults" HorizontalAlignment="Left" Height="129" Margin="23,153,0,0" VerticalAlignment="Top" Width="410" SelectionChanged="lbxFindResults_SelectionChanged"/>
-        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="192" Margin="594,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388" Text="(812) 345-0722"/>
+        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="29" Margin="777,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Text="(812) 345-0722"/>
 
     </Grid>
 </Window>

@@ -86,6 +86,17 @@ namespace FitnessClub
                 string strSelectedName = lbxFindResults.SelectedItem.ToString();
                 Customers customerSelected = customerList.Where(p => "| Last Name: " + p.LastName + " |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" == strSelectedName).FirstOrDefault();
                 txtPhoneData.Text = customerSelected.Phone;
+                txtFirstNameData.Text = customerSelected.FirstName;
+                txtLastNameData.Text = customerSelected.LastName;
+                txtMembershipTypeData.Text = customerSelected.CustomerType;
+                txtStartDateData.Text = customerSelected.StartDate;
+                txtEndDateData.Text = customerSelected.EndDate;
+                txtLockerRentalData.Text = customerSelected.MonthlyLockerRental;
+                txtTrainingPlanData.Text = customerSelected.MonthlyLockerRental;
+                txtWeightData.Text = customerSelected.Weight;
+                txtEmailData.Text = customerSelected.Email;
+                txtGenderData.Text = customerSelected.Gender;
+                txtAgeData.Text = customerSelected.Age;
             }
         }
 
