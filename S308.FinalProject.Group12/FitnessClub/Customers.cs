@@ -16,7 +16,7 @@ namespace FitnessClub
         public string Phone { get; set; }
         public string Email { get; set; }
         public string Age { get; set; }
-        public string CustomerType { get; set; }
+        public string MembershipType { get; set; }
         public string StartDate { get; set; }
         public string EndDate { get; set; }
         public string MonthlyTrainingPlan { get; set; }
@@ -27,7 +27,7 @@ namespace FitnessClub
         {
 
         }
-        public Customers(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string customertype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
+        public Customers(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
         {
             PersonalFitnessGoal = personalfitnessgoal;
             FirstName = firstname;
@@ -37,11 +37,11 @@ namespace FitnessClub
             Phone = phone;
             Email = email;
             Age = age;
-            CustomerType = customertype;
+            MembershipType = membershiptype;
             StartDate = startdate;
             EndDate = enddate;
-            MonthlyTrainingPlan = monthlytrainingplan;
             MonthlyLockerRental = monthlylockerrental;
+            MonthlyTrainingPlan = monthlytrainingplan;
             CreditCardType = creditcardtype;
             CreditCardNumber = creditcardnumber;
         }

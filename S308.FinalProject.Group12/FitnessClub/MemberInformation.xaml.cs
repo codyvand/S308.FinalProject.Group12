@@ -88,7 +88,7 @@ namespace FitnessClub
                 txtPhoneData.Text = customerSelected.Phone;
                 txtFirstNameData.Text = customerSelected.FirstName;
                 txtLastNameData.Text = customerSelected.LastName;
-                txtMembershipTypeData.Text = customerSelected.CustomerType;
+                txtMembershipTypeData.Text = customerSelected.MembershipType;
                 txtStartDateData.Text = customerSelected.StartDate;
                 txtEndDateData.Text = customerSelected.EndDate;
                 txtLockerRentalData.Text = customerSelected.MonthlyLockerRental;

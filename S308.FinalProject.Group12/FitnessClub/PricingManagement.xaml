@@ -54,6 +54,8 @@
         <CheckBox x:Name="chbTwoPerson12Month" Content="" HorizontalAlignment="Left" Margin="20,151,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbFamily1Month" Content="" HorizontalAlignment="Left" Margin="20,184,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbFamily12Month" Content="" HorizontalAlignment="Left" Margin="20,217,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="499,412,0,0" VerticalAlignment="Top" GroupName="group 1"/>
+        <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="499,432,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -143,7 +143,9 @@
         <TextBox x:Name="txtLockerRentalData" HorizontalAlignment="Left" Height="23" Margin="397,81,0,0" TextWrapping="Wrap" Text="Locker Yes" VerticalAlignment="Top" Width="132" Background="#FFF91818" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="23" Margin="739,122,0,0" TextWrapping="Wrap" Text="Type Master" VerticalAlignment="Top" Width="132" Background="#FFF70F0F" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="103,46,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="#FFF90D0D" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
-        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="428,39,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chbTrainingPlanData" Content="Yes" HorizontalAlignment="Left" Margin="428,39,0,0" VerticalAlignment="Top" IsChecked="True" FontSize="0.01" UseLayoutRounding="True"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="460,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="375,4,0,0" VerticalAlignment="Top" GroupName="1"/>
 
     </Grid>
 </Window>
