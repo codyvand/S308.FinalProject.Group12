@@ -47,14 +47,13 @@
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="678,185,0,0" VerticalAlignment="Top" Width="86" TabIndex="16" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="678,53,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnUpdatePricing" Content="Update Pricing" HorizontalAlignment="Left" Height="25" Margin="194,274,0,0" VerticalAlignment="Top" Width="100" TabIndex="13"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="84,399,0,0" VerticalAlignment="Top" Width="320"/>
         <CheckBox x:Name="chbIndividual1Month" Content="" HorizontalAlignment="Left" Margin="19,57,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbIndividual12Month" Content="" HorizontalAlignment="Left" Margin="19,90,0,0" VerticalAlignment="Top" Height="25" Width="22" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbTwoPerson1Month" Content="" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderTransformOrigin="1.326,0.57"/>
         <CheckBox x:Name="chbTwoPerson12Month" Content="" HorizontalAlignment="Left" Margin="20,151,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbFamily1Month" Content="" HorizontalAlignment="Left" Margin="20,184,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <CheckBox x:Name="chbFamily12Month" Content="" HorizontalAlignment="Left" Margin="20,217,0,0" VerticalAlignment="Top" Height="25" Width="23" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="499,412,0,0" VerticalAlignment="Top" GroupName="group 1"/>
+        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="499,274,0,0" VerticalAlignment="Top" GroupName="group 1"/>
         <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="499,432,0,0" VerticalAlignment="Top"/>
 
     </Grid>
