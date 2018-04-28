@@ -140,10 +140,10 @@
         <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <TextBox x:Name="txtStartDateData" HorizontalAlignment="Left" Height="23" Margin="178,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3" Background="#FFFD1818"/>
-        <TextBox x:Name="txtTrainingPlanData" HorizontalAlignment="Left" Height="23" Margin="391,53,0,0" TextWrapping="Wrap" Text="Training Yes" VerticalAlignment="Top" Width="126" Background="#FFFF0707" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <TextBox x:Name="txtLockerRentalData" HorizontalAlignment="Left" Height="23" Margin="397,81,0,0" TextWrapping="Wrap" Text="Locker Yes" VerticalAlignment="Top" Width="132" Background="#FFF91818" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="23" Margin="739,122,0,0" TextWrapping="Wrap" Text="Type Master" VerticalAlignment="Top" Width="132" Background="#FFF70F0F" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="103,46,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="#FFF90D0D" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
+        <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="428,39,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
