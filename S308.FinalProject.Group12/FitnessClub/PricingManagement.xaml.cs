@@ -21,7 +21,8 @@ namespace FitnessClub
     public partial class PricingManagement : Window
     {
         List<Features> featureList;
-        string strIndividual1Month, strIndividual12Month, strTwoPerson1Month, strTwoPerson12Month, strFamily1Month, strFamily12Month;
+        string strIndividual1MonthCheck, strIndividual12MonthCheck, strTwoPerson1MonthCheck, strTwoPerson12MonthCheck, strFamily1MonthCheck, strFamily12MonthCheck;
+        string strIndividual1Month;
         public PricingManagement()
         {
 
@@ -30,8 +31,8 @@ namespace FitnessClub
 
             //call the method to local the campus information and display
             InitializeComponent();
-            txtIndividual1Month.Text = featureList.ToString();
             ImportFeatureData();
+
         }
         private void ImportFeatureData()
         {
@@ -55,70 +56,68 @@ namespace FitnessClub
                 MessageBox.Show("Error in import process: " + ex.Message);
             }
 
-            //set the source of the datagrid and refresh
-            txtIndividual1Month.Text = featureList.ToString();
-            txtIndividual1Month.Text.Refresh();
+
 
         }
 
         private void rbtIndvidual1MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strIndividual1Month = "Yes";
+            strIndividual1MonthCheck = "Yes";
         }
 
         private void rbtIndvidual1MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strIndividual1Month = "No";
+            strIndividual1MonthCheck = "No";
         }
 
         private void rbtIndvidual12MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strIndividual12Month = "Yes";
+            strIndividual12MonthCheck = "Yes";
         }
 
         private void rbtIndvidual12MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strIndividual12Month = "No";
+            strIndividual12MonthCheck = "No";
         }
 
         private void rbtTwoPerson1MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strTwoPerson1Month = "Yes";
+            strTwoPerson1MonthCheck = "Yes";
         }
 
         private void rbtTwoPerson1MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strTwoPerson12Month = "No";
+            strTwoPerson1MonthCheck = "No";
         }
 
         private void rbtTwoPerson12MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strTwoPerson12Month = "Yes";
+            strTwoPerson12MonthCheck = "Yes";
         }
 
         private void rbtTwoPerson12MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strTwoPerson12Month = "No";
+            strTwoPerson12MonthCheck = "No";
         }
 
         private void rbtFamily1MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strFamily1Month = "Yes";
+            strFamily1MonthCheck = "Yes";
         }
 
         private void rbtFamily1MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strFamily1Month = "No";
+            strFamily1MonthCheck = "No";
         }
 
         private void rbtFamily12MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            strFamily12Month = "Yes";
+            strFamily12MonthCheck = "Yes";
         }
 
         private void rbtFamily12MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            strFamily12Month = "No";
+            strFamily12MonthCheck = "No";
         }
 
         private Features ConvertToFeatures(string strLine)
@@ -129,7 +128,7 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1Month, txtIndividual12Month.Text.Trim(), strIndividual12Month, txtTwoPerson1Month.Text.Trim(), strTwoPerson1Month, txtTwoPerson12Month.Text.Trim(), strTwoPerson12Month, txtFamily1Month.Text.Trim(), strFamily1Month, txtFamily12Month.Text.Trim(), strFamily12Month);
+            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
             return featureNew;
             
         }
