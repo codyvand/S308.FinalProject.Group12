@@ -97,6 +97,7 @@ namespace FitnessClub
                 txtEmailData.Text = customerSelected.Email;
                 txtGenderData.Text = customerSelected.Gender;
                 txtAgeData.Text = customerSelected.Age;
+                txtPersonalFitnessGoalData.Text = customerSelected.PersonalFitnessGoal;
             }
         }
 
