@@ -59,6 +59,7 @@
         <RadioButton x:Name="rbtFamily1MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,207,0,0" VerticalAlignment="Top" GroupName="Family1MonthGroup" Height="13" Width="39" Checked="rbtFamily1MonthNo_Checked"/>
         <RadioButton x:Name="rbtFamily12MonthYes" Content="Yes" HorizontalAlignment="Left" Margin="294,228,0,0" VerticalAlignment="Top" GroupName="Family12MonthGroup" Height="20" Width="39" Checked="rbtFamily12MonthYes_Checked"/>
         <RadioButton x:Name="rbtFamily12MonthNo" Content="No" HorizontalAlignment="Left" Margin="294,247,0,0" VerticalAlignment="Top" GroupName="TwoPerson1MonthGroup" Height="13" Width="39" Checked="rbtFamily12MonthNo_Checked"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="194,432,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
