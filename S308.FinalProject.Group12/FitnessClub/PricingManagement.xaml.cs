@@ -15,5 +15,11 @@ using Newtonsoft.Json;
 using System.IO;
 namespace FitnessClub
 {
-  
+    /// <summary>
+    /// Interaction logic for PricingManagement.xaml
+    /// </summary>
+    public partial class MemberInformation : Window
+    {
+        List<Features> featuresList;
+    }
 }
