@@ -23,7 +23,6 @@ namespace FitnessClub
     {
         List<MembershipType> membershiptypeList;
         string  strMembershipName,  strMembershipPrice,  strMembershipLength, strMembershipAvailibility;
-
        
        
         public PricingManager()
@@ -135,7 +134,7 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength, strMembershipAvailibility);
+            MembershipType membershiptypeNew = new MembershipType(strMembershipName, strMembershipPrice, strMembershipLength, strMembershipAvailibility);
             return membershiptypeNew;
 
         }
