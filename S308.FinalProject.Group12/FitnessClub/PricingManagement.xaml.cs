@@ -11,17 +11,15 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using Newtonsoft.Json;
+using System.IO;
 namespace FitnessClub
 {
     /// <summary>
     /// Interaction logic for PricingManagement.xaml
     /// </summary>
-    public partial class PricingManagement : Window
+    public partial class MemberInformation : Window
     {
-        public PricingManagement()
-        {
-            InitializeComponent();
-        }
+        List<Features> featuresList;
     }
 }
