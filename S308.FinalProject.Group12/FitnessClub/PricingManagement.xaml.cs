@@ -128,10 +128,10 @@ namespace FitnessClub
             string strFilePath = @"..\..\..\Data\Features.json";
 
             //Declare Customers class
-            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+            Features featureNew = new Features();
 
 
-            featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+            featureNew = new Features();
 
 
             //instantiate a new Campus from the input and add it to the list
@@ -166,9 +166,27 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+            Features featureNew = new Features();
             return featureNew;
             
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            List<Features> featureSearch;
+
+            string strMembershipType = cboMembershipTypes.Text.Trim();
+            
+            lbxFindResults.Items.Clear();
+
+           featureSearch = featureList.ToList();
+
+            foreach (Features p in featureList)
+            {
+                string strMembershipTypes = "| Membership Type: " + featureList;
+                lbxFindResults.Items.Add(txtAvailability);
+
+            }
         }
 
         private bool AddFeature(string individualsinglemonth, string individualsinglemonthcheck, string individualtwelvemonth, string individualtwelvemonthcheck, string twosinglemonth, string twosinglemonthcheck, string twotwelvemonth, string twotwelvemonthcheck, string familysinglemonth, string familysinglemonthcheck, string familytwelvemonth, string familytwelvemonthcheck)
