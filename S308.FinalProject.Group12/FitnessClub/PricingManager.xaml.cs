@@ -18,12 +18,12 @@ namespace FitnessClub
     /// <summary>
     /// Interaction logic for PricingManagement.xaml
     /// </summary>
-    public partial class PricingManagement : Window
+    public partial class PricingManager : Window
     {
         List<Features> featureList;
         string strIndividual1MonthCheck, strIndividual12MonthCheck, strTwoPerson1MonthCheck, strTwoPerson12MonthCheck, strFamily1MonthCheck, strFamily12MonthCheck;
         string strIndividual1Month;
-        public PricingManagement()
+        public PricingManager()
         {
 
             //instantiate a list to hold the Campuses
@@ -58,71 +58,13 @@ namespace FitnessClub
 
 
 
+        
+
         }
 
-        private void rbtIndvidual1MonthYes_Checked(object sender, RoutedEventArgs e)
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            strIndividual1MonthCheck = "Yes";
-        }
 
-        private void rbtIndvidual1MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strIndividual1MonthCheck = "No";
-        }
-
-        private void rbtIndvidual12MonthYes_Checked(object sender, RoutedEventArgs e)
-        {
-            strIndividual12MonthCheck = "Yes";
-        }
-
-        private void rbtIndvidual12MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strIndividual12MonthCheck = "No";
-        }
-
-        private void rbtTwoPerson1MonthYes_Checked(object sender, RoutedEventArgs e)
-        {
-            strTwoPerson1MonthCheck = "Yes";
-        }
-
-        private void rbtTwoPerson1MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strTwoPerson1MonthCheck = "No";
-        }
-
-        private void rbtTwoPerson12MonthYes_Checked(object sender, RoutedEventArgs e)
-        {
-            strTwoPerson12MonthCheck = "Yes";
-        }
-
-        private void rbtTwoPerson12MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strTwoPerson12MonthCheck = "No";
-        }
-
-        private void rbtFamily1MonthYes_Checked(object sender, RoutedEventArgs e)
-        {
-            strFamily1MonthCheck = "Yes";
-        }
-
-        private void rbtFamily1MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strFamily1MonthCheck = "No";
-        }
-
-        private void rbtFamily12MonthYes_Checked(object sender, RoutedEventArgs e)
-        {
-            strFamily12MonthCheck = "Yes";
-        }
-
-        private void rbtFamily12MonthNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strFamily12MonthCheck = "No";
-        }
-
-
-        private void btnUpdatePricing_Click(object sender, RoutedEventArgs e)
-        {
             string strFilePath = @"..\..\..\Data\Features.json";
 
             //Declare Customers class
@@ -156,6 +98,7 @@ namespace FitnessClub
 
         }
 
+
         private Features ConvertToFeatures(string strLine)
         {
             //declare a string array to hold the data 
@@ -166,9 +109,10 @@ namespace FitnessClub
             //create a customer from the data
             Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
             return featureNew;
-
         }
 
+
+     
         private bool AddFeature(string individualsinglemonth, string individualsinglemonthcheck, string individualtwelvemonth, string individualtwelvemonthcheck, string twosinglemonth, string twosinglemonthcheck, string twotwelvemonth, string twotwelvemonthcheck, string familysinglemonth, string familysinglemonthcheck, string familytwelvemonth, string familytwelvemonthcheck)
         {
             //Define variables
@@ -215,7 +159,7 @@ namespace FitnessClub
 
         private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
         {
-            Window winPricingManagement = new PricingManagement();
+            Window winPricingManagement = new PricingManager();
             winPricingManagement.Show();
             this.Close();
         }

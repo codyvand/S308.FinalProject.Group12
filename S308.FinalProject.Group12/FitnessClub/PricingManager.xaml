@@ -7,36 +7,6 @@
         mc:Ignorable="d"
         Title="PricingManager" Height="800" Width="800">
     <Grid>
-        <Rectangle x:Name="recFindMemberBy" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="277" Margin="9,14,0,0" Stroke="Black" VerticalAlignment="Top" Width="432" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-
-        <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" Text="Find Member By" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="23,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Membership Type" Background="{x:Null}" IsHitTestVisible="False" IsTabStop="False"/>
-        <Button x:Name="btnSearch" Content="Begin Search" HorizontalAlignment="Left" Margin="23,111,0,0" VerticalAlignment="Top" Width="86" Height="24" TabIndex="4" Click="btnSearch_Click"/>
-        <ListBox x:Name="lbxFindResults" HorizontalAlignment="Left" Height="129" Margin="23,153,0,0" VerticalAlignment="Top" Width="410" SelectionChanged="lbxFindResults_SelectionChanged"/>
-        <Rectangle x:Name="recUpdate" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="55" Margin="13,311,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
-            <Rectangle.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Rectangle.RenderTransform>
-        </Rectangle>
-        <TextBox x:Name="txtUpdateTitle" HorizontalAlignment="Left" Height="23" Margin="23,301,0,0" TextWrapping="Wrap" Text="Update" VerticalAlignment="Top" Width="151" FontWeight="Bold" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtPricingTitle" HorizontalAlignment="Left" Height="23" Margin="48,335,0,0" TextWrapping="Wrap" Text="Pricing:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtAvailibiltyTitle" HorizontalAlignment="Left" Height="23" Margin="276,335,0,0" TextWrapping="Wrap" Text="Availibility:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtPricingData" HorizontalAlignment="Left" Height="23" Margin="104,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Text="Yes"/>
-        <TextBox x:Name="txtAvailibiltyData" HorizontalAlignment="Left" Height="23" Margin="408,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Text="Yes"/>
         <Rectangle x:Name="recNavigation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="297" Margin="56,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="462" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -52,16 +22,13 @@
         <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="344,603,0,0" VerticalAlignment="Top" Width="94" Height="48" TabIndex="8" Click="btnPricingManagement_Click"/>
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="344,546,0,0" VerticalAlignment="Top" Width="94" TabIndex="7" Click="btnMembershipSales_Click" Height="44"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="28" Margin="344,383,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="118" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
-        <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Individual1Month"/>
-            <ComboBoxItem Content="Individual12Month"/>
-            <ComboBoxItem Content="TwoPerson12Month"/>
-            <ComboBoxItem Content="TwoPerson12Month"/>
-            <ComboBoxItem Content="Family1Month"/>
-            <ComboBoxItem Content="Family12Month"/>
-        </ComboBox>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="576,324,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
-        <ListBox x:Name="lbxFindResultsPrice" HorizontalAlignment="Left" Height="56" Margin="608,485,0,0" VerticalAlignment="Top" Width="184" SelectionChanged="lbxFindResults_SelectionChanged"/>
+        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="30" Margin="122,53,0,0" TextWrapping="Wrap" Text=" i 1 mon" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtIndividual12Month" HorizontalAlignment="Left" Height="30" Margin="122,103,0,0" TextWrapping="Wrap" Text=" i 12 mon" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="30" Margin="122,138,0,0" TextWrapping="Wrap" Text="2 per 1 mon" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="30" Margin="122,173,0,0" TextWrapping="Wrap" Text="2 per 12 mon" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtFamily1Month" HorizontalAlignment="Left" Height="30" Margin="122,208,0,0" TextWrapping="Wrap" Text="fam 1 mon" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txtFamily12Month" HorizontalAlignment="Left" Height="30" Margin="122,243,0,0" TextWrapping="Wrap" Text="fam 12 mon" VerticalAlignment="Top" Width="179"/>
 
     </Grid>
 </Window>
