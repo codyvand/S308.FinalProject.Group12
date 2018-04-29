@@ -113,5 +113,54 @@ namespace FitnessClub
                 txtPricingData.Text = membershiptypeSelected.MembershipPrice;
             }
         }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
+
+            //Declare Customers class
+            MembershipType membershiptypeNew = new MembershipType();
+
+
+            membershiptypeNew = new MembershipType();
+
+
+            //instantiate a new Campus from the input and add it to the list
+            membershiptypeList.Clear();
+            membershiptypeList.Add(membershiptypeNew);
+
+
+            try
+            {
+                //serialize the new list of campuses to json format
+                string jsonData = JsonConvert.SerializeObject(membershiptypeList);
+
+                //use System.IO.File to write over the file with the json data
+                System.IO.File.WriteAllText(strFilePath, jsonData);
+
+                MessageBox.Show(membershiptypeList.Count + " Cusomters have been exported.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in export process: " + ex.Message);
+            }
+
+            MessageBox.Show("Campus Added!" + Environment.NewLine + membershiptypeNew.ToString());
+
+        
+    }
+        private bool AddMembershipType(string membershipname, string membershipprice, string membershiplength, string membershipavailibility)
+        {
+            //Define variables
+            MembershipType membershiptypeNew;
+
+            membershiptypeNew = new MembershipType(membershipname, membershipprice, membershiplength, membershipavailibility);
+
+            //Add the new customer objec to the list
+            membershiptypeList.Add(membershiptypeNew);
+
+            //Return ture (as status) to the calling code
+            return true;
+        }
     }
 }

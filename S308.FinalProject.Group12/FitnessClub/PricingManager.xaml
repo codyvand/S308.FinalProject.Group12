@@ -60,6 +60,7 @@
             <ComboBoxItem Content="Family1Month"/>
             <ComboBoxItem Content="Family12Month"/>
         </ComboBox>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="576,324,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
 
     </Grid>
 </Window>
