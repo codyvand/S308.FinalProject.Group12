@@ -62,7 +62,7 @@ namespace FitnessClub
         {
             List<MembershipType> membershiptypeSearch;
 
-            string strMembershipType = cbxMembershipType.Text;
+            string strMembershipType = cbxMembershipTypeData.Text;
             lbxFindResults.Items.Clear();
 
             membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipType)).ToList();
@@ -101,6 +101,17 @@ namespace FitnessClub
             Window winPricingManager = new PricingManager();
             winPricingManager.Show();
             this.Close();
+        }
+
+        private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lbxFindResults.SelectedIndex > -1)
+            {
+                string strSelectedName = lbxFindResults.SelectedItem.ToString();
+                MembershipType membershiptypeSelected = membershiptypeList.Where(p => "Name: " + p.MembershipName + Environment.NewLine + "Price:  " + p.MembershipPrice + Environment.NewLine + "Availibility: " + p.MembershipAvailibility == strSelectedName).FirstOrDefault();
+                txtAvailibiltyData.Text = membershiptypeSelected.MembershipAvailibility;
+                txtPricingData.Text = membershiptypeSelected.MembershipPrice;
+            }
         }
     }
 }
