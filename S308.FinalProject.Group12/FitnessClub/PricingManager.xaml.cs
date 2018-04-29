@@ -22,6 +22,10 @@ namespace FitnessClub
     public partial class PricingManager : Window
     {
         List<MembershipType> membershiptypeList;
+        string  strMembershipName,  strMembershipPrice,  strMembershipLength, strMembershipAvailibility;
+
+       
+       
         public PricingManager()
         {
 
@@ -30,8 +34,9 @@ namespace FitnessClub
 
 
             //call the method to local the campus information and display
-            ImportMembershipTypeData();
             InitializeComponent();
+            ImportMembershipTypeData();
+          
         }
         private void ImportMembershipTypeData()
         {
@@ -75,6 +80,7 @@ namespace FitnessClub
             }
         }
 
+        //Navigation
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {
             Window winHomePage = new HomePage();
@@ -118,8 +124,8 @@ namespace FitnessClub
         {
             string strFilePath = @"..\..\..\Data\MembershipType.json";
 
-            //Declare Customers class
-            MembershipType membershiptypeNew = new MembershipType();
+            //Declare MembershipType class
+            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength,strMembershipAvailibility);
 
 
             membershiptypeNew = new MembershipType();
@@ -132,7 +138,7 @@ namespace FitnessClub
 
             try
             {
-                //serialize the new list of campuses to json format
+                //serialize the new list of memberships to json format
                 string jsonData = JsonConvert.SerializeObject(membershiptypeList);
 
                 //use System.IO.File to write over the file with the json data
@@ -146,9 +152,20 @@ namespace FitnessClub
             }
 
             MessageBox.Show("Campus Added!" + Environment.NewLine + membershiptypeNew.ToString());
+        }
 
-        
-    }
+        private MembershipType ConvertToMembershipType(string strLine)
+        {
+            //declare a string array to hold the data 
+            string[] rawData;
+            //split on the delimiter into the array
+            rawData = strLine.Split(',');
+
+            //create a customer from the data
+            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength, strMembershipAvailibility);
+            return membershiptypeNew;
+
+        }
         private bool AddMembershipType(string membershipname, string membershipprice, string membershiplength, string membershipavailibility)
         {
             //Define variables
