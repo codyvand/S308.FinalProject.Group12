@@ -223,8 +223,8 @@ namespace FitnessClub
 
         private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
         {
-            Window winPricingManagement = new PricingManagement();
-            winPricingManagement.Show();
+            Window winPricingManager = new PricingManager();
+            winPricingManager.Show();
             this.Close();
         }
 

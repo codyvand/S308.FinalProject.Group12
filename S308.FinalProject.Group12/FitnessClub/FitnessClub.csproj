@@ -90,10 +90,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PricingManagement.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="PricingManager.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -112,9 +108,6 @@
       <DependentUpon>MembershipSales.xaml</DependentUpon>
     </Compile>
     <Compile Include="MembershipType.cs" />
-    <Compile Include="PricingManagement.xaml.cs">
-      <DependentUpon>PricingManagement.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PricingManager.xaml.cs">
       <DependentUpon>PricingManager.xaml</DependentUpon>
     </Compile>

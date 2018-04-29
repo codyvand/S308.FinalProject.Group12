@@ -143,6 +143,7 @@
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
         <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="22" Margin="771,134,0,0" TextWrapping="Wrap" Text="MasterCard" VerticalAlignment="Top" Width="138"/>
 
     </Grid>
 </Window>

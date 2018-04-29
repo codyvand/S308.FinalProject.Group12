@@ -38,6 +38,21 @@
         <TextBox x:Name="txtLockerRentalTitle" HorizontalAlignment="Left" Height="23" Margin="276,335,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtTrainingPlanData" HorizontalAlignment="Left" Height="23" Margin="174,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Text="Yes"/>
         <TextBox x:Name="txtLockerRentalData" HorizontalAlignment="Left" Height="23" Margin="408,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Text="Yes"/>
+        <Rectangle x:Name="recNavigation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="297" Margin="56,372,0,0" Stroke="Black" VerticalAlignment="Top" Width="462" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="344,426,0,0" VerticalAlignment="Top" Width="94" Height="41" TabIndex="5" Click="btnMainMenu_Click"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="344,485,0,0" VerticalAlignment="Top" Width="94" TabIndex="6" Click="btnMemberInformation_Click" Height="46"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="344,603,0,0" VerticalAlignment="Top" Width="94" Height="48" TabIndex="8" Click="btnPricingManagement_Click"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="344,546,0,0" VerticalAlignment="Top" Width="94" TabIndex="7" Click="btnMembershipSales_Click" Height="44"/>
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="28" Margin="344,383,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="118" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
 
     </Grid>
 </Window>
