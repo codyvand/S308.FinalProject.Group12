@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="PricingManagement" Height="600" Width="1000">
     <Grid>
-        
+        <TextBox x:Name="txtIndivdual1Month" HorizontalAlignment="Left" Height="29" Margin="111,46,0,0" TextWrapping="Wrap" Text="Ind 1 month" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="txtIndivdual12Month" HorizontalAlignment="Left" Height="29" Margin="111,96,0,0" TextWrapping="Wrap" Text="Ind 12 month" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="29" Margin="111,155,0,0" TextWrapping="Wrap" Text="Two Person 1 month" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="29" Margin="111,204,0,0" TextWrapping="Wrap" Text="Two Person 12 month" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="txtFamily1Month" HorizontalAlignment="Left" Height="29" Margin="111,251,0,0" TextWrapping="Wrap" Text="Family 1 month" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="txtFamily12Month" HorizontalAlignment="Left" Height="28" Margin="111,304,0,0" TextWrapping="Wrap" Text="Family 12 month" VerticalAlignment="Top" Width="168"/>
+
     </Grid>
 </Window>
