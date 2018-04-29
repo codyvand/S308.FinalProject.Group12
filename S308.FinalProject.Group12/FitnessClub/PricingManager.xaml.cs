@@ -102,7 +102,7 @@ namespace FitnessClub
             winPricingManager.Show();
             this.Close();
         }
-
+        // This
         private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (lbxFindResults.SelectedIndex > -1)
