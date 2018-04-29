@@ -21,7 +21,7 @@
         <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" Text="Find Member By" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFindLastNameTitle" HorizontalAlignment="Left" Height="23" Margin="23,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Last Name:" Background="{x:Null}" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFindLastNameData" HorizontalAlignment="Left" Height="23" Margin="23,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Text="Dobos" TabIndex="1"/>
-        <Button x:Name="btnSearch" Content="Begin Search" HorizontalAlignment="Left" Margin="23,111,0,0" VerticalAlignment="Top" Width="86" Height="24" TabIndex="4"/>
+        <Button x:Name="btnSearch" Content="Begin Search" HorizontalAlignment="Left" Margin="23,111,0,0" VerticalAlignment="Top" Width="86" Height="24" TabIndex="4" Click="btnSearch_Click"/>
         <ListBox x:Name="lbxFindResults" HorizontalAlignment="Left" Height="129" Margin="23,153,0,0" VerticalAlignment="Top" Width="410"/>
         <Rectangle x:Name="recAdditionalFeatures" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="55" Margin="13,311,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
