@@ -74,7 +74,7 @@
         <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="46" Margin="617,10,0,0" TextWrapping="Wrap" Text="Membership Sales" VerticalAlignment="Top" Width="242" FontWeight="Bold" Background="{x:Null}" FontSize="21.333" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtPersonalFitnessGoalTitle" HorizontalAlignment="Left" Height="23" Margin="486,53,0,0" TextWrapping="Wrap" Text="Personal Fitness Goal:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="11,51,0,0" TextWrapping="Wrap" Text="MembershipType:" VerticalAlignment="Top" Width="104" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
-        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="80,74,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,104,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
         <TextBox x:Name="txtEndDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,258,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top" Width="60" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="250,181,0,0" TextWrapping="Wrap" Text="Cost per Month:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtSubtotalTitle" HorizontalAlignment="Left" Height="23" Margin="503,153,0,0" TextWrapping="Wrap" Text="Subtotal:" VerticalAlignment="Top" Width="62" Background="{x:Null}" BorderThickness="0"/>
@@ -114,7 +114,6 @@
         </ComboBox>
         <RadioButton x:Name="rbtMonthlyTrainingPlanYes" Content="Yes" HorizontalAlignment="Left" Margin="379,52,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanYes_Checked"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalYes" Content="Yes" HorizontalAlignment="Left" Margin="381,102,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalYes_Checked"/>
-        <Calendar x:Name="clrStartDate" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top" Height="167" Width="224" TabIndex="2"/>
         <Rectangle x:Name="recCreditCardInformation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="86" Margin="473,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
             <Rectangle.RenderTransform>
                 <TransformGroup>
@@ -144,6 +143,7 @@
         <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="103,46,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="#FFF90D0D" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
+        <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
