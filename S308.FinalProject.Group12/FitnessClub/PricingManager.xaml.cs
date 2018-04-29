@@ -62,14 +62,14 @@ namespace FitnessClub
         {
             List<MembershipType> membershiptypeSearch;
 
-            string strMembershipType = txtFindLastNameData.Text.Trim();
+            string strMembershipType = cbxMembershipType.Text;
             lbxFindResults.Items.Clear();
 
             membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipType)).ToList();
 
             foreach (MembershipType p in membershiptypeSearch)
             {
-                string strNamePhoneEmail = "Name: " + p.MembershipName + Environment.NewLine + "Phone: " + p.MembershipPrice + Environment.NewLine + "Member" + p.MembershipAvailibility;
+                string strNamePhoneEmail = "Name: " + p.MembershipName + Environment.NewLine + "Price:  " + p.MembershipPrice + Environment.NewLine + "Availibility: " + p.MembershipAvailibility;
                 lbxFindResults.Items.Add(strNamePhoneEmail);
 
             }
