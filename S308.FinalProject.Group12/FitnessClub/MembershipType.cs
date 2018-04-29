@@ -26,7 +26,7 @@ namespace FitnessClub
         }
         public override string ToString()
         {
-            return "MembershipType" + Environment.NewLine + "MembershipName:" + MembershipName + Environment.NewLine + "Membership Price:" + MembershipPrice + Environment.NewLine + "MembershipLength:" + MembershipLength + Environment;
+            return "MembershipType" + Environment.NewLine + "MembershipName:" + MembershipName + Environment.NewLine + "Membership Price:" + MembershipPrice + Environment.NewLine + "MembershipLength:" + MembershipLength + Environment.NewLine + "Membership Availibility:" + MembershipAvailibility;
         }
     }
 }
