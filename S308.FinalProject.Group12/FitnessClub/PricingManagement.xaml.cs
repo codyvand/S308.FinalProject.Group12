@@ -56,6 +56,8 @@ namespace FitnessClub
                 MessageBox.Show("Error in import process: " + ex.Message);
             }
 
+            // Display he saved prices into the correct text boxes
+
 
 
         }
