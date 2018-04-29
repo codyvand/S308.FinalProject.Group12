@@ -30,10 +30,10 @@ namespace FitnessClub
 
 
             //call the method to local the campus information and display
-            ImportFeatureData();
+            ImportMembershipTypeData();
             InitializeComponent();
         }
-        private void ImportFeatureData()
+        private void ImportMembershipTypeData()
         {
             string strFilePath = @"..\..\..\Data\Feature.json";
 
