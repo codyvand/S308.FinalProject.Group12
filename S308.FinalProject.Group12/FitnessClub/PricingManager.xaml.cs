@@ -11,35 +11,32 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.IO;
 using Newtonsoft.Json;
-
+using System.IO;
 namespace FitnessClub
 {
     /// <summary>
-    /// Interaction logic for PricingManager.xaml
+    /// Interaction logic for PricingManagement.xaml
     /// </summary>
-    public partial class PricingManager : Window
+    public partial class PricingManagement : Window
     {
-        List<MembershipType> membershiptypeList;
-        string  strMembershipName,  strMembershipPrice,  strMembershipLength, strMembershipAvailibility;
-       
-       
-        public PricingManager()
+        List<Features> featureList;
+        string strIndividual1MonthCheck, strIndividual12MonthCheck, strTwoPerson1MonthCheck, strTwoPerson12MonthCheck, strFamily1MonthCheck, strFamily12MonthCheck;
+        string strIndividual1Month;
+        public PricingManagement()
         {
 
-            //instantiate a list to hold the Customers
-            membershiptypeList = new List<MembershipType>();
-
+            //instantiate a list to hold the Campuses
+            featureList = new List<Features>();
 
             //call the method to local the campus information and display
             InitializeComponent();
-            ImportMembershipTypeData();
-          
+            ImportFeatureData();
+
         }
-        private void ImportMembershipTypeData()
+        private void ImportFeatureData()
         {
-            string strFilePath = @"..\..\..\Data\MembershipType.json";
+            string strFilePath = @"..\..\..\Data\Features.json";
 
             try
             {
@@ -47,12 +44,12 @@ namespace FitnessClub
                 string jsonData = File.ReadAllText(strFilePath);
 
                 //serialize the json data to a list of campuses
-                membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
+                featureList = JsonConvert.DeserializeObject<List<Features>>(jsonData);
 
-                if (membershiptypeList.Count >= 0)
-                    MessageBox.Show(membershiptypeList.Count + " Campuses have been imported.");
+                if (featureList.Count >= 0)
+                    MessageBox.Show(featureList.Count + " Features have been imported.");
                 else
-                    MessageBox.Show("No Campuses has been imported. Please check your file.");
+                    MessageBox.Show("No features has been imported. Please check your file.");
             }
             catch (Exception ex)
             {
@@ -60,73 +57,106 @@ namespace FitnessClub
             }
 
 
+
         }
 
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        private void rbtIndvidual1MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            List<MembershipType> membershiptypeSearch;
-
-            string strMembershipType = cbxMembershipTypeData.Text;
-            lbxFindResults.Items.Clear();
-
-            membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipType)).ToList();
-
-            foreach (MembershipType p in membershiptypeSearch)
-            {
-                string strNamePhoneEmail = "Name: " + p.MembershipName + Environment.NewLine + "Price:  " + p.MembershipPrice + Environment.NewLine + "Availibility: " + p.MembershipAvailibility;
-                lbxFindResults.Items.Add(strNamePhoneEmail);
-
-            }
+            strIndividual1MonthCheck = "Yes";
         }
 
- 
-        // This
-        private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void rbtIndvidual1MonthNo_Checked(object sender, RoutedEventArgs e)
         {
-            if (lbxFindResults.SelectedIndex > -1)
-            {
-                string strSelectedName = lbxFindResults.SelectedItem.ToString();
-                MembershipType membershiptypeSelected = membershiptypeList.Where(p => "Name: " + p.MembershipName + Environment.NewLine + "Price:  " + p.MembershipPrice + Environment.NewLine + "Availibility: " + p.MembershipAvailibility == strSelectedName).FirstOrDefault();
-                txtAvailibiltyData.Text = membershiptypeSelected.MembershipAvailibility;
-                txtPricingData.Text = membershiptypeSelected.MembershipPrice;
-            }
+            strIndividual1MonthCheck = "No";
         }
 
-        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        private void rbtIndvidual12MonthYes_Checked(object sender, RoutedEventArgs e)
         {
-            string strFilePath = @"..\..\..\Data\MembershipType.json";
+            strIndividual12MonthCheck = "Yes";
+        }
 
-            //Declare MembershipType class
-            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength,txtAvailibiltyData.Text);
+        private void rbtIndvidual12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strIndividual12MonthCheck = "No";
+        }
+
+        private void rbtTwoPerson1MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson1MonthCheck = "Yes";
+        }
+
+        private void rbtTwoPerson1MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson1MonthCheck = "No";
+        }
+
+        private void rbtTwoPerson12MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson12MonthCheck = "Yes";
+        }
+
+        private void rbtTwoPerson12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strTwoPerson12MonthCheck = "No";
+        }
+
+        private void rbtFamily1MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily1MonthCheck = "Yes";
+        }
+
+        private void rbtFamily1MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily1MonthCheck = "No";
+        }
+
+        private void rbtFamily12MonthYes_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily12MonthCheck = "Yes";
+        }
+
+        private void rbtFamily12MonthNo_Checked(object sender, RoutedEventArgs e)
+        {
+            strFamily12MonthCheck = "No";
+        }
 
 
-            membershiptypeNew = new MembershipType();
+        private void btnUpdatePricing_Click(object sender, RoutedEventArgs e)
+        {
+            string strFilePath = @"..\..\..\Data\Features.json";
+
+            //Declare Customers class
+            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+
+
+            featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
 
 
             //instantiate a new Campus from the input and add it to the list
-            membershiptypeList.Clear();
-            membershiptypeList.Add(membershiptypeNew);
+            featureList.Clear();
+            featureList.Add(featureNew);
 
 
             try
             {
-                //serialize the new list of memberships to json format
-                string jsonData = JsonConvert.SerializeObject(membershiptypeList);
+                //serialize the new list of campuses to json format
+                string jsonData = JsonConvert.SerializeObject(featureList);
 
                 //use System.IO.File to write over the file with the json data
                 System.IO.File.WriteAllText(strFilePath, jsonData);
 
-                MessageBox.Show(membershiptypeList.Count + " Cusomters have been exported.");
+                MessageBox.Show(featureList.Count + " Cusomters have been exported.");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error in export process: " + ex.Message);
             }
 
-            MessageBox.Show("Campus Added!" + Environment.NewLine + membershiptypeNew.ToString());
+            MessageBox.Show("Campus Added!" + Environment.NewLine + featureNew.ToString());
+
         }
 
-        private MembershipType ConvertToMembershipType(string strLine)
+        private Features ConvertToFeatures(string strLine)
         {
             //declare a string array to hold the data 
             string[] rawData;
@@ -134,24 +164,34 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            MembershipType membershiptypeNew = new MembershipType(strMembershipName, strMembershipPrice, strMembershipLength, strMembershipAvailibility);
-            return membershiptypeNew;
+            Features featureNew = new Features(txtIndividual1Month.Text.Trim(), strIndividual1MonthCheck, txtIndividual12Month.Text.Trim(), strIndividual12MonthCheck, txtTwoPerson1Month.Text.Trim(), strTwoPerson1MonthCheck, txtTwoPerson12Month.Text.Trim(), strTwoPerson12MonthCheck, txtFamily1Month.Text.Trim(), strFamily1MonthCheck, txtFamily12Month.Text.Trim(), strFamily12MonthCheck);
+            return featureNew;
 
         }
-        private bool AddMembershipType(string membershipname, string membershipprice, string membershiplength,string strMembershipAvailibility)
+
+        private bool AddFeature(string individualsinglemonth, string individualsinglemonthcheck, string individualtwelvemonth, string individualtwelvemonthcheck, string twosinglemonth, string twosinglemonthcheck, string twotwelvemonth, string twotwelvemonthcheck, string familysinglemonth, string familysinglemonthcheck, string familytwelvemonth, string familytwelvemonthcheck)
         {
             //Define variables
-            MembershipType membershiptypeNew;
+            Features featureNew;
 
-            membershiptypeNew = new MembershipType(strMembershipName, strMembershipPrice, strMembershipLength, strMembershipAvailibility);
+            featureNew = new Features(individualsinglemonth, individualsinglemonthcheck, individualtwelvemonth, individualtwelvemonthcheck, twosinglemonth, twosinglemonthcheck, twotwelvemonth, twotwelvemonthcheck, familysinglemonth, familysinglemonthcheck, familytwelvemonth, familytwelvemonthcheck);
 
             //Add the new customer objec to the list
-            membershiptypeList.Add(membershiptypeNew);
+            featureList.Add(featureNew);
 
             //Return ture (as status) to the calling code
             return true;
         }
-        //Navigation
+
+
+
+
+
+
+
+
+
+        //Nav links
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {
             Window winHomePage = new HomePage();
@@ -175,9 +215,11 @@ namespace FitnessClub
 
         private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
         {
-            Window winPricingManager = new PricingManager();
-            winPricingManager.Show();
+            Window winPricingManagement = new PricingManagement();
+            winPricingManagement.Show();
             this.Close();
         }
+
     }
 }
+
