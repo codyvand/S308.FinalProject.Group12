@@ -80,34 +80,7 @@ namespace FitnessClub
             }
         }
 
-        //Navigation
-        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
-        {
-            Window winHomePage = new HomePage();
-            winHomePage.Show();
-            this.Close();
-        }
-
-        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
-        {
-            Window winMemberInformation = new MemberInformation();
-            winMemberInformation.Show();
-            this.Close();
-        }
-
-        private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
-        {
-            Window winMembershipSales = new MembershipSales();
-            winMembershipSales.Show();
-            this.Close();
-        }
-
-        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
-        {
-            Window winPricingManager = new PricingManager();
-            winPricingManager.Show();
-            this.Close();
-        }
+ 
         // This
         private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -178,6 +151,34 @@ namespace FitnessClub
 
             //Return ture (as status) to the calling code
             return true;
+        }
+        //Navigation
+        private void btnMainMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Window winHomePage = new HomePage();
+            winHomePage.Show();
+            this.Close();
+        }
+
+        private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMemberInformation = new MemberInformation();
+            winMemberInformation.Show();
+            this.Close();
+        }
+
+        private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
+        {
+            Window winMembershipSales = new MembershipSales();
+            winMembershipSales.Show();
+            this.Close();
+        }
+
+        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
+        {
+            Window winPricingManager = new PricingManager();
+            winPricingManager.Show();
+            this.Close();
         }
     }
 }
