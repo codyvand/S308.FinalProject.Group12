@@ -21,12 +21,12 @@ namespace FitnessClub
     /// </summary>
     public partial class PricingManager : Window
     {
-        List<Features> featureList;
+        List<MembershipType> membershiptypeList;
         public PricingManager()
         {
 
             //instantiate a list to hold the Customers
-            featureList = new List<Features>();
+            membershiptypeList = new List<MembershipType>();
 
 
             //call the method to local the campus information and display
@@ -35,7 +35,7 @@ namespace FitnessClub
         }
         private void ImportMembershipTypeData()
         {
-            string strFilePath = @"..\..\..\Data\Feature.json";
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
 
             try
             {
@@ -43,10 +43,10 @@ namespace FitnessClub
                 string jsonData = File.ReadAllText(strFilePath);
 
                 //serialize the json data to a list of campuses
-                featureList = JsonConvert.DeserializeObject<List<Features>>(jsonData);
+                membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
 
-                if (featureList.Count >= 0)
-                    MessageBox.Show(featureList.Count + " Campuses have been imported.");
+                if (membershiptypeList.Count >= 0)
+                    MessageBox.Show(membershiptypeList.Count + " Campuses have been imported.");
                 else
                     MessageBox.Show("No Campuses has been imported. Please check your file.");
             }
@@ -60,16 +60,16 @@ namespace FitnessClub
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            List<Features> featureSearch;
+            List<MembershipType> membershiptypeSearch;
 
             string strMembershipType = txtFindLastNameData.Text.Trim();
             lbxFindResults.Items.Clear();
 
-            featureSearch = featureList.Where(p => p.LastName.StartsWith(strFindLastName) && p.Phone.StartsWith(strFindPhone) && p.Email.StartsWith(strFindEmail)).ToList();
+            membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipType)).ToList();
 
-            foreach (Customers p in customerSearch)
+            foreach (MembershipType p in membershiptypeSearch)
             {
-                string strNamePhoneEmail = "| Last Name: " + p.LastName + " |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |";
+                string strNamePhoneEmail = "Name: " + p.MembershipName + Environment.NewLine + "Phone: " + p.MembershipPrice + Environment.NewLine + "Member" + p.MembershipAvailibility;
                 lbxFindResults.Items.Add(strNamePhoneEmail);
 
             }
