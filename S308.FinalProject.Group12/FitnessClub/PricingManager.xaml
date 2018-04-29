@@ -61,6 +61,7 @@
             <ComboBoxItem Content="Family12Month"/>
         </ComboBox>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="576,324,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
+        <ListBox x:Name="lbxFindResultsPrice" HorizontalAlignment="Left" Height="56" Margin="608,485,0,0" VerticalAlignment="Top" Width="184" SelectionChanged="lbxFindResults_SelectionChanged"/>
 
     </Grid>
 </Window>

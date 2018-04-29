@@ -125,7 +125,7 @@ namespace FitnessClub
             string strFilePath = @"..\..\..\Data\MembershipType.json";
 
             //Declare MembershipType class
-            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength,strMembershipAvailibility);
+            MembershipType membershiptypeNew = new MembershipType(strMembershipName,strMembershipPrice, strMembershipLength,txtAvailibiltyData.Text);
 
 
             membershiptypeNew = new MembershipType();
@@ -166,12 +166,12 @@ namespace FitnessClub
             return membershiptypeNew;
 
         }
-        private bool AddMembershipType(string membershipname, string membershipprice, string membershiplength, string membershipavailibility)
+        private bool AddMembershipType(string membershipname, string membershipprice, string membershiplength,string strMembershipAvailibility)
         {
             //Define variables
             MembershipType membershiptypeNew;
 
-            membershiptypeNew = new MembershipType(membershipname, membershipprice, membershiplength, membershipavailibility);
+            membershiptypeNew = new MembershipType(strMembershipName, strMembershipPrice, strMembershipLength, strMembershipAvailibility);
 
             //Add the new customer objec to the list
             membershiptypeList.Add(membershiptypeNew);
