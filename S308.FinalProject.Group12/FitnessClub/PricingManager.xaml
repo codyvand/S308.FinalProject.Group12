@@ -23,7 +23,7 @@
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="344,546,0,0" VerticalAlignment="Top" Width="94" TabIndex="7" Click="btnMembershipSales_Click" Height="44"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="28" Margin="344,383,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="118" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="576,324,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
-        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="30" Margin="122,53,0,0" TextWrapping="Wrap" Text=" i 1 mon" VerticalAlignment="Top" Width="179" TextChanged="txtIndividual1Month_TextChanged"/>
+        <TextBox x:Name="txtIndividual1Month" HorizontalAlignment="Left" Height="30" Margin="122,53,0,0" TextWrapping="Wrap" Text=" i 1 mon" VerticalAlignment="Top" Width="179"/>
         <TextBox x:Name="txtIndividual12Month" HorizontalAlignment="Left" Height="30" Margin="122,103,0,0" TextWrapping="Wrap" Text=" i 12 mon" VerticalAlignment="Top" Width="179"/>
         <TextBox x:Name="txtTwoPerson1Month" HorizontalAlignment="Left" Height="30" Margin="122,138,0,0" TextWrapping="Wrap" Text="2 per 1 mon" VerticalAlignment="Top" Width="179"/>
         <TextBox x:Name="txtTwoPerson12Month" HorizontalAlignment="Left" Height="30" Margin="122,173,0,0" TextWrapping="Wrap" Text="2 per 12 mon" VerticalAlignment="Top" Width="179"/>

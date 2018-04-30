@@ -10,23 +10,21 @@ namespace FitnessClub
     {
         public string MembershipName { get; set; }
         public string MembershipPrice { get; set; }
-        public string MembershipLength { get; set; }
         public string MembershipAvailibility { get; set; }
 
         public MembershipType()
         {
 
         }
-        public MembershipType(string membershipname, string membershipprice, string membershiplength, string membershipavailibility)
+        public MembershipType(string membershipname, string membershipprice, string membershipavailibility)
         {
             MembershipName = membershipname;
             MembershipPrice = membershipprice;
-            MembershipLength = membershiplength;
             MembershipAvailibility = membershipavailibility;
         }
         public override string ToString()
         {
-            return "Membership Type" + Environment.NewLine + "Membership Name:" + MembershipName + Environment.NewLine + "Membership Price:" + MembershipPrice + Environment.NewLine + "Membership Length:" + MembershipLength + Environment.NewLine + "Membership Availibility:" + MembershipAvailibility;
+            return "Membership Type" + Environment.NewLine + "Membership Name:" + MembershipName + Environment.NewLine + "Membership Price:" + MembershipPrice + Environment.NewLine + "Membership Availibility:" + MembershipAvailibility;
         }
     }
 }
