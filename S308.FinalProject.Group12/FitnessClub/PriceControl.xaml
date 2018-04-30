@@ -62,8 +62,8 @@
             <ComboBoxItem Content="Family1Month"/>
             <ComboBoxItem Content="Family12Month"/>
         </ComboBox>
-        <Grid Margin="602,19,71,329">
-            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="150" Margin="0" VerticalAlignment="Top" Width="515">
+        <Grid Margin="578,19,23,263">
+            <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="150" Margin="0" VerticalAlignment="Top" Width="509">
                 <TabItem x:Name="tbiImport" Header="Import" FontSize="16" Height="29" VerticalAlignment="Bottom">
                     <Grid Background="#FFE5E5E5">
                         <Button x:Name="btnImport" Content="Import" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnImport_Click_1"/>
@@ -88,8 +88,8 @@
                     </Grid>
                 </TabItem>
             </TabControl>
-            <DataGrid x:Name="dtgContact" HorizontalAlignment="Left" Margin="35,170,0,0" VerticalAlignment="Top" Height="200" Width="450" FontSize="12"/>
-            <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="410,382,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
+            <DataGrid x:Name="dtgContact" HorizontalAlignment="Left" Margin="0,170,0,0" VerticalAlignment="Top" Height="246" Width="509" FontSize="12"/>
+            <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="434,445,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click"/>
 
         </Grid>
 
