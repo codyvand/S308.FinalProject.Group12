@@ -61,7 +61,7 @@ namespace FitnessClub
         {
             List<MembershipType> membershiptypeSearch;
 
-            string strMembershipTypeSearch = txtMembershipTypeSearch.Text.Trim();
+            string strMembershipTypeSearch = cbxMembershipTypeSearchTitle.Text.Trim();
             lbxFindResults.Items.Clear();
 
             membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipTypeSearch)).ToList();

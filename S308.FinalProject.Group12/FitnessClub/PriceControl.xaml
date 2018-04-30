@@ -54,7 +54,7 @@
         <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="55,642,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="8"/>
         <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="55,596,0,0" VerticalAlignment="Top" Width="86" TabIndex="7" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="55,466,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="37,68,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="cbxMembershipTypeSearchTitle" HorizontalAlignment="Left" Margin="37,68,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Individual1Month"/>
             <ComboBoxItem Content="Individual12Month"/>
             <ComboBoxItem Content="TwoPerson1Month"/>
