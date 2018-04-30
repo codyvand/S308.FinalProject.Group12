@@ -106,13 +106,19 @@
         <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722" TabIndex="13"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
-        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="344,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="$10"/>
+        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="344,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Text="$10"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="565,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" Text="$20" FontWeight="Bold"/>
         <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
             <ComboBox.DataContext>
                 <local:Features IndividualSingleMonth=""/>
             </ComboBox.DataContext>
+            <ComboBoxItem Content="Individual1Month"/>
+            <ComboBoxItem Content="Individual12Month"/>
+            <ComboBoxItem Content="TwoPerson1Month"/>
+            <ComboBoxItem Content="TwoPerson12Month"/>
+            <ComboBoxItem Content="Family1Month"/>
+            <ComboBoxItem Content="Family12Month"/>
         </ComboBox>
         <RadioButton x:Name="rbtMonthlyTrainingPlanYes" Content="Yes" HorizontalAlignment="Left" Margin="379,52,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanYes_Checked"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalYes" Content="Yes" HorizontalAlignment="Left" Margin="381,102,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalYes_Checked"/>

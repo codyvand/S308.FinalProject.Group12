@@ -86,14 +86,6 @@ namespace FitnessClub
             Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
-        private MembershipType ConvertToMembershipType(string strLine)
-        {
-            string[] rawData;
-            rawData = strLine.Split('|');
-
-            MembershipType membershiptypeNew = new MembershipType(rawData[0], rawData[1], rawData[2], rawData[3]);
-            return membershiptypeNew;
-        }
         private bool AddCustomer(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
         {
             //Define variables
@@ -258,7 +250,7 @@ namespace FitnessClub
             winPricingManager.Show();
             this.Close();
         }
-        string MonthlyTrainingPlanCO
+
         private void rbtMonthlyTrainingPlanYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "Yes";
@@ -274,22 +266,43 @@ namespace FitnessClub
             strMonthlyLockerRentalResult = "No";
         }
 
-        
-        
+
+
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string stMembershipType = membershiptypeList.IndexOf(cbxMembershipT);
-            if (cbxMembershipTypeData) 
+            string selectedText = cbxMembershipTypeData.Text;
+
+            switch (selectedText)
             {
+                case "Individual1Month":
+                    txtCostPerMonthData.Text = "9.99";
+                    break;
+                case "Individual12Month":
+                    txtCostPerMonthData.Text = "100.00";
+                    break;
+                case "TwoPerson1Month":
+                    txtCostPerMonthData.Text = "14.99";
+                    break;
+                case "TwoPerson12Month":
+                    txtCostPerMonthData.Text = "150.00";
+                    break;
+                case "Family1Month":
+                    txtCostPerMonthData.Text = "19.99";
+                    break;
+                case "Family12Month":
+                    txtCostPerMonthData.Text = "200.00";
+                    break;
+                default:
+                    MessageBox.Show("Please select a membership type.");
+                    break;
+
+
+
 
             }
-            cbxMembershipTypeData.Items.Add("Individual 1 Month");
-            cbxMembershipTypeData.Items.Add("Individual 12 Month");
-            cbxMembershipTypeData.Items.Add("Two Person 1 Month");
-            cbxMembershipTypeData.Items.Add("Two Person 12 Month");
-            cbxMembershipTypeData.Items.Add("Family 1 Month");
-            cbxMembershipTypeData.Items.Add("Family 12 Month");
+
         }
+
 
         private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
         {
