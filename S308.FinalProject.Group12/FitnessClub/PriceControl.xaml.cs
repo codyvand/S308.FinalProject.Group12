@@ -29,61 +29,7 @@ namespace FitnessClub
 
 
             //call the method to local the campus information and display
-            ImportMembershipData();
             InitializeComponent();
-        }
-        private void ImportMembershipData()
-        {
-            string strFilePath = @"..\..\..\Data\MembershipType.json";
-
-            try
-            {
-                //use System.IO.File to read the entire data file
-                string jsonData = File.ReadAllText(strFilePath);
-
-                //serialize the json data to a list of membership types
-                membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
-
-                if (membershiptypeList.Count >= 0)
-                    MessageBox.Show(membershiptypeList.Count + " Membership Types have been imported.");
-                else
-                    MessageBox.Show("No Membership Types has been imported. Please check your file.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error in import process: " + ex.Message);
-            }
-
-
-        }
-
-        private void btnSearch_Click(object sender, RoutedEventArgs e)
-        {
-            List<MembershipType> membershiptypeSearch;
-
-            string strMembershipTypeSearch = cbxMembershipTypeSearchTitle.Text.Trim();
-            lbxFindResults.Items.Clear();
-
-            membershiptypeSearch = membershiptypeList.Where(p => p.MembershipName.StartsWith(strMembershipTypeSearch)).ToList();
-
-            foreach (MembershipType p in membershiptypeSearch)
-            {
-                string strMembershipName = "Membership Name:" + p.MembershipName;
-                lbxFindResults.Items.Add(strMembershipName);
-            }
-        }
-
-
-        private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (lbxFindResults.SelectedIndex > -1)
-            {
-                string strSelectedName = lbxFindResults.SelectedItem.ToString();
-                MembershipType membershipSelected = membershiptypeList.Where(p => "Membership Name:" + p.MembershipName == strSelectedName).FirstOrDefault();
-                txtMembershipTypeNameData.Text = membershipSelected.MembershipName;
-                txtMembershipCostData.Text = membershipSelected.MembershipPrice;
-                txtMembershipAvailibilityData.Text = membershipSelected.MembershipAvailibility;
-            }
         }
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {
@@ -104,6 +50,103 @@ namespace FitnessClub
             Window winMembershipSales = new MembershipSales();
             winMembershipSales.Show();
             this.Close();
+        }
+
+        private MembershipType ConvertToMembershipType(string strLine)
+        {
+            string[] rawData;
+            rawData = strLine.Split(',');
+
+            MembershipType membershiptypeNew = new MembershipType(rawData[0], rawData[1], rawData[2]);
+            return membershiptypeNew;
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            //ClearScreen();
+            membershiptypeList.Clear();
+            dtgContact.Items.Refresh();
+        }
+
+
+        private void btnImport_Click(object sender, RoutedEventArgs e)
+        {
+            string strLine = "";
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
+
+            try
+            {
+                membershiptypeList.Clear();
+                StreamReader reader = new StreamReader(strFilePath);
+
+                while (!reader.EndOfStream)
+                {
+                    strLine = reader.ReadLine();
+                    MessageBox.Show(strLine);
+                    membershiptypeList.Add(ConvertToMembershipType(strLine));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in ready file: " + ex.Message);
+                return;
+            }
+
+            dtgContact.Items.Refresh();
+
+        }
+
+        private void btnExport_Click_1(object sender, RoutedEventArgs e)
+        {
+            string strFilePath = @"..\..\..\Data\MembershipType"
+    + ".json";
+            string strLine;
+
+            try
+            {
+                StreamWriter writer = new StreamWriter(strFilePath, false);
+                foreach (MembershipType c in membershiptypeList)
+                {
+                    strLine = String.Format("{0},{1},{2}", c.MembershipName
+                    , c.MembershipPrice, c.MembershipAvailibility);
+                    writer.WriteLine(strLine);
+                }
+
+                writer.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in write file: " + ex.Message);
+                return;
+            }
+
+            MessageBox.Show("Export completed!" + Environment.NewLine + "File Created: " + strFilePath);
+        }
+        private void AppendToFile(MembershipType membershiptypeNew)
+        {
+            string strFilePath = @"..\..\..\Data\MembershipType.txt";
+            string strLine;
+
+            try
+            {
+                StreamWriter writer = new StreamWriter(strFilePath, true);
+                strLine = String.Format("{0}|{1}|{2}", membershiptypeNew.MembershipName
+                    , membershiptypeNew.MembershipPrice, membershiptypeNew.MembershipAvailibility);
+                writer.WriteLine(strLine);
+                writer.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in append file: " + ex.Message);
+                return;
+            }
+        }
+        private void ClearScreen()
+        {
+            txtMembershipNameCreateData.Text = "";
+            txtMembershipCostCreateData.Text = "";
+            txtMembershipAvailibilityCreateData.Text = "";
+
         }
     }
 }

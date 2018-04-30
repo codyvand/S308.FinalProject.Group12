@@ -1,1 +1,2 @@
-[{"MembershipName":"Individual1Month","MembershipPrice":"11", "MembershipAvailibility":"Yes"}, {"MembershipName": "Individual12Month", "MembershipPrice": "12", "MembershipAvailibility": "Yes"}]
+Individual1Month|11|Yes
+Individual12Month|12|Yes
