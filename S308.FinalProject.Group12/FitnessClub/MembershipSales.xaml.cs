@@ -21,6 +21,7 @@ namespace FitnessClub
     public partial class MembershipSales : Window
     {
         List<Customers> customerList;
+        List<MembershipType> membershiptypeList;
         string strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult;
         public MembershipSales()
         {
@@ -28,9 +29,31 @@ namespace FitnessClub
 
             //instantiate a list to hold the Campuses
             customerList = new List<Customers>();
+            membershiptypeList = new List<MembershipType>();
 
             //call the method to local the campus information and display
             ImportCustomerData();
+            ImportMembershipTypeData();
+
+        }
+
+        private void ImportMembershipTypeData()
+        {
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
+
+            try
+            {
+                //use System.IO.File to read the entire data file
+                string jsonData = File.ReadAllText(strFilePath);
+
+                //serialize the json data to a list of campuses
+                membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in import process: " + ex.Message);
+            }
 
         }
         private void ImportCustomerData()
@@ -60,7 +83,7 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text,dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
         private bool AddCustomer(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
@@ -88,8 +111,8 @@ namespace FitnessClub
                 return false;
             }
 
-           
-           customerNew = new Customers(personalfitnessgoal, firstname, lastname, weight, gender, phone, email, age, membershiptype, startdate, enddate, monthlytrainingplan, monthlylockerrental, creditcardtype, creditcardnumber);
+
+            customerNew = new Customers(personalfitnessgoal, firstname, lastname, weight, gender, phone, email, age, membershiptype, startdate, enddate, monthlytrainingplan, monthlylockerrental, creditcardtype, creditcardnumber);
 
             //Add the new customer objec to the list
             customerList.Add(customerNew);
@@ -144,11 +167,11 @@ namespace FitnessClub
 
             //Email Vailidation
             string strEmailData;
-            strEmailData =txtEmailData.Text.Trim();
+            strEmailData = txtEmailData.Text.Trim();
             bool hasAt = strEmailData.Contains("@") == true;
             bool hasDot = strEmailData.Contains(".") == true;
 
-            if (!(hasDot) ||  !(hasAt))
+            if (!(hasDot) || !(hasAt))
             {
                 txtEmailData.Text = "";
                 MessageBox.Show("Enter a valid email adress.");
@@ -161,7 +184,7 @@ namespace FitnessClub
             string strDot = strEmailData.Substring(intAt + 1, intDot - intAt - 1);
             string strDomain = strEmailData.Substring(intDot + 1);
 
-            if (strUserName.Length < 1 || strDot.Length <1 || strDomain.Length <2)
+            if (strUserName.Length < 1 || strDot.Length < 1 || strDomain.Length < 2)
             {
                 txtEmailData.Text = "";
                 MessageBox.Show("Enter a valid email adress.");
@@ -170,10 +193,10 @@ namespace FitnessClub
             }
 
             //Declare Customers class
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text,dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
 
 
-                customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), txtMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, txtCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
 
 
             //instantiate a new Campus from the input and add it to the list
@@ -196,7 +219,7 @@ namespace FitnessClub
             }
 
             MessageBox.Show("Campus Added!" + Environment.NewLine + customerNew.ToString());
-            }
+        }
 
 
         //Navigation Links
@@ -243,8 +266,11 @@ namespace FitnessClub
             strMonthlyLockerRentalResult = "No";
         }
 
+        
+        
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+           
             cbxMembershipTypeData.Items.Add("Individual 1 Month");
             cbxMembershipTypeData.Items.Add("Individual 12 Month");
             cbxMembershipTypeData.Items.Add("Two Person 1 Month");
