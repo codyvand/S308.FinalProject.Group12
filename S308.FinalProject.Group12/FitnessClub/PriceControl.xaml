@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClub"
         mc:Ignorable="d"
-        Title="PriceControl" Height="550" Width="800">
+        Title="PriceControl" Height="550" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <Rectangle x:Name="recNavigation" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="236" Margin="18,83,0,0" Stroke="Black" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.RenderTransform>
@@ -17,33 +17,33 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="46,134,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="5" Click="btnMainMenu_Click"/>
-        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="46,180,0,0" VerticalAlignment="Top" Width="86" TabIndex="6" Click="btnMemberInformation_Click"/>
-        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="46,275,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="8"/>
-        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="46,226,0,0" VerticalAlignment="Top" Width="86" TabIndex="7" Click="btnMembershipSales_Click"/>
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="46,134,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="9" Click="btnMainMenu_Click"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="46,180,0,0" VerticalAlignment="Top" Width="86" TabIndex="10" Click="btnMemberInformation_Click"/>
+        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="46,275,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="12"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="46,226,0,0" VerticalAlignment="Top" Width="86" TabIndex="11" Click="btnMembershipSales_Click"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="46,100,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="108" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
         <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="150" Margin="252,61,0,0" VerticalAlignment="Top" Width="509">
             <TabItem x:Name="tbiImport" Header="Import" FontSize="16" Height="29" VerticalAlignment="Bottom">
                 <Grid Background="#FFE5E5E5">
-                    <Button x:Name="btnImport" Content="Import" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnImport_Click_1"/>
+                    <Button x:Name="btnImport" Content="Import" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnImport_Click_1" TabIndex="0"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tbiCreate" Header="Create" FontSize="16">
+            <TabItem x:Name="tbiCreate" Header="Create" FontSize="16" TabIndex="1">
                 <Grid Background="#FFE5E5E5">
                     <Label x:Name="lblMembershipName" Content="MembershipName:" HorizontalAlignment="Left" Margin="0,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
-                    <TextBox x:Name="txtMembershipNameCreateData" HorizontalAlignment="Left" Height="23" Margin="127,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="12"/>
+                    <TextBox x:Name="txtMembershipNameCreateData" HorizontalAlignment="Left" Height="23" Margin="127,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="12" TabIndex="2"/>
                     <Label x:Name="lblSecondName" Content="Availibility" HorizontalAlignment="Left" Margin="16,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
-                    <TextBox x:Name="txtMembershipAvailibilityCreateData" HorizontalAlignment="Left" Height="23" Margin="127,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="12"/>
+                    <TextBox x:Name="txtMembershipAvailibilityCreateData" HorizontalAlignment="Left" Height="23" Margin="127,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="12" TabIndex="4"/>
                     <Label x:Name="lblMembershipCostTitle" Content="MembershipCost" HorizontalAlignment="Left" Margin="274,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
-                    <TextBox x:Name="txtMembershipCostCreateData" HorizontalAlignment="Left" Height="23" Margin="338,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" FontSize="12"/>
-                    <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="383,80,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnCreate_Click"/>
+                    <TextBox x:Name="txtMembershipCostCreateData" HorizontalAlignment="Left" Height="23" Margin="338,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" FontSize="12" TabIndex="3"/>
+                    <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="383,80,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnCreate_Click" TabIndex="6"/>
                     <Label x:Name="lblMembershipLengthCreateTitle" Content="MembershipCost" HorizontalAlignment="Left" Margin="274,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
-                    <TextBox x:Name="txtMembershipLengthCreateData" HorizontalAlignment="Left" Height="23" Margin="337,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="12"/>
+                    <TextBox x:Name="txtMembershipLengthCreateData" HorizontalAlignment="Left" Height="23" Margin="337,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="12" TabIndex="5"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="tbiExport" Header="Export" FontSize="16">
+            <TabItem x:Name="tbiExport" Header="Export" FontSize="16" TabIndex="7">
                 <Grid Background="#FFE5E5E5">
-                    <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnExport_Click"/>
+                    <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnExport_Click" TabIndex="8"/>
                 </Grid>
             </TabItem>
         </TabControl>
