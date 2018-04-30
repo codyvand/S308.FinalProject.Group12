@@ -284,7 +284,8 @@ namespace FitnessClub
             ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
             strSelectedMembershipType = cbxSelectedItem.Content.ToString();
 
-        
+            string strCostPerMonthData;
+            strCostPerMonthData = txtCostPerMonthData.Text;
 
             //5
             switch (strSelectedMembershipType)
@@ -308,7 +309,8 @@ namespace FitnessClub
                     txtCostPerMonthData.Text = "200.00";
                     break;
             }
-
+           int intMembershipPrice = Convert.ToInt32(strCostPerMonthData);
+            
 
         }
 
