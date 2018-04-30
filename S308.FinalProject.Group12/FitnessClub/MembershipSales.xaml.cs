@@ -243,7 +243,15 @@ namespace FitnessClub
             strMonthlyLockerRentalResult = "No";
         }
 
-     
+        private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            cbxMembershipTypeData.Items.Add("Individual 1 Month");
+            cbxMembershipTypeData.Items.Add("Individual 12 Month");
+            cbxMembershipTypeData.Items.Add("Two Person 1 Month");
+            cbxMembershipTypeData.Items.Add("Two Person 12 Month");
+            cbxMembershipTypeData.Items.Add("Family 1 Month");
+            cbxMembershipTypeData.Items.Add("Family 12 Month");
+        }
 
         private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
         {
