@@ -39,12 +39,12 @@ namespace FitnessClub
 
         private void ImportMembershipTypeData()
         {
-            string strFilePath = @"..\..\..\Data\MembershipType.json";
+            string strFilePathMem = @"..\..\..\Data\MembershipType.json";
 
             try
             {
                 //use System.IO.File to read the entire data file
-                string jsonData = File.ReadAllText(strFilePath);
+                string jsonData = File.ReadAllText(strFilePathMem);
 
                 //serialize the json data to a list of campuses
                 membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
@@ -270,7 +270,8 @@ namespace FitnessClub
         
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+            
+
             cbxMembershipTypeData.Items.Add("Individual 1 Month");
             cbxMembershipTypeData.Items.Add("Individual 12 Month");
             cbxMembershipTypeData.Items.Add("Two Person 1 Month");
