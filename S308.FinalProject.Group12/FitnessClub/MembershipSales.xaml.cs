@@ -258,7 +258,7 @@ namespace FitnessClub
             winPricingManager.Show();
             this.Close();
         }
-        string MonthlyTrainingPlanCo
+        string MonthlyTrainingPlanCO
         private void rbtMonthlyTrainingPlanYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "Yes";
