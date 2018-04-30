@@ -35,7 +35,7 @@ namespace FitnessClub
         private void btnImport_Click_1(object sender, RoutedEventArgs e)
         {
             string strLine = "";
-            string strFilePath = @"..\..\..\Data\MembershipTypes.json";
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
 
             try
             {
@@ -82,7 +82,7 @@ namespace FitnessClub
 
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
-            string strFilePath = @"..\..\..\Data\MembershipTypes"
+            string strFilePath = @"..\..\..\Data\MembershipType"
     + ".json";
             string strLine;
 
@@ -126,7 +126,7 @@ namespace FitnessClub
 
         private void AppendToFile(MembershipType membershiptypeNew)
         {
-            string strFilePath = @"..\..\..\Data\MembershipTypes.txt";
+            string strFilePath = @"..\..\..\Data\MembershipType.txt";
             string strLine;
 
             try
