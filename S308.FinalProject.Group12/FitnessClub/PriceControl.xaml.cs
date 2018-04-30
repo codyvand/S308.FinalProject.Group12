@@ -105,6 +105,51 @@ namespace FitnessClub
 
             MessageBox.Show("Export completed!" + Environment.NewLine + "File Created: " + strFilePath);
         }
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            ClearScreen();
+            membershiptypeList.Clear();
+            dtgContact.Items.Refresh();
+        }
+        #endregion
+
+        #region Helper Functions
+        private MembershipType ConvertToMembershipType(string strLine)
+        {
+            string[] rawData;
+            rawData = strLine.Split('|');
+
+            MembershipType membershiptypeNew = new MembershipType(rawData[0], rawData[1], rawData[2], rawData[3]);
+            return membershiptypeNew;
+        }
+
+        private void AppendToFile(MembershipType membershiptypeNew)
+        {
+            string strFilePath = @"..\..\..\Data\MembershipType.txt";
+            string strLine;
+
+            try
+            {
+                StreamWriter writer = new StreamWriter(strFilePath, true);
+                strLine = String.Format("{0}|{1}|{2}|{3}", membershiptypeNew.MembershipName, membershiptypeNew.MembershipPrice, membershiptypeNew.MembershipAvailibility, membershiptypeNew.MembershipLength);
+                writer.WriteLine(strLine);
+                writer.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in append file: " + ex.Message);
+                return;
+            }
+        }
+
+        private void ClearScreen()
+        {
+            txtMembershipNameCreateData.Text = "";
+            txtMembershipCostCreateData.Text = "";
+            txtMembershipAvailibilityCreateData.Text = "";
+            txtMembershipLengthCreateData.Text = "";
+        }
+
         #endregion
 
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
@@ -127,7 +172,6 @@ namespace FitnessClub
             winMembershipSales.Show();
             this.Close();
         }
-
 
     }
 }
