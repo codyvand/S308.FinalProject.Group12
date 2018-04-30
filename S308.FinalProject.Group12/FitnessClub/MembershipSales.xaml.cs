@@ -243,6 +243,8 @@ namespace FitnessClub
             strMonthlyLockerRentalResult = "No";
         }
 
+     
+
         private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "No";
