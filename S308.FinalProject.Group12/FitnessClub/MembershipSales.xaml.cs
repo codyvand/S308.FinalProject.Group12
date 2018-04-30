@@ -270,13 +270,28 @@ namespace FitnessClub
 
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string selectedText = cbxMembershipTypeData.Text;
 
-            switch (selectedText)
+            string strSelectedMembershipType;
+
+            //2
+            if (cbxMembershipTypeData.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a theater.");
+                return;
+            }
+
+            //3
+            ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
+            strSelectedMembershipType = cbxSelectedItem.Content.ToString();
+
+        
+
+            //5
+            switch (strSelectedMembershipType)
             {
                 case "Individual1Month":
                     txtCostPerMonthData.Text = "9.99";
-                    break;
+                   break;
                 case "Individual12Month":
                     txtCostPerMonthData.Text = "100.00";
                     break;
@@ -292,16 +307,14 @@ namespace FitnessClub
                 case "Family12Month":
                     txtCostPerMonthData.Text = "200.00";
                     break;
-                default:
-                    MessageBox.Show("Please select a membership type.");
-                    break;
-
-
-
-
             }
 
+
         }
+
+
+
+
 
 
         private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
