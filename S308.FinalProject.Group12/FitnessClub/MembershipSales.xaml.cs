@@ -266,19 +266,43 @@ namespace FitnessClub
             strMonthlyLockerRentalResult = "No";
         }
 
-        
-        
+
+
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            string selectedText = cbxMembershipTypeData.Text;
 
-            cbxMembershipTypeData.Items.Add("Individual 1 Month");
-            cbxMembershipTypeData.Items.Add("Individual 12 Month");
-            cbxMembershipTypeData.Items.Add("Two Person 1 Month");
-            cbxMembershipTypeData.Items.Add("Two Person 12 Month");
-            cbxMembershipTypeData.Items.Add("Family 1 Month");
-            cbxMembershipTypeData.Items.Add("Family 12 Month");
+            switch (selectedText)
+            {
+                case "Individual1Month":
+                    txtCostPerMonthData.Text = "9.99";
+                    break;
+                case "Individual12Month":
+                    txtCostPerMonthData.Text = "100.00";
+                    break;
+                case "TwoPerson1Month":
+                    txtCostPerMonthData.Text = "14.99";
+                    break;
+                case "TwoPerson12Month":
+                    txtCostPerMonthData.Text = "150.00";
+                    break;
+                case "Family1Month":
+                    txtCostPerMonthData.Text = "19.99";
+                    break;
+                case "Family12Month":
+                    txtCostPerMonthData.Text = "200.00";
+                    break;
+                default:
+                    MessageBox.Show("Please select a membership type.");
+                    break;
+
+
+
+
+            }
+
         }
+
 
         private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
         {
