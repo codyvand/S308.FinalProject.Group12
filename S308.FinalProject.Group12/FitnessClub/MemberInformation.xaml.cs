@@ -97,6 +97,11 @@ namespace FitnessClub
                 txtGenderData.Text = customerSelected.Gender;
                 txtAgeData.Text = customerSelected.Age;
                 txtPersonalFitnessGoalData.Text = customerSelected.PersonalFitnessGoal;
+                txtCostPerMonthCost.Text = customerSelected.MembershipCostPerMonth;
+                txtMonthlyTrainingPlanCost.Text = customerSelected.PersonalTrainingPlanCost;
+                txtMonthlyLockerRentalCost.Text = customerSelected.MonthlyLockerRental;
+                txtSubtotalCost.Text = customerSelected.MembershipSubtotalCost;
+                txtTotalCost.Text = customerSelected.MembershipTotalCost;
             }
         }
 
