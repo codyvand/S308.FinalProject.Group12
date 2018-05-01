@@ -125,6 +125,37 @@ namespace FitnessClub
         {
             string strFilePath = @"..\..\..\Data\Customers.json";
             long phone;
+            //1. Declare a variables
+            //   - credit card number from the text box and assign (remove spaces)
+            //   - counter for loop
+            //   - check digit (to hold each digit while working with them)
+            //   - check sum (to hold the sum of the digits once modified)
+            //   - valid (boolean)
+            //   - card type
+            //2. Make sure the text entered is numeric
+            //       a. message to user that says to enter only numbers
+            //       b. show negative result
+            //3. Make sure there are 13, 15, 16 digits entered
+            //       a. message to the user about the number of digits
+            //       b. show negative result
+            //4. Determine the card type from the prefix and set the card type variable
+            //5. Validate card number
+            //       a. reverse all of the characters in the credit card number
+            //       b. loop through the characters
+            //           - if it is the first, third, fifth, etc digit add it to the check sum
+            //           - if it is the second, fourth, sixth, etc digit double before adding to the check sum
+            //                   - if after double the digit it is > 9 then add the two numbers before adding to the check sum
+            //                   - 12 = 1 + 2 or x - 9
+            //       c. if the result is divisible by 10 the card number is a valid number. Set the valid variable
+            //6. Show the appropriate result
+            //       'a. if valid
+            //           - display the logo for the card
+            //           - set the text of the result label to Credit Card Is Valid
+            //           - set the text color to green
+            //       b. else
+            //           - set the text of the result label to Credit Card Is Not Valid
+            //           - set the text color to red
+       
 
             //validate the input FirstName(input)
             if (txtFirstNameData.Text.Trim() == "")
