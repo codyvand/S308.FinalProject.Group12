@@ -280,7 +280,7 @@ namespace FitnessClub
         private void rbtMonthlyTrainingPlanNo_Checked_1(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "No";
-            intMonthlyTrainingCost = 19;
+            intMonthlyTrainingCost = 0;
             string strMonthlyTrainingCost = intMonthlyTrainingCost.ToString();
             txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
         }
