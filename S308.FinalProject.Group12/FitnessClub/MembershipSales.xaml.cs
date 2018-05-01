@@ -579,7 +579,45 @@ namespace FitnessClub
             }
         }
 
- 
+        // Validate mem type and start date then display all hidden features
+        private void btnContinue_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbxMembershipTypeData.Text.Length > 1 && dtpStartDate.Text.Length >1)
+
+            {  txtMemberInformationTitle.Visibility = Visibility.Visible;
+            recMemberInformation.Visibility = Visibility.Visible;
+            txtPersonalFitnessGoalTitle.Visibility = Visibility.Visible;
+            txtPersonalFitnessGoalData.Visibility = Visibility.Visible;
+            recCreditCardInformation.Visibility = Visibility.Visible;
+            txtCreditCardInformationTitle.Visibility = Visibility.Visible;
+            txtCreditCardTypeTitle.Visibility = Visibility.Visible;
+            cbxCreditCardTypeData.Visibility = Visibility.Visible;
+            txtCreditCardNumberTitle.Visibility = Visibility.Visible;
+            txtCreditCardNumberData.Visibility = Visibility.Visible;
+            recAdditionalFeatures_Copy1.Visibility = Visibility.Visible;
+            txtPersonalInformationTitle.Visibility = Visibility.Visible;
+            txtFirstNameTitle.Visibility = Visibility.Visible;
+            txtFirstNameData.Visibility = Visibility.Visible;
+            txtLastNameTitle.Visibility = Visibility.Visible;
+            txtLastNameData.Visibility = Visibility.Visible;
+            txtWeightTitle_.Visibility = Visibility.Visible;
+            txtWeightData.Visibility = Visibility.Visible;
+            txtGenderTitle.Visibility = Visibility.Visible;
+            txtGenderData.Visibility = Visibility.Visible;
+            txtPhoneTitle.Visibility = Visibility.Visible;
+            txtPhoneData.Visibility = Visibility.Visible;
+            txtPhoneDataExample.Visibility = Visibility.Visible;
+            txtEmailTitle.Visibility = Visibility.Visible;
+            txtEmailData.Visibility = Visibility.Visible;
+            txtAgeTitle.Visibility = Visibility.Visible;
+            txtAgeData.Visibility = Visibility.Visible;
+            btnSubmitMembership.Visibility = Visibility.Visible; } 
+
+            else 
+                MessageBox.Show("Please select a membership type and a start date to continue.");
+
+
+        }
 
         public static string ReverseString(string s)
         {

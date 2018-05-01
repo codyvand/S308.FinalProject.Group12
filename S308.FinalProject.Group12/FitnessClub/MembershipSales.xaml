@@ -195,7 +195,7 @@
         <TextBox x:Name="txtPhoneDataExample" HorizontalAlignment="Left" Height="23" Margin="783,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="example: 1111111111" TabIndex="13" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="10.667"/>
         <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="250,181,0,0" TextWrapping="Wrap" Text="Member Value:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0"/>
-        <Button x:Name="btnContinue" Content="Continue" HorizontalAlignment="Left" Height="23" Margin="99,237,0,0" VerticalAlignment="Top" Width="100">
+        <Button x:Name="btnContinue" Content="Continue" HorizontalAlignment="Left" Height="23" Margin="99,237,0,0" VerticalAlignment="Top" Width="100" Click="btnContinue_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
