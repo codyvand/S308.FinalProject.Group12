@@ -502,13 +502,13 @@ namespace FitnessClub
             {
                 string strCost = txtCostPerMonthData.Text;
                 double dblCost = Convert.ToDouble(strCost);
-                txtCostData.Text = (dblCost).ToString("C2");
+                txtCostData.Text = (dblCost).ToString();
             }
             else
             {
                 string strCost = txtCostPerMonthData.Text;
                 double dblCost = Convert.ToDouble(strCost);
-                txtCostData.Text = (dblCost/12).ToString("C2");
+                txtCostData.Text = (dblCost/12).ToString();
 
             }
 
