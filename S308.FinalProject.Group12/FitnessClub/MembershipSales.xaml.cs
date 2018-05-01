@@ -250,42 +250,45 @@ namespace FitnessClub
             winPricingManager.Show();
             this.Close();
         }
-        int intMonthlyTrainingCost;
-        int intMonthlyLockerRentalCost;
+        double dblMonthlyTrainingCost;
+        double dblMonthlyLockerRentalCost;
         private void rbtMonthlyTrainingPlanYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "Yes";
-            intMonthlyTrainingCost = 19;
-            string strMonthlyTrainingCost = intMonthlyTrainingCost.ToString();
+            dblMonthlyTrainingCost = 19;
+            string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
             txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost ;
+            UpdateCostTotal();
         }
 
         private void rbtMonthlyLockerRentalYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyLockerRentalResult = "Yes";
-            intMonthlyLockerRentalCost = 19;
-            string strMonthlyLockerRentalCost = intMonthlyLockerRentalCost.ToString();
+            dblMonthlyLockerRentalCost = 19;
+            string strMonthlyLockerRentalCost = dblMonthlyLockerRentalCost.ToString();
             txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
+            UpdateCostTotal();
         }
 
         private void rbtMonthlyLockerRentalNo_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyLockerRentalResult = "No";
-            intMonthlyLockerRentalCost = 0;
-            string strMonthlyLockerRentalCost = intMonthlyLockerRentalCost.ToString();
+            dblMonthlyLockerRentalCost = 0;
+            string strMonthlyLockerRentalCost = dblMonthlyLockerRentalCost.ToString();
             txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
-
+            UpdateCostTotal();
         }
 
         private void rbtMonthlyTrainingPlanNo_Checked_1(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "No";
-            intMonthlyTrainingCost = 0;
-            string strMonthlyTrainingCost = intMonthlyTrainingCost.ToString();
+            dblMonthlyTrainingCost = 0;
+            string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
             txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
+            UpdateCostTotal();
         }
 
-        private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        public void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
             string strSelectedMembershipType;
@@ -301,38 +304,49 @@ namespace FitnessClub
             ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
             strSelectedMembershipType = cbxSelectedItem.Content.ToString();
 
-            string strCosMembershipType;
-            strCosMembershipType = "";
+            string strCostMembershipType;
+            strCostMembershipType = "0";
 
             //5
             switch (strSelectedMembershipType)
             {
                 case "Individual1Month":
-                    strCosMembershipType = "9.99";
-                   break;
+                    strCostMembershipType = "9.99";
+                    break;
                 case "Individual12Month":
-                    strCosMembershipType = "100.00";
+                    strCostMembershipType = "100.00";
                     break;
                 case "TwoPerson1Month":
-                    strCosMembershipType = "14.99";
+                    strCostMembershipType = "14.99";
                     break;
                 case "TwoPerson12Month":
-                    strCosMembershipType = "150.00";
+                    strCostMembershipType = "150.00";
                     break;
                 case "Family1Month":
-                    strCosMembershipType = "19.99";
+                    strCostMembershipType = "19.99";
                     break;
                 case "Family12Month":
-                    strCosMembershipType = "200.00";
+                    strCostMembershipType = "200.00";
                     break;
             }
-            txtCostPerMonthData.Text = strCosMembershipType;
+            txtCostPerMonthData.Text = strCostMembershipType;
             UpdateCostTotal();
-
         }
         public void UpdateCostTotal()
         {
             string strCostMembershipType;
+            strCostMembershipType = txtCostPerMonthData.Text;
+            double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
+
+            string strMonthlyTrainingCost = txtMonthlyTrainingPlanPrice.Text;
+            double dblMonthlyTrainingCost = Convert.ToDouble(strMonthlyTrainingCost);
+
+            string strMonthlyLockerRentalCost = txtMonthlyLockerRentalPrice.Text;
+            double dblMonthlyLockerRentalCost = Convert.ToDouble(strMonthlyLockerRentalCost);
+
+            double dblTotalCost = dblMonthlyTrainingCost + dblMonthlyLockerRentalCost + dblCostMembershipType;
+            string strTotalCost = Convert.ToString(dblTotalCost);
+            txtTotalData.Text = strTotalCost;
 
         }
 
