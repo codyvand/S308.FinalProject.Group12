@@ -443,8 +443,7 @@ namespace FitnessClub
         {
             strMonthlyTrainingPlanResult = "No";
             dblMonthlyTrainingCost = 0;
-            string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
-            txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
+            txtMonthlyTrainingPlanPrice.Text = dblMonthlyTrainingCost.ToString("C2");
 
             string strCostMembershipType;
             strCostMembershipType = txtCostPerMonthData.Text;
