@@ -28,7 +28,7 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="23,231,0,0" VerticalAlignment="Top" Width="124" Height =TabIndex="10" Click="btnMemberInformationHeight="70"ght="42" FontSize="21.333" FontFamily="Global Sans Serif">
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="23,231,0,0" VerticalAlignment="Top" Width="124" Height = "600" TabIndex="10" Click="btnMemberInformationHeight="70"ght="42" FontSize="21.333" FontFamily="Global Sans Serif">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
