@@ -136,11 +136,12 @@
         <TextBox x:Name="txtCreditCardTypeTitle" HorizontalAlignment="Left" Height="23" Margin="509,118,0,0" TextWrapping="Wrap" Text="Credit Card Type:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtCreditCardNumberTitle" HorizontalAlignment="Left" Height="23" Margin="510,146,0,0" TextWrapping="Wrap" Text="Credit Card Number:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <ComboBox x:Name="cbxCreditCardTypeData" HorizontalAlignment="Left" Margin="610,118,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="7">
-            <ComboBoxItem Content="American Express"/>
+            <ComboBoxItem Content="AMEX"/>
+            <ComboBoxItem Content="Discover"/>
             <ComboBoxItem Content="MasterCard"/>
-            <ComboBoxItem Content="Visa"/>
+            <ComboBoxItem Content="VISA"/>
         </ComboBox>
-        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="629,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="5555 5555 5555 5555" TabIndex="8"/>
+        <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="629,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="378282246310005" TabIndex="8"/>
         <TextBox x:Name="txtTrainingPlanPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,209,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtLockerRentalPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,232,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="0"/>
@@ -149,7 +150,6 @@
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked_1"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
         <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="22" Margin="771,134,0,0" TextWrapping="Wrap" Text="MasterCard" VerticalAlignment="Top" Width="138"/>
 
     </Grid>
 </Window>
