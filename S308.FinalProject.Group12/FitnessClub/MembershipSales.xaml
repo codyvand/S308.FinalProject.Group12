@@ -85,10 +85,10 @@
         <TextBox x:Name="txtFirstNameTitle" HorizontalAlignment="Left" Height="23" Margin="511,246,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtLastNameTitle" HorizontalAlignment="Left" Height="23" Margin="511,274,0,0" TextWrapping="Wrap" Text="Last Name:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtPhoneTitle" HorizontalAlignment="Left" Height="23" Margin="739,246,0,0" TextWrapping="Wrap" Text="Phone:" VerticalAlignment="Top" Width="44" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
-        <TextBox x:Name="txtEmailTitle" HorizontalAlignment="Left" Height="23" Margin="739,272,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Width="48" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
+        <TextBox x:Name="txtEmailTitle" HorizontalAlignment="Left" Height="23" Margin="739,300,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Width="48" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtGenderTitle" HorizontalAlignment="Left" Height="23" Margin="511,331,0,0" TextWrapping="Wrap" Text="Gender:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtWeightTitle_" HorizontalAlignment="Left" Height="23" Margin="511,303,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
-        <TextBox x:Name="txtAgeTitle" HorizontalAlignment="Left" Height="23" Margin="739,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="Age:" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtAgeTitle" HorizontalAlignment="Left" Height="23" Margin="739,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="Age:" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="80,344,0,-108" VerticalAlignment="Top" Width="86" Height="34" TabIndex="17" Click="btnMainMenu_Click"/>
         <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="80,392,0,-158" VerticalAlignment="Top" Width="86" TabIndex="18" Click="btnMemberInformation_Click"/>
         <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="80,486,0,-254" VerticalAlignment="Top" Width="86" Height="38" TabIndex="20" Click="btnPricingManagement_Click"/>
@@ -98,14 +98,14 @@
         <TextBox x:Name="txtPersonalFitnessGoalData" HorizontalAlignment="Left" Height="23" Margin="612,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" Text="To grow and get faster and stronger" FontStyle="Italic" TabIndex="6"/>
         <TextBox x:Name="txtMembershipInvestmentTitle" HorizontalAlignment="Left" Height="23" Margin="250,150,0,0" TextWrapping="Wrap" Text="Membership Investment" VerticalAlignment="Top" Width="151" FontWeight="Bold" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtMembershipDetailsTitle" HorizontalAlignment="Left" Height="23" Margin="27,10,0,0" TextWrapping="Wrap" Text="Membership Details" VerticalAlignment="Top" Width="187" FontWeight="Bold" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsTabStop="False" IsHitTestVisible="False"/>
-        <TextBox x:Name="txtEndDateData" HorizontalAlignment="Left" Height="23" Margin="78,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3"/>
+        <TextBox x:Name="txtEndDateData" HorizontalAlignment="Left" Height="41" Margin="78,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" TabIndex="3"/>
         <TextBox x:Name="txtFirstNameData" HorizontalAlignment="Left" Height="23" Margin="578,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Zach" TabIndex="9"/>
         <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="578,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos" TabIndex="10"/>
         <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="578,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190" TabIndex="11"/>
         <TextBox x:Name="txtGenderData" HorizontalAlignment="Left" Height="23" Margin="577,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Male" TabIndex="12"/>
-        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722" TabIndex="13"/>
-        <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
-        <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
+        <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="1111111111" TabIndex="13"/>
+        <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
+        <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Text="0"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="565,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold" Text="0"/>
@@ -149,7 +149,8 @@
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked_1"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
-        <TextBox x:Name="txtStartDateData" HorizontalAlignment="Left" Height="23" Margin="78,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3"/>
+        <DatePicker x:Name="dtpStartDate" HorizontalAlignment="Left" Margin="73,102,0,0" VerticalAlignment="Top" SelectedDateChanged="dtpStartDate_SelectedDateChanged" FirstDayOfWeek="Monday"/>
+        <TextBox x:Name="txtPhoneDataExample" HorizontalAlignment="Left" Height="23" Margin="783,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="example: 1111111111" TabIndex="13" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="10.667"/>
 
     </Grid>
 </Window>

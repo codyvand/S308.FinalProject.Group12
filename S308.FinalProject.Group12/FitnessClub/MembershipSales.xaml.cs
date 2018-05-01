@@ -85,7 +85,7 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
             return customerNew;
         }
         private bool AddCustomer(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber)
@@ -126,37 +126,10 @@ namespace FitnessClub
         public void btnSubmitMembership_Click(object sender, RoutedEventArgs e)
         {
 
-            ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
-            strSelectedMembershipType = cbxSelectedItem.Content.ToString();
-            string strMembershipType;
-            strMembershipType = "0";
 
-            txtEndDateData.Text = dprStartDate.;
 
-            switch (strSelectedMembershipType)
-            {
-                case "Individual1Month":
-                    strMembershipType = "9.99";
-                    break;
-                case "Individual12Month":
-                    strMembershipType = "100.00";
-                    break;
-                case "TwoPerson1Month":
-                    strMembershipType = "14.99";
-                    break;
-                case "TwoPerson12Month":
-                    strMembershipType = "150.00";
-                    break;
-                case "Family1Month":
-                    strMembershipType = "19.99";
-                    break;
-                case "Family12Month":
-                    strMembershipType = "200.00";
-                    break;
-            }
 
-        
-        string strFilePath = @"..\..\..\Data\Customers.json";
+            string strFilePath = @"..\..\..\Data\Customers.json";
             long phone;
             //1. Declare a variables
             //   - credit card number from the text box and assign (remove spaces)
@@ -260,7 +233,7 @@ namespace FitnessClub
                     case "VISA":
                         break;
                 }
-                if(strCardType == cbxCreditCardTypeData.Text)
+                if (strCardType == cbxCreditCardTypeData.Text)
                 {
                 }
                 else
@@ -348,10 +321,10 @@ namespace FitnessClub
             }
 
             //Declare Customers class
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), strSelectedMembershipType, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), strSelectedMembershipType, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
 
 
-            customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), strSelectedMembershipType, dprStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
+            customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), strSelectedMembershipType, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim());
 
 
             //instantiate a new Campus from the input and add it to the list
@@ -412,7 +385,7 @@ namespace FitnessClub
             strMonthlyTrainingPlanResult = "Yes";
             dblMonthlyTrainingCost = 19;
             string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
-            txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost ;
+            txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
 
             string strCostMembershipType;
             strCostMembershipType = txtCostPerMonthData.Text;
@@ -426,7 +399,7 @@ namespace FitnessClub
             txtTotalData.Text = strTotalCost;
 
         }
-    
+
 
         private void rbtMonthlyLockerRentalYes_Checked(object sender, RoutedEventArgs e)
         {
@@ -466,7 +439,7 @@ namespace FitnessClub
             string strTotalCost = Convert.ToString(dblTotalCost);
             txtTotalData.Text = strTotalCost;
 
-    }
+        }
 
         private void rbtMonthlyTrainingPlanNo_Checked_1(object sender, RoutedEventArgs e)
         {
@@ -486,7 +459,7 @@ namespace FitnessClub
             string strTotalCost = Convert.ToString(dblTotalCost);
             txtTotalData.Text = strTotalCost;
 
-    }
+        }
 
         string strSelectedMembershipType;
 
@@ -500,6 +473,24 @@ namespace FitnessClub
             strSelectedMembershipType = cbxSelectedItem.Content.ToString();
             string strCostMembershipType;
             strCostMembershipType = "0";
+
+            if (strSelectedMembershipType == "Individual1Month" || strSelectedMembershipType == "TwoPerson1Month" || strSelectedMembershipType == "Family1Month")
+            {
+                DateTime? datStartDate = dtpStartDate.SelectedDate;
+                txtEndDateData.Text = "";
+                
+                TimeSpan tspAddOneMonth = TimeSpan.FromDays(30);
+                txtEndDateData.Text = datStartDate + tspAddOneMonth + Environment.NewLine;
+            }
+            else
+            {
+                DateTime? datStartDate = dtpStartDate.SelectedDate;
+                txtEndDateData.Text = "";
+
+                TimeSpan tspAddOneYear = TimeSpan.FromDays(360);
+                txtEndDateData.Text = datStartDate + tspAddOneYear + Environment.NewLine;
+
+            }
 
             //5
             switch (strSelectedMembershipType)
@@ -538,7 +529,37 @@ namespace FitnessClub
 
     }
 
+        private void dtpStartDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
+            strSelectedMembershipType = cbxSelectedItem.Content.ToString();
+            string strCostMembershipType;
+            strCostMembershipType = "0";
+            DateTime? datStartDate = dtpStartDate.SelectedDate;
 
+            if (datStartDate< DateTime.Today)
+            {
+                MessageBox.Show("Start date must be in the present.");
+                dtpStartDate.Text = "";
+                return;
+            }
+            if (strSelectedMembershipType == "Individual1Month" || strSelectedMembershipType == "TwoPerson1Month" || strSelectedMembershipType == "Family1Month")
+            {
+                
+                txtEndDateData.Text = "";
+
+                TimeSpan tspAddOneMonth = TimeSpan.FromDays(30);
+                txtEndDateData.Text = datStartDate + tspAddOneMonth + Environment.NewLine;
+            }
+            else
+            {
+                txtEndDateData.Text = "";
+
+                TimeSpan tspAddOneYear = TimeSpan.FromDays(360);
+                txtEndDateData.Text = datStartDate + tspAddOneYear + Environment.NewLine;
+
+            }
+        }
 
         public static string ReverseString(string s)
         {
