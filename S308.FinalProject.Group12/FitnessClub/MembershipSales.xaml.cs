@@ -301,33 +301,32 @@ namespace FitnessClub
             ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
             strSelectedMembershipType = cbxSelectedItem.Content.ToString();
 
-            string strCostPerMonthData;
-            strCostPerMonthData = txtCostPerMonthData.Text;
+            string strCosMembershipType;
+            strCosMembershipType = "";
 
             //5
             switch (strSelectedMembershipType)
             {
                 case "Individual1Month":
-                    txtCostPerMonthData.Text = "9.99";
+                    strCosMembershipType = "9.99";
                    break;
                 case "Individual12Month":
-                    txtCostPerMonthData.Text = "100.00";
+                    strCosMembershipType = "100.00";
                     break;
                 case "TwoPerson1Month":
-                    txtCostPerMonthData.Text = "14.99";
+                    strCosMembershipType = "14.99";
                     break;
                 case "TwoPerson12Month":
-                    txtCostPerMonthData.Text = "150.00";
+                    strCosMembershipType = "150.00";
                     break;
                 case "Family1Month":
-                    txtCostPerMonthData.Text = "19.99";
+                    strCosMembershipType = "19.99";
                     break;
                 case "Family12Month":
-                    txtCostPerMonthData.Text = "200.00";
+                    strCosMembershipType = "200.00";
                     break;
             }
-           int intMembershipPrice = Convert.ToInt32(strCostPerMonthData);
-            
+            txtCostPerMonthData.Text = strCosMembershipType;     
 
         }
 
