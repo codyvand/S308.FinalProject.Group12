@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
 using System.IO;
+using System.Windows.Navigation;
+
 namespace FitnessClub
 {
     /// <summary>
@@ -155,7 +157,87 @@ namespace FitnessClub
             //       b. else
             //           - set the text of the result label to Credit Card Is Not Valid
             //           - set the text color to red
-       
+
+            string strCardNum = txtCreditCardNumberData.Text.Trim().Replace(" ", "");
+            long lngOut;
+            bool bolValid = false;
+            int i;
+            int intCheckDigit;
+            int intCheckSum = 0;
+            string strCardType;
+
+            //2.
+
+            if (!Int64.TryParse(strCardNum, out lngOut))
+            {
+                MessageBox.Show("Credit card numbers contain only numbers.");
+                return;
+            }
+            //3.
+            if (strCardNum.Length != 13 && strCardNum.Length != 15 && strCardNum.Length != 16)
+            {
+                MessageBox.Show("Credit card numbers must contain 13, 15, or 16 digits.");
+                return;
+            }
+            //4.
+            if (strCardNum.StartsWith("34") || strCardNum.StartsWith("37"))
+                strCardType = "AMEX";
+            else if (strCardNum.StartsWith("6011"))
+                strCardType = "Discover";
+            else if (strCardNum.StartsWith("51") || strCardNum.StartsWith("52") || strCardNum.StartsWith("53") || strCardNum.StartsWith("54") || strCardNum.StartsWith("55"))
+                strCardType = "MasterCard";
+            else if (strCardNum.StartsWith("4"))
+                strCardType = "VISA";
+            else
+                strCardType = "Unknown Card Type";
+
+            //5.
+            strCardNum = ReverseString(strCardNum);
+
+            for (i = 0; i < strCardNum.Length; i++)
+            {
+                intCheckDigit = Convert.ToInt32(strCardNum.Substring(i, 1));
+
+                if ((i + 1) % 2 == 0)
+                {
+                    intCheckDigit *= 2;
+
+                    if (intCheckDigit > 9)
+                    {
+                        intCheckDigit -= 9;
+                    }
+                }
+
+                intCheckSum += intCheckDigit;
+            }
+
+            if (intCheckSum % 10 == 0)
+            {
+                bolValid = true;
+            }
+            //6.
+            if (bolValid)
+            {
+                switch (strCardType)
+                {
+                    case "AMEX":
+                        break;
+                    case "Discover":
+                        break;
+                    case "MasterCard":
+                        break;
+                    case "VISA":
+                        break;
+                }
+
+                MessageBox.Show("The Credit Card Is A Valid " + strCardType);
+
+            }
+            else
+            {
+                MessageBox.Show("The Credit Card Is Not Valid");
+                return;
+            }
 
             //validate the input FirstName(input)
             if (txtFirstNameData.Text.Trim() == "")
@@ -418,7 +500,13 @@ namespace FitnessClub
             txtTotalData.Text = strTotalCost;
 
     }
-
+        public static string ReverseString(string s)
+        {
+            char[] array = s.ToCharArray();
+            Array.Reverse(array);
+            return new string(array);
+        }
 
     }
+
 }
