@@ -107,7 +107,6 @@
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
         <TextBox x:Name="txtCostData" HorizontalAlignment="Left" Height="23" Margin="371,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0"/>
-        <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="565,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold" Text="0"/>
         <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
             <ComboBox.DataContext>
