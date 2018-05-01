@@ -99,7 +99,7 @@ namespace FitnessClub
                 txtPersonalFitnessGoalData.Text = customerSelected.PersonalFitnessGoal;
                 txtCostPerMonthCost.Text = customerSelected.MembershipCostPerMonth;
                 txtMonthlyTrainingPlanCost.Text = customerSelected.PersonalTrainingPlanCost;
-                txtMonthlyLockerRentalCost.Text = customerSelected.MonthlyLockerRental;
+                txtMonthlyLockerRentalCost.Text = customerSelected.LockerRentalCost;
                 txtSubtotalCost.Text = customerSelected.MembershipSubtotalCost;
                 txtTotalCost.Text = customerSelected.MembershipTotalCost;
             }
