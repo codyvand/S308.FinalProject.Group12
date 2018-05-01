@@ -326,7 +326,13 @@ namespace FitnessClub
                     strCosMembershipType = "200.00";
                     break;
             }
-            txtCostPerMonthData.Text = strCosMembershipType;     
+            txtCostPerMonthData.Text = strCosMembershipType;
+            UpdateCostTotal();
+
+        }
+        public void UpdateCostTotal()
+        {
+            string strCostMembershipType;
 
         }
 
