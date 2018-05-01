@@ -251,25 +251,39 @@ namespace FitnessClub
             this.Close();
         }
         int intMonthlyTrainingCost;
+        int intMonthlyLockerRentalCost;
         private void rbtMonthlyTrainingPlanYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "Yes";
-            intMonthlyTrainingCost = 10;
-            strMonth
-            txtMonthlyTrainingPlanPrice.Text = intMonthlyTrainingCost;
+            intMonthlyTrainingCost = 19;
+            string strMonthlyTrainingCost = intMonthlyTrainingCost.ToString();
+            txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost ;
         }
 
         private void rbtMonthlyLockerRentalYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyLockerRentalResult = "Yes";
+            intMonthlyLockerRentalCost = 19;
+            string strMonthlyLockerRentalCost = intMonthlyLockerRentalCost.ToString();
+            txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
         }
 
         private void rbtMonthlyLockerRentalNo_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyLockerRentalResult = "No";
+            intMonthlyLockerRentalCost = 0;
+            string strMonthlyLockerRentalCost = intMonthlyLockerRentalCost.ToString();
+            txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
+
         }
 
-
+        private void rbtMonthlyTrainingPlanNo_Checked_1(object sender, RoutedEventArgs e)
+        {
+            strMonthlyTrainingPlanResult = "No";
+            intMonthlyTrainingCost = 19;
+            string strMonthlyTrainingCost = intMonthlyTrainingCost.ToString();
+            txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
+        }
 
         private void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -318,13 +332,5 @@ namespace FitnessClub
         }
 
 
-
-
-
-
-        private void rbtMonthlyTrainingPlanNo_Checked(object sender, RoutedEventArgs e)
-        {
-            strMonthlyTrainingPlanResult = "No";
-        }
     }
 }

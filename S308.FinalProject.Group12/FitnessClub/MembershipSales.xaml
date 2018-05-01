@@ -148,7 +148,7 @@
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <TextBox x:Name="txtStartDateData" HorizontalAlignment="Left" Height="23" Margin="178,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3" Background="#FFFD1818"/>
         <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="-17,168,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="#FFF90D0D" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>
-        <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked"/>
+        <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked_1"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
         <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCreditCardTypeData" HorizontalAlignment="Left" Height="22" Margin="771,134,0,0" TextWrapping="Wrap" Text="MasterCard" VerticalAlignment="Top" Width="138"/>
