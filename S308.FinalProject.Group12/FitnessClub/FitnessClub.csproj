@@ -160,12 +160,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\gym.jpg" />
-    <Resource Include="images\homepagepic.jpg" />
-    <Resource Include="images\idk.jpg" />
+    <Resource Include="images\Gym_wiki.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\download.jpg" />
+    <Resource Include="images\GYM-LEFT-400x400.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -8,7 +8,7 @@
         Title="HomePage" Height="300" Width="300">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden" Height="267">
         <Grid.Background>
-            <ImageBrush ImageSource="images/download.jpg" Stretch="None"/>
+            <ImageBrush ImageSource="images/GYM-LEFT-400x400.png"/>
         </Grid.Background>
         <TextBox x:Name="txtWelcome" HorizontalAlignment="Left" Height="95" Margin="10,10,0,0" TextWrapping="Wrap" Text="Welcome to the Gym" VerticalAlignment="Top" Width="272" IsTabStop="False" Focusable="False" AllowDrop="False" FontSize="33.333" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#FFDDDDDD" BorderThickness="1" Padding="1" VerticalScrollBarVisibility="Disabled" BorderBrush="Black" FontFamily="Global Sans Serif" Opacity="0.75"/>
         <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="84,110,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="1" Click="btnMemberInformation_Click" FontFamily="Global Sans Serif" Opacity="0.75"/>
