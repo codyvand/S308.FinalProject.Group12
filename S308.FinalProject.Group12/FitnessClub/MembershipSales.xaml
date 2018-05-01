@@ -106,7 +106,7 @@
         <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="(812) 345-0722" TabIndex="13"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
-        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Text="0"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="565,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
         <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold"/>
         <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
@@ -143,8 +143,8 @@
         <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="629,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="5555 5555 5555 5555" TabIndex="8"/>
         <TextBox x:Name="txtTrainingPlanPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,209,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtLockerRentalPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,232,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
-        <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37"/>
+        <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="0"/>
+        <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Text="0"/>
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <TextBox x:Name="txtStartDateData" HorizontalAlignment="Left" Height="23" Margin="178,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Text="04/08/2018" TabIndex="3" Background="#FFFD1818"/>
         <TextBox x:Name="txtMembershipTypeData" HorizontalAlignment="Left" Height="23" Margin="-17,168,0,0" TextWrapping="Wrap" Text="MembershipType YUM" VerticalAlignment="Top" Width="132" Background="#FFF90D0D" BorderThickness="0" AllowDrop="True" IsHitTestVisible="True"/>

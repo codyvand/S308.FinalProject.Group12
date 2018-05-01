@@ -258,8 +258,20 @@ namespace FitnessClub
             dblMonthlyTrainingCost = 19;
             string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
             txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost ;
-            UpdateCostTotal();
+
+            string strCostMembershipType;
+            strCostMembershipType = txtCostPerMonthData.Text;
+            double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
+
+            string strMonthlyLockerRentalCost = txtMonthlyLockerRentalPrice.Text;
+            double dblMonthlyLockerRentalCost = Convert.ToDouble(strMonthlyLockerRentalCost);
+
+            double dblTotalCost = dblMonthlyTrainingCost + dblMonthlyLockerRentalCost + dblCostMembershipType;
+            string strTotalCost = Convert.ToString(dblTotalCost);
+            txtTotalData.Text = strTotalCost;
+
         }
+    
 
         private void rbtMonthlyLockerRentalYes_Checked(object sender, RoutedEventArgs e)
         {
@@ -267,8 +279,19 @@ namespace FitnessClub
             dblMonthlyLockerRentalCost = 19;
             string strMonthlyLockerRentalCost = dblMonthlyLockerRentalCost.ToString();
             txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
-            UpdateCostTotal();
+            string strCostMembershipType;
+            strCostMembershipType = txtCostPerMonthData.Text;
+            double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
+
+            string strMonthlyTrainingCost = txtMonthlyTrainingPlanPrice.Text;
+            double dblMonthlyTrainingCost = Convert.ToDouble(strMonthlyTrainingCost);
+
+            double dblTotalCost = dblMonthlyTrainingCost + dblMonthlyLockerRentalCost + dblCostMembershipType;
+            string strTotalCost = Convert.ToString(dblTotalCost);
+            txtTotalData.Text = strTotalCost;
+
         }
+
 
         private void rbtMonthlyLockerRentalNo_Checked(object sender, RoutedEventArgs e)
         {
@@ -276,8 +299,19 @@ namespace FitnessClub
             dblMonthlyLockerRentalCost = 0;
             string strMonthlyLockerRentalCost = dblMonthlyLockerRentalCost.ToString();
             txtMonthlyLockerRentalPrice.Text = strMonthlyLockerRentalCost;
-            UpdateCostTotal();
-        }
+
+            string strCostMembershipType;
+            strCostMembershipType = txtCostPerMonthData.Text;
+            double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
+
+            string strMonthlyTrainingCost = txtMonthlyTrainingPlanPrice.Text;
+            double dblMonthlyTrainingCost = Convert.ToDouble(strMonthlyTrainingCost);
+
+            double dblTotalCost = dblMonthlyTrainingCost + dblMonthlyLockerRentalCost + dblCostMembershipType;
+            string strTotalCost = Convert.ToString(dblTotalCost);
+            txtTotalData.Text = strTotalCost;
+
+    }
 
         private void rbtMonthlyTrainingPlanNo_Checked_1(object sender, RoutedEventArgs e)
         {
@@ -285,8 +319,19 @@ namespace FitnessClub
             dblMonthlyTrainingCost = 0;
             string strMonthlyTrainingCost = dblMonthlyTrainingCost.ToString();
             txtMonthlyTrainingPlanPrice.Text = strMonthlyTrainingCost;
-            UpdateCostTotal();
-        }
+
+            string strCostMembershipType;
+            strCostMembershipType = txtCostPerMonthData.Text;
+            double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
+
+            string strMonthlyLockerRentalCost = txtMonthlyLockerRentalPrice.Text;
+            double dblMonthlyLockerRentalCost = Convert.ToDouble(strMonthlyLockerRentalCost);
+
+            double dblTotalCost = dblMonthlyTrainingCost + dblMonthlyLockerRentalCost + dblCostMembershipType;
+            string strTotalCost = Convert.ToString(dblTotalCost);
+            txtTotalData.Text = strTotalCost;
+
+    }
 
         public void cbxMembershipTypeData_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -330,12 +375,6 @@ namespace FitnessClub
                     break;
             }
             txtCostPerMonthData.Text = strCostMembershipType;
-            UpdateCostTotal();
-        }
-        public void UpdateCostTotal()
-        {
-            string strCostMembershipType;
-            strCostMembershipType = txtCostPerMonthData.Text;
             double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
 
             string strMonthlyTrainingCost = txtMonthlyTrainingPlanPrice.Text;
@@ -348,7 +387,7 @@ namespace FitnessClub
             string strTotalCost = Convert.ToString(dblTotalCost);
             txtTotalData.Text = strTotalCost;
 
-        }
+    }
 
 
     }
