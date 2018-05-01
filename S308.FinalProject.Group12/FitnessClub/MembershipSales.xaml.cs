@@ -229,8 +229,15 @@ namespace FitnessClub
                     case "VISA":
                         break;
                 }
-
-                MessageBox.Show("The Credit Card Is A Valid " + strCardType);
+                if(strCardType == cbxCreditCardTypeData.Text)
+                {
+                    MessageBox.Show("The Credit Card Is A Valid " + strCardType);
+                }
+                else
+                {
+                    MessageBox.Show("The Credit Card Is No the Correct Type" + strCardType);
+                    return;
+                }
 
             }
             else
