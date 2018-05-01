@@ -35,29 +35,11 @@ namespace FitnessClub
 
             //call the method to local the campus information and display
             ImportCustomerData();
-            ImportMembershipTypeData();
+
 
         }
 
-        private void ImportMembershipTypeData()
-        {
-            string strFilePathMem = @"..\..\..\Data\MembershipType.json";
 
-            try
-            {
-                //use System.IO.File to read the entire data file
-                string jsonData = File.ReadAllText(strFilePathMem);
-
-                //serialize the json data to a list of campuses
-                membershiptypeList = JsonConvert.DeserializeObject<List<MembershipType>>(jsonData);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error in import process: " + ex.Message);
-            }
-
-        }
         private void ImportCustomerData()
         {
             string strFilePath = @"..\..\..\Data\Customers.json";
