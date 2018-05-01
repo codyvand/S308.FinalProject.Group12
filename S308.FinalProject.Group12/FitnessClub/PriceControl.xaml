@@ -43,8 +43,12 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="50" Margin="10,73,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="151" Background="{x:Null}" BorderThickness="0" FontSize="26.667" IsHitTestVisible="False" IsTabStop="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Global Sans Serif"/>
-        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="150" Margin="252,61,0,0" VerticalAlignment="Top" Width="509">
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="50" Margin="10,73,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="151" BorderThickness="0" FontSize="26.667" IsHitTestVisible="False" IsTabStop="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Global Sans Serif">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="150" Margin="252,83,0,0" VerticalAlignment="Top" Width="509">
             <TabItem x:Name="tbiImport" Header="Import" FontSize="16" Height="29" VerticalAlignment="Bottom">
                 <Grid>
                     <Grid.Background>
@@ -54,7 +58,10 @@
                 </Grid>
             </TabItem>
             <TabItem x:Name="tbiCreate" Header="Create" FontSize="16" TabIndex="1">
-                <Grid Background="#FFE5E5E5">
+                <Grid>
+                    <Grid.Background>
+                        <SolidColorBrush Color="#FFE5E5E5" Opacity="0.75"/>
+                    </Grid.Background>
                     <Label x:Name="lblMembershipName" Content="MembershipName:" HorizontalAlignment="Left" Margin="0,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
                     <TextBox x:Name="txtMembershipNameCreateData" HorizontalAlignment="Left" Height="23" Margin="127,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="12" TabIndex="2"/>
                     <Label x:Name="lblSecondName" Content="Availibility" HorizontalAlignment="Left" Margin="16,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.397,0.414" FontSize="14"/>
@@ -67,22 +74,33 @@
                 </Grid>
             </TabItem>
             <TabItem x:Name="tbiExport" Header="Export" FontSize="16" TabIndex="7">
-                <Grid Background="#FFE5E5E5">
-                    <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnExport_Click" TabIndex="8"/>
+                <Grid>
+                    <Grid.Background>
+                        <SolidColorBrush Color="#FFE5E5E5" Opacity="0.75"/>
+                    </Grid.Background>
+                    <Button x:Name="btnExport" Content="Export" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="75" FontSize="14" Click="btnExport_Click" TabIndex="8">
+                        <Button.Background>
+                            <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
+                        </Button.Background>
+                    </Button>
                 </Grid>
             </TabItem>
         </TabControl>
-        <DataGrid x:Name="dtgContact" HorizontalAlignment="Left" Margin="252,231,0,0" VerticalAlignment="Top" Height="246" Width="509" FontSize="12">
+        <DataGrid x:Name="dtgContact" HorizontalAlignment="Left" Margin="252,285,0,0" VerticalAlignment="Top" Height="246" Width="509" FontSize="12">
             <DataGrid.Background>
                 <SolidColorBrush Color="#FFF0F0F0" Opacity="0.75"/>
             </DataGrid.Background>
         </DataGrid>
-        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="686,496,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click">
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="864,526,0,0" VerticalAlignment="Top" Width="120" Click="btnClear_Click" Height="35" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
         </Button>
-        <TextBox x:Name="txtPriceControllerTitle" HorizontalAlignment="Center" Height="56" Margin="231,0,203,0" TextWrapping="Wrap" Text="Gym Membership Price Controller" VerticalAlignment="Top" Width="560" FontWeight="Bold" Background="{x:Null}" FontSize="33.333" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False" FontFamily="Global Sans Serif"/>
+        <TextBox x:Name="txtPriceControllerTitle" HorizontalAlignment="Center" Height="56" Margin="231,0,203,0" TextWrapping="Wrap" Text="Gym Membership Price Controller" VerticalAlignment="Top" Width="560" FontWeight="Bold" FontSize="33.333" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False" FontFamily="Global Sans Serif" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
+            </TextBox.Background>
+        </TextBox>
 
     </Grid>
 </Window>
