@@ -148,9 +148,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\FitForLife.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
@@ -166,6 +163,9 @@
     <Resource Include="images\gym.jpg" />
     <Resource Include="images\homepagepic.jpg" />
     <Resource Include="images\idk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\download.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
