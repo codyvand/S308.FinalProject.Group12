@@ -535,10 +535,17 @@ namespace FitnessClub
             strSelectedMembershipType = cbxSelectedItem.Content.ToString();
             string strCostMembershipType;
             strCostMembershipType = "0";
+            DateTime? datStartDate = dtpStartDate.SelectedDate;
 
+            if (datStartDate< DateTime.Today)
+            {
+                MessageBox.Show("Start date must be in the present.");
+                dtpStartDate.Text = "";
+                return;
+            }
             if (strSelectedMembershipType == "Individual1Month" || strSelectedMembershipType == "TwoPerson1Month" || strSelectedMembershipType == "Family1Month")
             {
-                DateTime? datStartDate = dtpStartDate.SelectedDate;
+                
                 txtEndDateData.Text = "";
 
                 TimeSpan tspAddOneMonth = TimeSpan.FromDays(30);
@@ -546,7 +553,6 @@ namespace FitnessClub
             }
             else
             {
-                DateTime? datStartDate = dtpStartDate.SelectedDate;
                 txtEndDateData.Text = "";
 
                 TimeSpan tspAddOneYear = TimeSpan.FromDays(360);

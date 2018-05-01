@@ -149,11 +149,7 @@
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked_1"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
-        <DatePicker x:Name="dtpStartDate" HorizontalAlignment="Left" Margin="73,102,0,0" VerticalAlignment="Top" SelectedDateChanged="dtpStartDate_SelectedDateChanged" FirstDayOfWeek="Monday">
-            <DatePicker.BlackoutDates>
-                <CalendarDateRange/>
-            </DatePicker.BlackoutDates>
-        </DatePicker>
+        <DatePicker x:Name="dtpStartDate" HorizontalAlignment="Left" Margin="73,102,0,0" VerticalAlignment="Top" SelectedDateChanged="dtpStartDate_SelectedDateChanged" FirstDayOfWeek="Monday"/>
         <TextBox x:Name="txtPhoneDataExample" HorizontalAlignment="Left" Height="23" Margin="783,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="example: 1111111111" TabIndex="13" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="10.667"/>
 
     </Grid>
