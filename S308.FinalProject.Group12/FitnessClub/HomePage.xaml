@@ -17,7 +17,6 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPricingManagement" Content="Pricing Manager" HorizontalAlignment="Left" Margin="84,202,0,0" VerticalAlignment="Top" Width="116" Height="41" TabIndex="3" Click="btnPricingManagement_Click" FontFamily="Global Sans Serif" Opacity="0.75"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="790,515,0,0" VerticalAlignment="Top" Width="200" Height="48" TabIndex="4" Click="btnExit_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="26.667"/>
         <Button x:Name="btnPriceControl" Content="Price Control" HorizontalAlignment="Left" Margin="404,431,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="3" FontFamily="Global Sans Serif" Click="btnPriceControl_Click" Opacity="0.75" FontSize="24">
             <Button.Background>

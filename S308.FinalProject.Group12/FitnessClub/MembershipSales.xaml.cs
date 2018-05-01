@@ -354,10 +354,10 @@ namespace FitnessClub
             this.Close();
         }
 
-        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
+        private void btnPricingControl_Click(object sender, RoutedEventArgs e)
         {
-            Window winPricingManager = new PricingManager();
-            winPricingManager.Show();
+            Window winPriceControl = new PriceControl();
+            winPriceControl.Show();
             this.Close();
         }
         double dblMonthlyTrainingCost;
@@ -545,6 +545,8 @@ namespace FitnessClub
 
             }
         }
+
+ 
 
         public static string ReverseString(string s)
         {

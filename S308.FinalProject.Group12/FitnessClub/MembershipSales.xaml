@@ -120,7 +120,7 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPricingManagement" Content="Pricing&#xA;Management" HorizontalAlignment="Left" Margin="240,477,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="20" Click="btnPricingManagement_Click">
+        <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="240,477,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="20" Click="btnPricingControl_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>

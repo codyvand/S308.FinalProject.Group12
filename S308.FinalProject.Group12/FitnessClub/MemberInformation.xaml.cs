@@ -135,7 +135,14 @@ namespace FitnessClub
             this.Close();
         }
 
-
+        private void btnPricingControl_Click(object sender, RoutedEventArgs e)
+        {
+           
+            Window winPriceControl = new PriceControl();
+            winPriceControl.Show();
+            this.Close();
+        }
     }
     }
+   
    
