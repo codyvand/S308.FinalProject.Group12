@@ -48,6 +48,7 @@ namespace FitnessClub
                     //MessageBox.Show(strLine);
                     membershiptypeList.Add(ConvertToMembershipType(strLine));
                 }
+                reader.Close();
  
             }
             catch (Exception ex)

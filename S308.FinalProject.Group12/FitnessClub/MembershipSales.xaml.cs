@@ -471,28 +471,38 @@ namespace FitnessClub
             string strCostMembershipType;
             strCostMembershipType = "0";
 
-            //5
-            switch (strSelectedMembershipType)
+
+            string strLine = "";
+            string strFilePath = @"..\..\..\Data\MembershipType.json";
+            string[] data;
+            try
             {
-                case "Individual1Month":
-                    strCostMembershipType = "9.99";
-                    break;
-                case "Individual12Month":
-                    strCostMembershipType = "100.00";
-                    break;
-                case "TwoPerson1Month":
-                    strCostMembershipType = "14.99";
-                    break;
-                case "TwoPerson12Month":
-                    strCostMembershipType = "150.00";
-                    break;
-                case "Family1Month":
-                    strCostMembershipType = "19.99";
-                    break;
-                case "Family12Month":
-                    strCostMembershipType = "200.00";
-                    break;
+                membershiptypeList.Clear();
+                StreamReader reader = new StreamReader(strFilePath);
+
+                while (!reader.EndOfStream)
+                {
+                    strLine = reader.ReadLine();
+                    data = strLine.Split('|');
+                    if (data[0] == strSelectedMembershipType)
+                    {
+                        strCostMembershipType = data[1];
+                    }
+
+                }
+                reader.Close();
+
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error in ready file: " + ex.Message);
+                return;
+            }
+
+
+
+
+
             txtCostPerMonthData.Text = strCostMembershipType;
             double dblCostMembershipType = Convert.ToDouble(strCostMembershipType);
 
