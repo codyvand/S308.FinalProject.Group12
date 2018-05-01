@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>
         </Grid.Background>
-        <Rectangle x:Name="recMembershipDetails" HorizontalAlignment="Left" Height="310" Margin="10,1,0,0" Stroke="Black" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recMembershipDetails" HorizontalAlignment="Left" Height="310" Margin="10,-3,0,0" Stroke="Black" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -51,7 +51,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
-        <Rectangle x:Name="recMemberInformation" HorizontalAlignment="Left" Height="376" Margin="466,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recMemberInformation" HorizontalAlignment="Left" Height="376" Margin="462,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -98,7 +98,6 @@
         <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,104,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
         <TextBox x:Name="txtEndDateTitle" HorizontalAlignment="Left" Height="23" Margin="20,163,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top" Width="60" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtCostTitle" HorizontalAlignment="Left" Height="23" Margin="250,204,0,0" TextWrapping="Wrap" Text="Cost Per Month:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtSubtotalTitle" HorizontalAlignment="Left" Height="23" Margin="503,153,0,0" TextWrapping="Wrap" Text="Subtotal:" VerticalAlignment="Top" Width="62" Background="{x:Null}" BorderThickness="0"/>
         <TextBox x:Name="txtAdditionalFeaturesTitle" HorizontalAlignment="Left" Height="23" Margin="260,16,0,0" TextWrapping="Wrap" Text="Additional Features" VerticalAlignment="Top" Width="150" FontWeight="Bold" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtTrainingPlanTitle" HorizontalAlignment="Left" Height="23" Margin="250,56,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtLockerRentalTitle" HorizontalAlignment="Left" Height="23" Margin="254,105,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
@@ -158,7 +157,7 @@
         </ComboBox>
         <RadioButton x:Name="rbtMonthlyTrainingPlanYes" Content="Yes" HorizontalAlignment="Left" Margin="379,52,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanYes_Checked"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalYes" Content="Yes" HorizontalAlignment="Left" Margin="381,102,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalYes_Checked"/>
-        <Rectangle x:Name="recCreditCardInformation" HorizontalAlignment="Left" Height="86" Margin="473,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recCreditCardInformation" HorizontalAlignment="Left" Height="86" Margin="476,101,0,0" Stroke="Black" VerticalAlignment="Top" Width="498" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -185,7 +184,7 @@
         <TextBox x:Name="txtLockerRentalPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,255,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0"/>
         <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0"/>
-        <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="629,404,0,0" VerticalAlignment="Top" Width="200" Height="59" TabIndex="16" Click="btnSubmitMembership_Click">
+        <Button x:Name="btnSubmitMembership" Content="Submit Sale" HorizontalAlignment="Left" Margin="629,404,0,0" VerticalAlignment="Top" Width="200" Height="59" TabIndex="16" Click="btnSubmitMembership_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
@@ -196,6 +195,11 @@
         <TextBox x:Name="txtPhoneDataExample" HorizontalAlignment="Left" Height="23" Margin="783,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="example: 1111111111" TabIndex="13" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="10.667"/>
         <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="250,181,0,0" TextWrapping="Wrap" Text="Member Value:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0"/>
+        <Button x:Name="btnContinue" Content="Continue" HorizontalAlignment="Left" Height="23" Margin="99,237,0,0" VerticalAlignment="Top" Width="100">
+            <Button.Background>
+                <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

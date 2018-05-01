@@ -29,6 +29,39 @@ namespace FitnessClub
         {
             InitializeComponent();
 
+            // Hide Stuff on right
+
+            txtMemberInformationTitle.Visibility = Visibility.Hidden;
+            recMemberInformation.Visibility = Visibility.Hidden;
+            txtPersonalFitnessGoalTitle.Visibility = Visibility.Hidden;
+            txtPersonalFitnessGoalData.Visibility = Visibility.Hidden;
+            recCreditCardInformation.Visibility = Visibility.Hidden;
+            txtCreditCardInformationTitle.Visibility = Visibility.Hidden;
+            txtCreditCardTypeTitle.Visibility = Visibility.Hidden;
+            cbxCreditCardTypeData.Visibility = Visibility.Hidden;
+            txtCreditCardNumberTitle.Visibility = Visibility.Hidden;
+            txtCreditCardNumberData.Visibility = Visibility.Hidden;
+            recAdditionalFeatures_Copy1.Visibility = Visibility.Hidden;
+            txtPersonalInformationTitle.Visibility = Visibility.Hidden;
+            txtFirstNameTitle.Visibility = Visibility.Hidden;
+            txtFirstNameData.Visibility = Visibility.Hidden;
+            txtLastNameTitle.Visibility = Visibility.Hidden;
+            txtLastNameData.Visibility = Visibility.Hidden;
+            txtWeightTitle_.Visibility = Visibility.Hidden;
+            txtWeightData.Visibility = Visibility.Hidden;
+            txtGenderTitle.Visibility = Visibility.Hidden;
+            txtGenderData.Visibility = Visibility.Hidden;
+            txtPhoneTitle.Visibility = Visibility.Hidden;
+            txtPhoneData.Visibility = Visibility.Hidden;
+            txtPhoneDataExample.Visibility = Visibility.Hidden;
+            txtEmailTitle.Visibility = Visibility.Hidden;
+            txtEmailData.Visibility = Visibility.Hidden;
+            txtAgeTitle.Visibility = Visibility.Hidden;
+            txtAgeData.Visibility = Visibility.Hidden;
+            btnSubmitMembership.Visibility = Visibility.Hidden;
+
+
+
             //instantiate a list to hold the Campuses
             customerList = new List<Customers>();
             membershiptypeList = new List<MembershipType>();
