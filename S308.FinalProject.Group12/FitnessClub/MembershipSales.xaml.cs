@@ -506,6 +506,42 @@ namespace FitnessClub
             txtTotalData.Text = strTotalCost;
 
     }
+
+        private void dprStartDate_CalendarClosed(object sender, RoutedEventArgs e)
+        {
+            //3
+            ComboBoxItem cbxSelectedItem = (ComboBoxItem)cbxMembershipTypeData.SelectedItem;
+            strSelectedMembershipType = cbxSelectedItem.Content.ToString();
+            string strMembershipType;
+            strMembershipType = "0";
+            txtEndDateData.Text = "";
+
+            txtEndDateData.Text = dprStartDate.ToString();
+
+            switch (strSelectedMembershipType)
+            {
+                case "Individual1Month":
+                    strMembershipType = "9.99";
+                    break;
+                case "Individual12Month":
+                    strMembershipType = "100.00";
+                    break;
+                case "TwoPerson1Month":
+                    strMembershipType = "14.99";
+                    break;
+                case "TwoPerson12Month":
+                    strMembershipType = "150.00";
+                    break;
+                case "Family1Month":
+                    strMembershipType = "19.99";
+                    break;
+                case "Family12Month":
+                    strMembershipType = "200.00";
+                    break;
+            }
+
+        }
+
         public static string ReverseString(string s)
         {
             char[] array = s.ToCharArray();

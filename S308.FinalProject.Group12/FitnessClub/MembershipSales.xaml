@@ -108,7 +108,7 @@
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
         <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="57" Text="0"/>
         <TextBox x:Name="txtSubtotalData" HorizontalAlignment="Left" Height="23" Margin="565,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" Text="$10"/>
-        <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold"/>
+        <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold" Text="0"/>
         <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
             <ComboBox.DataContext>
                 <local:Features IndividualSingleMonth=""/>
@@ -149,7 +149,8 @@
         <Button x:Name="btnSubmitMembership" Content="Submit Button" HorizontalAlignment="Left" Margin="315,406,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="16" Click="btnSubmitMembership_Click"/>
         <RadioButton x:Name="rbtMonthlyTrainingPlanNo" Content="No" HorizontalAlignment="Left" Margin="379,69,0,0" VerticalAlignment="Top" TabIndex="4" GroupName="MonthlyTrainingPlanGroup" Checked="rbtMonthlyTrainingPlanNo_Checked_1"/>
         <RadioButton x:Name="rbtMonthlyLockerRentalNo" Content="No" HorizontalAlignment="Left" Margin="381,119,0,0" VerticalAlignment="Top" TabIndex="5" GroupName="MonthlyLockerRentalGroup" Checked="rbtMonthlyLockerRentalNo_Checked"/>
-        <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dprStartDate" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top" CalendarClosed="dprStartDate_CalendarClosed"/>
+        <DatePicker x:Name="dprEndDate" HorizontalAlignment="Left" Margin="68,179,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
