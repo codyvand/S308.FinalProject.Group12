@@ -250,10 +250,13 @@ namespace FitnessClub
             winPricingManager.Show();
             this.Close();
         }
-
+        int intMonthlyTrainingCost;
         private void rbtMonthlyTrainingPlanYes_Checked(object sender, RoutedEventArgs e)
         {
             strMonthlyTrainingPlanResult = "Yes";
+            intMonthlyTrainingCost = 10;
+            strMonth
+            txtMonthlyTrainingPlanPrice.Text = intMonthlyTrainingCost;
         }
 
         private void rbtMonthlyLockerRentalYes_Checked(object sender, RoutedEventArgs e)
