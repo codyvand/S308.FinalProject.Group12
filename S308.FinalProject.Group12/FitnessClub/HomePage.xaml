@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FitnessClub"
         mc:Ignorable="d"
-        Title="HomePage" Height="600" Width="1000" VerticalAlignment="Center" HorizontalAlignment="Center">
+        Title="HomePage" Height="600" Width="1000" VerticalAlignment="Center" HorizontalAlignment="Center" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid ScrollViewer.VerticalScrollBarVisibility="Hidden" Margin="0,0,-8,-4">
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>

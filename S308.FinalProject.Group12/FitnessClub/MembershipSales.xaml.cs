@@ -665,8 +665,7 @@ namespace FitnessClub
             btnSubmitMembership.Visibility = Visibility.Hidden;
 
             //Clear boxes
-            cbxCreditCardTypeData.Text = "";
-            cbxMembershipTypeData.Text = "";
+
             dtpStartDate.Text = "";
             txtFirstNameData.Text = "";
             txtLastNameData.Text = "";
@@ -676,7 +675,6 @@ namespace FitnessClub
             txtEmailData.Text = "";
             txtPhoneData.Text = "";
             txtWeightData.Text = "";
-            cbxGenderData.Text = "";
             txtPersonalFitnessGoalData.Text = "";
             txtMonthlyLockerRentalPrice.Text = "";
             txtMonthlyTrainingPlanPrice.Text = "";
