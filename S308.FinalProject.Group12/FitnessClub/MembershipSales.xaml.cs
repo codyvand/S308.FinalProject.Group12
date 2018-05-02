@@ -321,7 +321,7 @@ namespace FitnessClub
                 return;
             }
 
-         
+
 
             int intAt = strEmailData.IndexOf("@");
             int intDot = strEmailData.IndexOf(".");
@@ -338,16 +338,17 @@ namespace FitnessClub
             }
 
             //Gender Validation 
-            if (cbxGenderData.Text == "");
-
-             MessageBox.Show("Please select a gender."); 
+            if (cbxGenderData.Text == "")
+            {
+                MessageBox.Show("Please select a gender.");
                 return;
+            }
 
-            
 
 
-            //Declare Customers class
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
+
+                    //Declare Customers class
+                    Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
 
 
             customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
