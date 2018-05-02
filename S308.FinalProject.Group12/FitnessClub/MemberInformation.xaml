@@ -24,7 +24,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
-        <Rectangle x:Name="recFindMemberBy" HorizontalAlignment="Left" Height="277" Margin="9,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="432" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
+        <Rectangle x:Name="recFindMemberBy" HorizontalAlignment="Left" Height="286" Margin="9,11,0,0" Stroke="Black" VerticalAlignment="Top" Width="432" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -129,7 +129,7 @@
         <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="228,436,0,0" VerticalAlignment="Top" Width="138" Height="61" TabIndex="8" Click="btnPricingControl_Click" FontSize="18.667"/>
         <Button x:Name="btnMembershipSales" Content="Membership&#xD;&#xA;Sales" HorizontalAlignment="Left" Margin="228,348,0,0" VerticalAlignment="Top" Width="138" TabIndex="7" Click="btnMembershipSales_Click" Height="59" FontSize="18.667"/>
         <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="29" Margin="23,315,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="21.333" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" Text="Find Member By" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" Text="Find Member By" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsHitTestVisible="False" IsTabStop="False" FontWeight="Bold"/>
         <TextBox x:Name="txtPersonalInformationTitle" HorizontalAlignment="Left" Height="21" Margin="478,268,0,0" TextWrapping="Wrap" Text="Personal Information" VerticalAlignment="Top" Width="151" FontWeight="Bold" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFindLastNameTitle" HorizontalAlignment="Left" Height="21" Margin="23,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Last Name:" Background="{x:Null}" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtPersonalFitnessGoalData" HorizontalAlignment="Left" Height="21" Margin="596,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" FontStyle="Italic"/>
