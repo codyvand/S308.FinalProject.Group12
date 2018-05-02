@@ -41,7 +41,7 @@ namespace FitnessClub
             cbxCreditCardTypeData.Visibility = Visibility.Hidden;
             txtCreditCardNumberTitle.Visibility = Visibility.Hidden;
             txtCreditCardNumberData.Visibility = Visibility.Hidden;
-            recAdditionalFeatures_Copy1.Visibility = Visibility.Hidden;
+            recPersonalInfo.Visibility = Visibility.Hidden;
             txtPersonalInformationTitle.Visibility = Visibility.Hidden;
             txtFirstNameTitle.Visibility = Visibility.Hidden;
             txtFirstNameData.Visibility = Visibility.Hidden;
@@ -321,12 +321,7 @@ namespace FitnessClub
                 return;
             }
 
-            //Gender Validation
-
-
-
-
-        
+         
 
             int intAt = strEmailData.IndexOf("@");
             int intDot = strEmailData.IndexOf(".");
@@ -341,6 +336,15 @@ namespace FitnessClub
                 return;
 
             }
+
+            //Gender Validation 
+            if (cbxGenderData.Text == "");
+
+             MessageBox.Show("Please select a gender."); 
+                return;
+
+            
+
 
             //Declare Customers class
             Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
@@ -601,7 +605,7 @@ namespace FitnessClub
             cbxCreditCardTypeData.Visibility = Visibility.Visible;
             txtCreditCardNumberTitle.Visibility = Visibility.Visible;
             txtCreditCardNumberData.Visibility = Visibility.Visible;
-            recAdditionalFeatures_Copy1.Visibility = Visibility.Visible;
+            recPersonalInfo.Visibility = Visibility.Visible;
             txtPersonalInformationTitle.Visibility = Visibility.Visible;
             txtFirstNameTitle.Visibility = Visibility.Visible;
             txtFirstNameData.Visibility = Visibility.Visible;

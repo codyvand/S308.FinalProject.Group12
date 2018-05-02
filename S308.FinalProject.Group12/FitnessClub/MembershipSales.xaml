@@ -199,10 +199,10 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <ComboBox x:Name="cbxGenderData" HorizontalAlignment="Left" Margin="560,326,0,0" VerticalAlignment="Top" Width="120">
+        <ComboBox x:Name="cbxGenderData" HorizontalAlignment="Left" Height="23" Margin="578,331,0,0" VerticalAlignment="Top" Width="122">
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>
-            <ComboBoxItem Content="Not Provided"/>
+            <ComboBoxItem Content="Prefer not to answer"/>
         </ComboBox>
 
     </Grid>
