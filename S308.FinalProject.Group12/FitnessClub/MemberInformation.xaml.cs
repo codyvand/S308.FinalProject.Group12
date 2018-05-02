@@ -128,12 +128,7 @@ namespace FitnessClub
             this.Close();
         }
 
-        private void btnPricingManagement_Click(object sender, RoutedEventArgs e)
-        {
-            Window winPricingManager = new PricingManager();
-            winPricingManager.Show();
-            this.Close();
-        }
+
 
         private void btnPricingControl_Click(object sender, RoutedEventArgs e)
         {
