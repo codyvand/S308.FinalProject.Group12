@@ -631,6 +631,47 @@ namespace FitnessClub
 
         }
 
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            // Hide Stuff on right
+
+            txtMemberInformationTitle.Visibility = Visibility.Hidden;
+            recMemberInformation.Visibility = Visibility.Hidden;
+            txtPersonalFitnessGoalTitle.Visibility = Visibility.Hidden;
+            txtPersonalFitnessGoalData.Visibility = Visibility.Hidden;
+            recCreditCardInformation.Visibility = Visibility.Hidden;
+            txtCreditCardInformationTitle.Visibility = Visibility.Hidden;
+            txtCreditCardTypeTitle.Visibility = Visibility.Hidden;
+            cbxCreditCardTypeData.Visibility = Visibility.Hidden;
+            txtCreditCardNumberTitle.Visibility = Visibility.Hidden;
+            txtCreditCardNumberData.Visibility = Visibility.Hidden;
+            recPersonalInfo.Visibility = Visibility.Hidden;
+            txtPersonalInformationTitle.Visibility = Visibility.Hidden;
+            txtFirstNameTitle.Visibility = Visibility.Hidden;
+            txtFirstNameData.Visibility = Visibility.Hidden;
+            txtLastNameTitle.Visibility = Visibility.Hidden;
+            txtLastNameData.Visibility = Visibility.Hidden;
+            txtWeightTitle_.Visibility = Visibility.Hidden;
+            txtWeightData.Visibility = Visibility.Hidden;
+            txtGenderTitle.Visibility = Visibility.Hidden;
+            cbxGenderData.Visibility = Visibility.Hidden;
+            txtPhoneTitle.Visibility = Visibility.Hidden;
+            txtPhoneData.Visibility = Visibility.Hidden;
+            txtPhoneDataExample.Visibility = Visibility.Hidden;
+            txtEmailTitle.Visibility = Visibility.Hidden;
+            txtEmailData.Visibility = Visibility.Hidden;
+            txtAgeTitle.Visibility = Visibility.Hidden;
+            txtAgeData.Visibility = Visibility.Hidden;
+            btnSubmitMembership.Visibility = Visibility.Hidden;
+
+            //Clear boxes
+            cbxCreditCardTypeData.Text = "";
+            cbxMembershipTypeData.Text = "";
+            dtpStartDate.Text = "";
+            txtFirstNameData.Text = "";
+            txtLastNameData.Text = "";
+        }
+
         public static string ReverseString(string s)
         {
             char[] array = s.ToCharArray();
