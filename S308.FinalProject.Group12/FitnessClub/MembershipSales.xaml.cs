@@ -670,6 +670,19 @@ namespace FitnessClub
             dtpStartDate.Text = "";
             txtFirstNameData.Text = "";
             txtLastNameData.Text = "";
+            txtCostData.Text = "";
+            txtCostPerMonthData.Text = "";
+            txtCreditCardNumberData.Text = "";
+            txtEmailData.Text = "";
+            txtPhoneData.Text = "";
+            txtWeightData.Text = "";
+            cbxGenderData.Text = "";
+            txtPersonalFitnessGoalData.Text = "";
+            txtMonthlyLockerRentalPrice.Text = "";
+            txtMonthlyTrainingPlanPrice.Text = "";
+            txtTotalData.Text = "";
+            txtEndDateData.Text = "";
+            txtAgeData.Text = "";
         }
 
         public static string ReverseString(string s)
