@@ -68,6 +68,19 @@ namespace FitnessClub
             string strFindEmail = txtFindEmailData.Text.Trim();
             lbxFindResults.Items.Clear();
 
+            if (txtFindEmailData.Text == "")
+            {
+                if(txtFindLastNameData.Text == "")
+                {
+                    if(txtFindPhoneData.Text == "")
+                    {
+                        MessageBox.Show("Last Name and or Email and or Phone must be provided to look up a member.");
+                        return;
+                    }
+                }
+
+            }
+
             customerSearch = customerList.Where(p => p.LastName.StartsWith(strFindLastName) && p.Phone.StartsWith(strFindPhone) && p.Email.StartsWith(strFindEmail)).ToList();
 
             foreach (Customers p in customerSearch)
@@ -75,6 +88,11 @@ namespace FitnessClub
                 string strNamePhoneEmail = "| Last Name: " + p.LastName +" |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" ;
                 lbxFindResults.Items.Add(strNamePhoneEmail);
 
+            }
+            if (lbxFindResults.Items.IsEmpty)
+            {
+                MessageBox.Show("Member was not found based on the provided search information");
+                return;
             }
         }
 
