@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>
         </Grid.Background>
-        <Rectangle x:Name="recMembershipDetails" HorizontalAlignment="Left" Height="310" Margin="10,-3,0,0" Stroke="Black" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recMembershipDetails" HorizontalAlignment="Left" Height="310" Margin="10,4,0,0" Stroke="Black" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -51,7 +51,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
-        <Rectangle x:Name="recMemberInformation" HorizontalAlignment="Left" Height="376" Margin="462,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recMemberInformation" HorizontalAlignment="Left" Height="376" Margin="468,4,0,0" Stroke="Black" VerticalAlignment="Top" Width="518" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
@@ -95,7 +95,7 @@
         <TextBox x:Name="txtMemberInformationTitle" HorizontalAlignment="Left" Height="46" Margin="617,10,0,0" TextWrapping="Wrap" Text="Membership Sales" VerticalAlignment="Top" Width="242" FontWeight="Bold" Background="{x:Null}" FontSize="21.333" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtPersonalFitnessGoalTitle" HorizontalAlignment="Left" Height="23" Margin="486,53,0,0" TextWrapping="Wrap" Text="Personal Fitness Goal:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMembershipTypeTitle" HorizontalAlignment="Left" Height="23" Margin="11,51,0,0" TextWrapping="Wrap" Text="MembershipType:" VerticalAlignment="Top" Width="104" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False" Focusable="False" AllowDrop="False"/>
-        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,104,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtStartDateTitle" HorizontalAlignment="Left" Height="23" Margin="11,104,0,0" TextWrapping="Wrap" Text="Start Date" VerticalAlignment="Top" Width="62" RenderTransformOrigin="1.681,0.599" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtEndDateTitle" HorizontalAlignment="Left" Height="23" Margin="20,163,0,0" TextWrapping="Wrap" Text="End Date:" VerticalAlignment="Top" Width="60" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtCostTitle" HorizontalAlignment="Left" Height="23" Margin="250,204,0,0" TextWrapping="Wrap" Text="Cost Per Month:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtAdditionalFeaturesTitle" HorizontalAlignment="Left" Height="23" Margin="260,16,0,0" TextWrapping="Wrap" Text="Additional Features" VerticalAlignment="Top" Width="150" FontWeight="Bold" IsTabStop="False" IsHitTestVisible="False"/>
@@ -134,16 +134,16 @@
         <TextBox x:Name="txtPersonalFitnessGoalData" HorizontalAlignment="Left" Height="23" Margin="612,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" Text="To grow and get faster and stronger" FontStyle="Italic" TabIndex="6"/>
         <TextBox x:Name="txtMembershipInvestmentTitle" HorizontalAlignment="Left" Height="23" Margin="250,150,0,0" TextWrapping="Wrap" Text="Membership Investment" VerticalAlignment="Top" Width="151" FontWeight="Bold" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtMembershipDetailsTitle" HorizontalAlignment="Left" Height="23" Margin="27,10,0,0" TextWrapping="Wrap" Text="Membership Details" VerticalAlignment="Top" Width="187" FontWeight="Bold" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsTabStop="False" IsHitTestVisible="False"/>
-        <TextBox x:Name="txtEndDateData" HorizontalAlignment="Left" Height="41" Margin="78,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" TabIndex="3"/>
+        <TextBox x:Name="txtEndDateData" HorizontalAlignment="Left" Height="21" Margin="78,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" TabIndex="3" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFirstNameData" HorizontalAlignment="Left" Height="23" Margin="578,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Zach" TabIndex="9"/>
         <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="578,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos" TabIndex="10"/>
         <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="578,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190" TabIndex="11"/>
         <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="1111111111" TabIndex="13"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
-        <TextBox x:Name="txtCostData" HorizontalAlignment="Left" Height="23" Margin="371,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0"/>
-        <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold" Text="0"/>
-        <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="115,51,0,0" VerticalAlignment="Top" Width="120" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
+        <TextBox x:Name="txtCostData" HorizontalAlignment="Left" Height="23" Margin="371,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtTotalData" HorizontalAlignment="Left" Height="23" Margin="293,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88" FontWeight="Bold" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
+        <ComboBox x:Name="cbxMembershipTypeData" HorizontalAlignment="Left" Margin="110,51,0,0" VerticalAlignment="Top" Width="137" Height="23" TabIndex="1" IsSynchronizedWithCurrentItem="True" SelectionChanged="cbxMembershipTypeData_SelectionChanged">
             <ComboBox.DataContext>
                 <local:Features IndividualSingleMonth=""/>
             </ComboBox.DataContext>
@@ -181,8 +181,8 @@
         <TextBox x:Name="txtCreditCardNumberData" HorizontalAlignment="Left" Height="23" Margin="629,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="378282246310005" TabIndex="8"/>
         <TextBox x:Name="txtTrainingPlanPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,232,0,0" TextWrapping="Wrap" Text="Monthly Training Plan:" VerticalAlignment="Top" Width="126" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtLockerRentalPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,255,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0"/>
-        <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0"/>
+        <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
+        <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnSubmitMembership" Content="Submit Sale" HorizontalAlignment="Left" Margin="827,414,0,0" VerticalAlignment="Top" Width="147" Height="36" TabIndex="16" Click="btnSubmitMembership_Click" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
@@ -193,7 +193,7 @@
         <DatePicker x:Name="dtpStartDate" HorizontalAlignment="Left" Margin="73,102,0,0" VerticalAlignment="Top" SelectedDateChanged="dtpStartDate_SelectedDateChanged" FirstDayOfWeek="Monday"/>
         <TextBox x:Name="txtPhoneDataExample" HorizontalAlignment="Left" Height="23" Margin="783,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="example: 1111111111" TabIndex="13" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="Black" FontSize="10.667"/>
         <TextBox x:Name="txtCostPerMonthTitle" HorizontalAlignment="Left" Height="23" Margin="250,181,0,0" TextWrapping="Wrap" Text="Member Value:" VerticalAlignment="Top" Width="101" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
-        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0"/>
+        <TextBox x:Name="txtCostPerMonthData" HorizontalAlignment="Left" Height="23" Margin="371,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
         <Button x:Name="btnContinue" Content="Continue" HorizontalAlignment="Left" Height="23" Margin="99,237,0,0" VerticalAlignment="Top" Width="100" Click="btnContinue_Click">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
