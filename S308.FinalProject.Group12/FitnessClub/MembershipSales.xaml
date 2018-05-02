@@ -64,7 +64,7 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle x:Name="recAdditionalFeatures_Copy1" HorizontalAlignment="Left" Height="140" Margin="476,221,0,0" Stroke="Black" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recPersonalInfo" HorizontalAlignment="Left" Height="140" Margin="476,221,0,0" Stroke="Black" VerticalAlignment="Top" Width="497" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
