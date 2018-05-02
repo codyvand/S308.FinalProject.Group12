@@ -26,6 +26,7 @@ namespace FitnessClub
 
         private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
         {
+            //Open selected page button and close previous homepage
             Window winMemberInformation = new MemberInformation();
             winMemberInformation.Show();
             this.Close(); 
@@ -33,6 +34,7 @@ namespace FitnessClub
 
         private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
         {
+            //Open selected page button and close previous homepage
             Window winMembershipSales = new MembershipSales();
             winMembershipSales.Show();
             this.Close();
@@ -40,11 +42,13 @@ namespace FitnessClub
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
+            //close out of the window homepage
             this.Close();
         }
 
         private void btnPriceControl_Click(object sender, RoutedEventArgs e)
         {
+            //Open up selected page button and close previous homepage
             Window winPriceControl = new PriceControl();
             winPriceControl.Show();
             this.Close();
