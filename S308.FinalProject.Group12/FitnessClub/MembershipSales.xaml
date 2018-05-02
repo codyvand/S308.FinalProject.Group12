@@ -109,22 +109,22 @@
         <TextBox x:Name="txtGenderTitle" HorizontalAlignment="Left" Height="23" Margin="511,331,0,0" TextWrapping="Wrap" Text="Gender:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtWeightTitle_" HorizontalAlignment="Left" Height="23" Margin="511,303,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsTabStop="False" IsHitTestVisible="False"/>
         <TextBox x:Name="txtAgeTitle" HorizontalAlignment="Left" Height="23" Margin="739,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="Age:" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
-        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="42,392,0,0" VerticalAlignment="Top" Width="157" Height="53" TabIndex="19" Click="btnMainMenu_Click" FontSize="18.667">
+        <Button x:Name="btnMainMenu" Content="Main&#xA;Menu" HorizontalAlignment="Left" Margin="42,392,0,0" VerticalAlignment="Top" Width="157" Height="53" TabIndex="20" Click="btnMainMenu_Click" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="240,391,0,0" VerticalAlignment="Top" Width="157" TabIndex="20" Click="btnMemberInformation_Click" Height="53" FontSize="18.667">
+        <Button x:Name="btnMemberInformation" Content="Member&#xA;Information" HorizontalAlignment="Left" Margin="240,391,0,0" VerticalAlignment="Top" Width="157" TabIndex="21" Click="btnMemberInformation_Click" Height="53" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="240,462,0,0" VerticalAlignment="Top" Width="157" Height="53" TabIndex="22" Click="btnPricingControl_Click" FontSize="18.667">
+        <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="240,462,0,0" VerticalAlignment="Top" Width="157" Height="53" TabIndex="23" Click="btnPricingControl_Click" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="42,462,0,0" VerticalAlignment="Top" Width="157" TabIndex="21" Click="btnMembershipSales_Click" Height="53" FontSize="18.667">
+        <Button x:Name="btnMembershipSales" Content="Membership&#xA;Sales" HorizontalAlignment="Left" Margin="42,462,0,0" VerticalAlignment="Top" Width="157" TabIndex="22" Click="btnMembershipSales_Click" Height="53" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
@@ -183,7 +183,7 @@
         <TextBox x:Name="txtLockerRentalPriceTitle" HorizontalAlignment="Left" Height="23" Margin="250,255,0,0" TextWrapping="Wrap" Text="Monthly Locker Rental:" VerticalAlignment="Top" Width="132" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMonthlyTrainingPlanPrice" HorizontalAlignment="Left" Height="23" Margin="391,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtMonthlyLockerRentalPrice" HorizontalAlignment="Left" Height="23" Margin="391,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="0" IsHitTestVisible="False" IsTabStop="False"/>
-        <Button x:Name="btnSubmitMembership" Content="Submit Sale" HorizontalAlignment="Left" Margin="827,414,0,0" VerticalAlignment="Top" Width="147" Height="36" TabIndex="18" Click="btnSubmitMembership_Click" FontSize="18.667">
+        <Button x:Name="btnSubmitMembership" Content="Submit Sale" HorizontalAlignment="Left" Margin="827,414,0,0" VerticalAlignment="Top" Width="147" Height="36" TabIndex="19" Click="btnSubmitMembership_Click" FontSize="18.667">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
             </Button.Background>
@@ -204,6 +204,11 @@
             <ComboBoxItem Content="Female"/>
             <ComboBoxItem Content="Prefer not to answer"/>
         </ComboBox>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="640,414,0,0" VerticalAlignment="Top" Width="147" Height="36" TabIndex="18" Click="btnSubmitMembership_Click" FontSize="18.667">
+            <Button.Background>
+                <SolidColorBrush Color="#FFDDDDDD" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
