@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>
         </Grid.Background>
-        <Rectangle x:Name="recNavigation" HorizontalAlignment="Left" Height="236" Margin="32,307,0,0" Stroke="Black" VerticalAlignment="Top" Width="149" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
+        <Rectangle x:Name="recNavigation" HorizontalAlignment="Left" Height="236" Margin="10,307,0,0" Stroke="Black" VerticalAlignment="Top" Width="430" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.8"/>
             </Rectangle.Fill>
@@ -124,11 +124,11 @@
         <TextBox x:Name="txtGenderTitle" HorizontalAlignment="Left" Height="21" Margin="503,389,0,0" TextWrapping="Wrap" Text="Gender:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtWeightTitle_" HorizontalAlignment="Left" Height="21" Margin="503,361,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="67" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtAgeTitle" HorizontalAlignment="Left" Height="21" Margin="731,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="Age:" Background="{x:Null}" BorderThickness="0" IsHitTestVisible="False" IsTabStop="False"/>
-        <Button x:Name="btnMainMenu" Content="Main&#xD;&#xA;Menu" HorizontalAlignment="Left" Margin="65,349,0,0" VerticalAlignment="Top" Width="86" Height="34" TabIndex="5" Click="btnMainMenu_Click"/>
-        <Button x:Name="btnMemberInformation" Content="Member&#xD;&#xA;Information" HorizontalAlignment="Left" Margin="65,397,0,0" VerticalAlignment="Top" Width="86" TabIndex="6" Click="btnMemberInformation_Click"/>
-        <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="65,491,0,0" VerticalAlignment="Top" Width="86" Height="38" TabIndex="8" Click="btnPricingControl_Click"/>
-        <Button x:Name="btnMembershipSales" Content="Membership&#xD;&#xA;Sales" HorizontalAlignment="Left" Margin="65,445,0,0" VerticalAlignment="Top" Width="86" TabIndex="7" Click="btnMembershipSales_Click"/>
-        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="23" Margin="65,315,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="16" IsHitTestVisible="False" IsTabStop="False"/>
+        <Button x:Name="btnMainMenu" Content="Main&#xD;&#xA;Menu" HorizontalAlignment="Left" Margin="46,349,0,0" VerticalAlignment="Top" Width="138" Height="61" TabIndex="5" Click="btnMainMenu_Click" FontSize="18.667"/>
+        <Button x:Name="btnMemberInformation" Content="Member&#xD;&#xA;Information" HorizontalAlignment="Left" Margin="46,436,0,0" VerticalAlignment="Top" Width="138" TabIndex="6" Click="btnMemberInformation_Click" Height="61" FontSize="18.667"/>
+        <Button x:Name="btnPricingControl" Content="Pricing Control" HorizontalAlignment="Left" Margin="228,436,0,0" VerticalAlignment="Top" Width="138" Height="61" TabIndex="8" Click="btnPricingControl_Click" FontSize="18.667"/>
+        <Button x:Name="btnMembershipSales" Content="Membership&#xD;&#xA;Sales" HorizontalAlignment="Left" Margin="228,348,0,0" VerticalAlignment="Top" Width="138" TabIndex="7" Click="btnMembershipSales_Click" Height="59" FontSize="18.667"/>
+        <TextBox x:Name="txtNavigationTitle" HorizontalAlignment="Left" Height="29" Margin="23,315,0,0" TextWrapping="Wrap" Text="Navigation" VerticalAlignment="Top" Width="109" Background="{x:Null}" BorderThickness="0" FontSize="21.333" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFindMember" HorizontalAlignment="Left" Height="23" Margin="10,20,0,0" TextWrapping="Wrap" Text="Find Member By" VerticalAlignment="Top" Width="153" Background="{x:Null}" BorderThickness="0" FontSize="18.667" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtPersonalInformationTitle" HorizontalAlignment="Left" Height="21" Margin="478,268,0,0" TextWrapping="Wrap" Text="Personal Information" VerticalAlignment="Top" Width="151" FontWeight="Bold" IsHitTestVisible="False" IsTabStop="False"/>
         <TextBox x:Name="txtFindLastNameTitle" HorizontalAlignment="Left" Height="21" Margin="23,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Last Name:" Background="{x:Null}" IsHitTestVisible="False" IsTabStop="False"/>

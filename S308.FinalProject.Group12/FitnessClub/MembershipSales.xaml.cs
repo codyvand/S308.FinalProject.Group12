@@ -321,6 +321,24 @@ namespace FitnessClub
                 return;
             }
 
+            //Gender Validation
+            string strGenderData;
+            strGenderData = txtGenderData.Text.Trim().ToLower();
+            bool isMale = strGenderData.Contains("male") == true;
+            bool isFemale = strGenderData.Contains("female") == true;
+            bool isNeither = strGenderData.Contains("prefer not to answer") == true;
+
+            if (!(isMale) || !(isFemale) || !(isNeither))
+            {
+                txtGenderData.Text = "";
+                MessageBox.Show("Enter a valid gender.");
+                return;
+            }
+
+
+
+        
+
             int intAt = strEmailData.IndexOf("@");
             int intDot = strEmailData.IndexOf(".");
             string strUserName = strEmailData.Substring(0, intAt);
