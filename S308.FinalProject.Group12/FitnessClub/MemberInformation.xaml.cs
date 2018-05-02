@@ -47,9 +47,9 @@ namespace FitnessClub
                 customerList = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
 
                 if (customerList.Count >= 0)
-                    MessageBox.Show(customerList.Count + " Campuses have been imported.");
+                    MessageBox.Show(customerList.Count + " Memberships have have been imported.");
                 else
-                    MessageBox.Show("No Campuses has been imported. Please check your file.");
+                    MessageBox.Show("No memberships have been imported. Please check your file.");
             }
             catch (Exception ex)
             {
@@ -61,25 +61,50 @@ namespace FitnessClub
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            //Pull List 
             List<Customers> customerSearch;
-
+            //Define variables
             string strFindLastName = txtFindLastNameData.Text.Trim();
             string strFindPhone = txtFindPhoneData.Text.Trim();
             string strFindEmail = txtFindEmailData.Text.Trim();
             lbxFindResults.Items.Clear();
 
+            //Stop search if email and last and phone are not provided
+            if (txtFindEmailData.Text == "")
+            {
+                if(txtFindLastNameData.Text == "")
+                {
+                    if(txtFindPhoneData.Text == "")
+                    {
+                        MessageBox.Show("Last Name and or Email and or Phone must be provided to look up a member.");
+                        return;
+                    }
+                }
+
+            }
+
+            //Search for customers on the provided last name phone and email date even if the data was partial
             customerSearch = customerList.Where(p => p.LastName.StartsWith(strFindLastName) && p.Phone.StartsWith(strFindPhone) && p.Email.StartsWith(strFindEmail)).ToList();
 
+            //Look up each value that meets the criteria and display a result
             foreach (Customers p in customerSearch)
             {
+                //Display this and add it to be viewable in the data grid
                 string strNamePhoneEmail = "| Last Name: " + p.LastName +" |" + "| Phone: " + p.Phone + " |" + "| Email: " + p.Email + " |" ;
                 lbxFindResults.Items.Add(strNamePhoneEmail);
 
+            }
+            //If no membershp data can be found display this message
+            if (lbxFindResults.Items.IsEmpty)
+            {
+                MessageBox.Show("Member was not found based on the provided search information");
+                return;
             }
         }
 
         private void lbxFindResults_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //Populate all the listed fields based on the selected value in the membership data grid
             if (lbxFindResults.SelectedIndex > -1)
             {
                 string strSelectedName = lbxFindResults.SelectedItem.ToString();
@@ -109,6 +134,7 @@ namespace FitnessClub
         // Navigation Links
         private void btnMainMenu_Click(object sender, RoutedEventArgs e)
         {
+            //Open new page and close previous
             Window winHomePage = new HomePage();
             winHomePage.Show();
             this.Close();
@@ -116,6 +142,7 @@ namespace FitnessClub
 
         private void btnMemberInformation_Click(object sender, RoutedEventArgs e)
         {
+            //Open new page and close previous
             Window winMemberInformation = new MemberInformation();
             winMemberInformation.Show();
             this.Close();
@@ -123,6 +150,7 @@ namespace FitnessClub
 
         private void btnMembershipSales_Click(object sender, RoutedEventArgs e)
         {
+            //Open new page and close previous
             Window winMembershipSales = new MembershipSales();
             winMembershipSales.Show();
             this.Close();
@@ -132,7 +160,7 @@ namespace FitnessClub
 
         private void btnPricingControl_Click(object sender, RoutedEventArgs e)
         {
-           
+           //Open new page and close previous
             Window winPriceControl = new PriceControl();
             winPriceControl.Show();
             this.Close();
