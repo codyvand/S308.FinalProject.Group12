@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>
         </Grid.Background>
-        <Rectangle x:Name="recNavigation" HorizontalAlignment="Left" Height="236" Margin="10,307,0,0" Stroke="Black" VerticalAlignment="Top" Width="430" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
+        <Rectangle x:Name="recNavigation" HorizontalAlignment="Left" Height="236" Margin="10,308,0,0" Stroke="Black" VerticalAlignment="Top" Width="430" RenderTransformOrigin="0.5,0.5" IsHitTestVisible="False">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.8"/>
             </Rectangle.Fill>
@@ -65,7 +65,7 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
-        <Rectangle x:Name="recAdditionalFeatures_Copy" HorizontalAlignment="Left" Height="79" Margin="468,446,0,0" Stroke="Black" VerticalAlignment="Top" Width="496" RenderTransformOrigin="0.5,0.5">
+        <Rectangle x:Name="recMembershipInvestment" HorizontalAlignment="Left" Height="79" Margin="468,446,0,0" Stroke="Black" VerticalAlignment="Top" Width="496" RenderTransformOrigin="0.5,0.5">
             <Rectangle.Fill>
                 <SolidColorBrush Color="#FFF4F4F5" Opacity="0.75"/>
             </Rectangle.Fill>
