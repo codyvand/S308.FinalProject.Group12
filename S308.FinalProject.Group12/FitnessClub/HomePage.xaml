@@ -10,15 +10,15 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/Gym_wiki.jpg"/>
         </Grid.Background>
-        <TextBox x:Name="txtWelcome" HorizontalAlignment="Left" Height="187" Margin="284,10,0,0" TextWrapping="Wrap" Text="Welcome to the Gym" VerticalAlignment="Top" Width="438" IsTabStop="False" Focusable="False" AllowDrop="False" FontSize="53.333" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#FFDDDDDD" BorderThickness="1" Padding="1" VerticalScrollBarVisibility="Disabled" BorderBrush="Black" FontFamily="Global Sans Serif" Opacity="0.75"/>
-        <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="404,234,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="1" Click="btnMemberInformation_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="24"/>
-        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="404,331,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="2" Click="btnMembershipSales_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="24">
+        <TextBox x:Name="txtWelcome" HorizontalAlignment="Left" Height="187" Margin="284,10,0,0" TextWrapping="Wrap" Text="Welcome to the Gym" VerticalAlignment="Top" Width="438" IsTabStop="False" Focusable="False" AllowDrop="False" FontSize="53.333" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#FFDDDDDD" BorderThickness="1" Padding="1" VerticalScrollBarVisibility="Disabled" BorderBrush="Black" FontFamily="Global Sans Serif" Opacity="0.75" IsHitTestVisible="False"/>
+        <Button x:Name="btnMemberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="404,234,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="0" Click="btnMemberInformation_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="24"/>
+        <Button x:Name="btnMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="404,331,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="1" Click="btnMembershipSales_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="24">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="790,515,0,0" VerticalAlignment="Top" Width="200" Height="48" TabIndex="4" Click="btnExit_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="26.667"/>
-        <Button x:Name="btnPriceControl" Content="Price Control" HorizontalAlignment="Left" Margin="404,431,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="3" FontFamily="Global Sans Serif" Click="btnPriceControl_Click" Opacity="0.75" FontSize="24">
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="790,515,0,0" VerticalAlignment="Top" Width="200" Height="48" TabIndex="3" Click="btnExit_Click" FontFamily="Global Sans Serif" Opacity="0.75" FontSize="26.667"/>
+        <Button x:Name="btnPriceControl" Content="Price Control" HorizontalAlignment="Left" Margin="404,431,0,0" VerticalAlignment="Top" Width="226" Height="64" TabIndex="2" FontFamily="Global Sans Serif" Click="btnPriceControl_Click" Opacity="0.75" FontSize="24">
             <Button.Background>
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
