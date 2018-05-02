@@ -138,7 +138,6 @@
         <TextBox x:Name="txtFirstNameData" HorizontalAlignment="Left" Height="23" Margin="578,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Zach" TabIndex="9"/>
         <TextBox x:Name="txtLastNameData" HorizontalAlignment="Left" Height="23" Margin="578,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Dobos" TabIndex="10"/>
         <TextBox x:Name="txtWeightData" HorizontalAlignment="Left" Height="23" Margin="578,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="190" TabIndex="11"/>
-        <TextBox x:Name="txtGenderData" HorizontalAlignment="Left" Height="23" Margin="577,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="Male" TabIndex="12"/>
         <TextBox x:Name="txtPhoneData" HorizontalAlignment="Left" Height="23" Margin="783,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="1111111111" TabIndex="13"/>
         <TextBox x:Name="txtEmailData" HorizontalAlignment="Left" Height="23" Margin="785,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" Text="zdobos@indiana.edu" TabIndex="14"/>
         <TextBox x:Name="txtAgeData" HorizontalAlignment="Left" Height="23" Margin="787,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Text="22" TabIndex="15"/>
@@ -200,6 +199,11 @@
                 <SolidColorBrush Color="#FFDDDDDD" Opacity="0.75"/>
             </Button.Background>
         </Button>
+        <ComboBox x:Name="cbxGenderData" HorizontalAlignment="Left" Margin="560,326,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
+            <ComboBoxItem Content="Not Provided"/>
+        </ComboBox>
 
     </Grid>
 </Window>

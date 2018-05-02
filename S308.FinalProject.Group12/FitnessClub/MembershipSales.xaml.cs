@@ -50,7 +50,7 @@ namespace FitnessClub
             txtWeightTitle_.Visibility = Visibility.Hidden;
             txtWeightData.Visibility = Visibility.Hidden;
             txtGenderTitle.Visibility = Visibility.Hidden;
-            txtGenderData.Visibility = Visibility.Hidden;
+            cbxGenderData.Visibility = Visibility.Hidden;
             txtPhoneTitle.Visibility = Visibility.Hidden;
             txtPhoneData.Visibility = Visibility.Hidden;
             txtPhoneDataExample.Visibility = Visibility.Hidden;
@@ -100,7 +100,7 @@ namespace FitnessClub
             rawData = strLine.Split(',');
 
             //create a customer from the data
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(),txtCostData.Text.Trim(),txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim()  , txtTotalData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(),txtCostData.Text.Trim(),txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim()  , txtTotalData.Text.Trim());
             return customerNew;
         }
         private bool AddCustomer(string personalfitnessgoal, string firstname, string lastname, string weight, string gender, string phone, string email, string age, string membershiptype, string startdate, string enddate, string monthlytrainingplan, string monthlylockerrental, string creditcardtype, string creditcardnumber, string membershipcostpernomth, string personaltrainingplancost, string lockerrentalcost, string membershipsubtotalcost, string membershiptotalcost)
@@ -322,18 +322,7 @@ namespace FitnessClub
             }
 
             //Gender Validation
-            string strGenderData;
-            strGenderData = txtGenderData.Text.Trim().ToLower();
-            bool isMale = strGenderData.Contains("male") == true;
-            bool isFemale = strGenderData.Contains("female") == true;
-            bool isNeither = strGenderData.Contains("prefer not to answer") == true;
 
-            if (!(isMale) || !(isFemale) || !(isNeither))
-            {
-                txtGenderData.Text = "";
-                MessageBox.Show("Enter a valid gender.");
-                return;
-            }
 
 
 
@@ -354,10 +343,10 @@ namespace FitnessClub
             }
 
             //Declare Customers class
-            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
+            Customers customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
 
 
-            customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), txtGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
+            customerNew = new Customers(txtPersonalFitnessGoalData.Text.Trim(), txtFirstNameData.Text.Trim(), txtLastNameData.Text.Trim(), txtWeightData.Text.Trim(), cbxGenderData.Text.Trim(), txtPhoneData.Text.Trim(), txtEmailData.Text.Trim(), txtAgeData.Text.Trim(), cbxMembershipTypeData.Text, dtpStartDate.SelectedDate.ToString(), txtEndDateData.Text.Trim(), strMonthlyTrainingPlanResult, strMonthlyLockerRentalResult, cbxCreditCardTypeData.Text, txtCreditCardNumberData.Text.Trim(), txtCostData.Text.Trim(), txtMonthlyTrainingPlanPrice.Text.Trim(), txtMonthlyLockerRentalPrice.Text.Trim(), txtCostPerMonthData.Text.Trim(), txtTotalData.Text.Trim());
 
 
             //instantiate a new Campus from the input and add it to the list
@@ -621,7 +610,7 @@ namespace FitnessClub
             txtWeightTitle_.Visibility = Visibility.Visible;
             txtWeightData.Visibility = Visibility.Visible;
             txtGenderTitle.Visibility = Visibility.Visible;
-            txtGenderData.Visibility = Visibility.Visible;
+            cbxGenderData.Visibility = Visibility.Visible;
             txtPhoneTitle.Visibility = Visibility.Visible;
             txtPhoneData.Visibility = Visibility.Visible;
             txtPhoneDataExample.Visibility = Visibility.Visible;
