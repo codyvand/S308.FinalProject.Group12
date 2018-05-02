@@ -36,6 +36,7 @@ namespace FitnessClub
 
         private void ImportCustomerData()
         {
+            //Define the json file path
             string strFilePath = @"..\..\..\Data\Customers.json";
 
             try
@@ -46,6 +47,7 @@ namespace FitnessClub
                 //serialize the json data to a list of campuses
                 customerList = JsonConvert.DeserializeObject<List<Customers>>(jsonData);
 
+                //If there are values in the customer list then a message will display else a 
                 if (customerList.Count >= 0)
                     MessageBox.Show(customerList.Count + " Memberships have have been imported.");
                 else
